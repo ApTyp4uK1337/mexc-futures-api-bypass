@@ -1,6 +1,6 @@
 # MEXC Futures API bypass
 
-<img src="https://raw.githubusercontent.com/ApTyp4uK1337/mexc-futures-api-bypass/refs/heads/main/assets/preview.gif" align="center"/>
+<img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" align="center"/>
 
 # Coming Soon...
 
