@@ -41,16 +41,16 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Get the user's asset transfer records</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getPositionsHistory</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getPositionsHistory.md"><strong>getPositionsHistory</strong></a></td>
+      <td>Get the user’s history position information</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getOpenPositions</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getOpenPositions.md"><strong>getOpenPositions</strong></a></td>
+      <td>Get the user's current holding position</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getOpenOrders</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getOpenOrders.md"><strong>getOpenOrders</strong></a></td>
+      <td>Get the user's current pending order</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getOrdersHistory.md"><strong>getOrdersHistory</strong></a></td>
