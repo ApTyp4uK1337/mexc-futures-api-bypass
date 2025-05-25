@@ -5,7 +5,7 @@
 
 | **Name**           | **Type**   | **Required** | **Description** |
 |--------------------|------------|--------------|------------------|
-| `cuurrency`           | `string`   | ✅            | currency |
+| `currency`           | `string`   | ✅            | currency |
 
 ---
 
