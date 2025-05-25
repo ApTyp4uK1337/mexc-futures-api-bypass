@@ -1,7 +1,7 @@
 
-# 📦 Order
+# Order
 
-## 📋 Properties
+## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |
 |--------------------|------------|--------------|------------------|
@@ -21,38 +21,36 @@
 
 ---
 
-## 🎯 Enum: `Order.Side`
+## Enum: `Order.Side`
 
 | **Name**       | **Value** |
 |----------------|-----------|
-| `Open Long`    | `'1'`     |
-| `Close Short`  | `'2'`     |
-| `Open Short`   | `'3'`     |
-| `Close Long`   | `'4'`     |
+| `Open Long`    | `1`     |
+| `Close Short`  | `2`     |
+| `Open Short`   | `3`     |
+| `Close Long`   | `4`     |
 
-## 🎯 Enum: `Order.Type`
-
-| **Name**       | **Value** |
-|----------------|-----------|
-| `Limit`    | `'1'`     |
-| `Post Only`  | `'2'`     |
-| `IOC`   | `'3'`     |
-| `FOK`   | `'4'`     |
-| `Market`   | `'5'`     |
-| `Convert Market to Current`   | `'6'`     |
-
-## 🎯 Enum: `Order.OpenType`
+## Enum: `Order.Type`
 
 | **Name**       | **Value** |
 |----------------|-----------|
-| `Isolated`    | `'1'`     |
-| `Cross`  | `'2'`     |
+| `Limit`    | `1`     |
+| `Post Only`  | `2`     |
+| `IOC`   | `3`     |
+| `FOK`   | `4`     |
+| `Market`   | `5`     |
+| `Convert Market to Current`   | `6`     |
 
-## 🎯 Enum: `Order.PositionMode`
+## Enum: `Order.OpenType`
 
 | **Name**       | **Value** |
 |----------------|-----------|
-| `Hedge`    | `'1'`     |
-| `One-way`  | `'2'`     |
+| `Isolated`    | `1`     |
+| `Cross`  | `2`     |
 
----
+## Enum: `Order.PositionMode`
+
+| **Name**       | **Value** |
+|----------------|-----------|
+| `Hedge`    | `1`     |
+| `One-way`  | `2`     |
