@@ -1,27 +1,40 @@
-# Order
 
-## Properties
+# 📦 Order
 
-**Name** | **Data Type** | **Mandatory** | **Description**
-symbol | string | true | the name of the contract
-price | decimal | true | price
-vol | decimal | true | volume
-leverage | int | false | leverage ,Leverage is necessary on Isolated Margin
-side | int | true | order direction
-type | int | true | orderType,1:price limited order,2:Post Only Maker,3:transact or cancel instantly ,4 : transact completely or cancel completely，5:market orders,6 convert market price to current price
-openType | int | true | open type,1:isolated,2:cross
-positionId | long | false | position Id，It is recommended to fill in this parameter when closing a position
-externalOid | string | false | external order ID
-stopLossPrice | decimal | false | stop-loss price
-takeProfitPrice | decimal | false | take-profit price
-positionMode | int | false | position mode,1:hedge,2:one-way,default: the user's current config
-reduceOnly | boolean | false | Default false,For one-way positions, if you need to only reduce positions, pass in true, and two-way positions will not accept this parameter
+## 📋 Properties
 
-## Enum: Order.Side
-* `Open Long` (value: `'1'`)
+| **Name**           | **Type**   | **Required** | **Description** |
+|--------------------|------------|--------------|------------------|
+| `symbol`           | `string`   | ✅            | Contract name |
+| `price`            | `decimal`  | ✅            | Price |
+| `vol`              | `decimal`  | ✅            | Volume |
+| `leverage`         | `int`      | ❌            | Leverage (required for Isolated Margin) |
+| `side`             | `int`      | ✅            | Order direction ([see values below](#-enum-orderside)) |
+| `type`             | `int`      | ✅            | Order type: <br>1 = Limit, 2 = Post Only, 3 = IOC, 4 = FOK, 5 = Market, 6 = Convert Market to Current |
+| `openType`         | `int`      | ✅            | Open type: 1 = Isolated, 2 = Cross |
+| `positionId`       | `long`     | ❌            | Position ID (recommended when closing) |
+| `externalOid`      | `string`   | ❌            | External order ID |
+| `stopLossPrice`    | `decimal`  | ❌            | Stop-loss price |
+| `takeProfitPrice`  | `decimal`  | ❌            | Take-profit price |
+| `positionMode`     | `int`      | ❌            | Position mode: 1 = Hedge, 2 = One-way. Default = user's config |
+| `reduceOnly`       | `boolean`  | ❌            | Default: `false`. For One-Way only; ignored in Hedge mode |
 
-* `Close Short` (value: `'2'`)
+---
 
-* `Open Short` (value: `'3'`)
+## 🎯 Enum: `Order.Side`
 
-* `Close Long` (value: `'4'`)
+| **Name**       | **Value** |
+|----------------|-----------|
+| `Open Long`    | `'1'`     |
+| `Close Short`  | `'2'`     |
+| `Open Short`   | `'3'`     |
+| `Close Long`   | `'4'`     |
+
+---
+
+### 💡 Советы по улучшению оформления
+
+- Используй эмодзи для акцентов (`📋`, `📦`, `🎯`, `✅`, `❌`, и т.д.).
+- Вставляй ссылки и якоря (`[see values below](#-enum-orderside)`).
+- Можно добавить пример JSON ниже для наглядности.
+- Для больших README — используйте навигацию, `toc`, и делите на разделы.
