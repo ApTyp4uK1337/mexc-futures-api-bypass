@@ -1,4 +1,3 @@
-
 # getAssets
 
 ## Example

@@ -1,4 +1,3 @@
-
 # getLeverage
 
 ## Properties

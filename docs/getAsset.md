@@ -1,4 +1,3 @@
-
 # getAsset
 
 ## Properties
