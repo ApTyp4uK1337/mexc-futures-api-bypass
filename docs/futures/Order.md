@@ -46,3 +46,15 @@
 
 * `Hedge` (value: `'1'`)
 * `One-way` (value: `'2'`)
+
+---
+
+## Response
+
+```JSON
+{
+    "success": true,
+    "code": 0,
+    "data": 102057569836905984
+}
+```
