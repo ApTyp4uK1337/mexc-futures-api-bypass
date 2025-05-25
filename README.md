@@ -1,5 +1,7 @@
 # MEXC Futures API bypass
 
+This API is for making requests that have been marked as `Under maintenance` in [MEXC API docs](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance).
+
 <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" align="center"/>
 
 # Coming Soon...
