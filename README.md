@@ -87,16 +87,16 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Coming Soon...</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getRiskLimit</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getRiskLimits.md"><strong>getRiskLimits</strong></a></td>
+      <td>Get risk limits</td>
     </tr>
     <tr>
       <td><a href="#"><strong>changeMargin</strong></a></td>
       <td>Coming Soon...</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getLeverage</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getLeverage.md"><strong>getLeverage</strong></a></td>
+      <td>Get leverage</td>
     </tr>
     <tr>
       <td><a href="#"><strong>changeLeverage</strong></a></td>
