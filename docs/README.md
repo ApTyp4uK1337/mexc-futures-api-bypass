@@ -37,19 +37,19 @@
       <td>Get all of the user's historical orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder</strong></a></td>
       <td>Create order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders</strong></a></td>
       <td>Cancel the orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders</strong></a></td>
       <td>Cancel all uncompleted orders under a contract</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId</strong></a></td>
       <td>Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.</td>
     </tr>
     <tr>
@@ -57,27 +57,27 @@
       <td>Gets the trigger order list</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createTriggerOrder.md"><strong>createTriggerOrder (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createTriggerOrder.md"><strong>createTriggerOrder</strong></a></td>
       <td>Trigger order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelTriggerOrders.md"><strong>cancelTriggerOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelTriggerOrders.md"><strong>cancelTriggerOrders</strong></a></td>
       <td>Cancel the trigger order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllTriggerOrders.md"><strong>cancelAllTriggerOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllTriggerOrders.md"><strong>cancelAllTriggerOrders</strong></a></td>
       <td>Cancel all trigger orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getStopLimitOrders.md"><strong>getStopLimitOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getStopLimitOrders.md"><strong>getStopLimitOrders</strong></a></td>
       <td>Get the Stop-Limit order list</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelStopLimitOrders.md"><strong>cancelStopLimitOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelStopLimitOrders.md"><strong>cancelStopLimitOrders</strong></a></td>
       <td>Cancel the Stop-Limit trigger order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllStopLimitOrders.md"><strong>cancelAllStopLimitOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllStopLimitOrders.md"><strong>cancelAllStopLimitOrders</strong></a></td>
       <td>Cancel all Stop-Limit price trigger orders</td>
     </tr>
     <tr>
