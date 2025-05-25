@@ -7,7 +7,7 @@ This API is for making requests that have been marked as `Under maintenance` in 
 # Available Methods
 | **Name**           | **Description** |
 |--------------------|------------|--------------|------------------|
-| [getAssets](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getAssets.md)           Get all informations of user's asset |
+| [getAssets](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getAssets.md)     |      Get all informations of user's asset |
 
 <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" align="center"/>
 
