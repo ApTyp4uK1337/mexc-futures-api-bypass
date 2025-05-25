@@ -1,5 +1,5 @@
 
-# Assets
+# getAssets
 
 ## Example
 
