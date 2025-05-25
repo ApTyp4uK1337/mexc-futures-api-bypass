@@ -1,5 +1,9 @@
 # getTriggerOrders
 
+Gets the trigger order list.
+
+- **Endpoint:** `/api/v1/private/planorder/list/orders`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

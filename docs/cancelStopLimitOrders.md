@@ -1,5 +1,9 @@
 # cancelStopLimitOrders
 
+Cancel the Stop-Limit trigger order.
+
+- **Endpoint:** `/api/v1/private/stoporder/cancel`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

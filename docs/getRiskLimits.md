@@ -1,5 +1,9 @@
 # getRiskLimits
 
+Get risk limits.
+
+- **Endpoint:** `/api/v1/private/account/risk_limit`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

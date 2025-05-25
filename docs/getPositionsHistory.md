@@ -1,5 +1,9 @@
 # getPositionsHistory
 
+Get the user’s history position information.
+
+- **Endpoint:** `/api/v1/private/position/list/history_positions`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

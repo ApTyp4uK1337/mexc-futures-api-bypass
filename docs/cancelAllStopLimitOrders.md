@@ -1,5 +1,9 @@
 # cancelAllStopLimitOrders
 
+Cancel all Stop-Limit price trigger orders.
+
+- **Endpoint:** `/api/v1/private/stoporder/cancel_all`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

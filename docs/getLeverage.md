@@ -1,5 +1,9 @@
 # getLeverage
 
+Get leverage.
+
+- **Endpoint:** `/api/v1/private/position/leverage`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

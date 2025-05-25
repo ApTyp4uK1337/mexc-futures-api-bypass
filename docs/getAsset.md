@@ -1,5 +1,9 @@
 # getAsset
 
+Get all informations of user's asset.
+
+- **Endpoint:** `/api/v1/private/account/assets`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

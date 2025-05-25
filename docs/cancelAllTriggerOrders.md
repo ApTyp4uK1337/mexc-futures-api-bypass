@@ -1,5 +1,9 @@
 # cancelAllTriggerOrders
 
+Cancel all trigger orders.
+
+- **Endpoint:** `/private/planorder/cancel_all`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

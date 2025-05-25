@@ -1,5 +1,9 @@
 # cancelOrderWithExternalId
 
+Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.
+
+- **Endpoint:** `/api/v1/private/order/cancel_with_external`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

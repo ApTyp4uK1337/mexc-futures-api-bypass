@@ -1,5 +1,9 @@
 # getStopLimitOrders
 
+Get the Stop-Limit order list.
+
+- **Endpoint:** `/api/v1/private/stoporder/list/orders`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

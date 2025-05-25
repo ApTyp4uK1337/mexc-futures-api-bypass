@@ -1,5 +1,9 @@
 # createTriggerOrder
 
+Trigger order.
+
+- **Endpoint:** `/api/v1/private/planorder/place`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

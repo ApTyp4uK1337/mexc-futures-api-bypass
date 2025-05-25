@@ -1,5 +1,9 @@
 # closeAllPositions
 
+Close all positions.
+
+- **Endpoint:** `/api/v1/private/position/close_all`
+
 ## Example
 
 ```js

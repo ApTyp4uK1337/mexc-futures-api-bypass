@@ -1,5 +1,9 @@
 # changeLeverage
 
+Switch leverage.
+
+- **Endpoint:** `/api/v1/private/position/change_leverage`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

@@ -1,5 +1,9 @@
 # changePositionMode
 
+Change position mode.
+
+- **Endpoint:** `/api/v1/private/position/change_position_mode`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

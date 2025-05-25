@@ -1,5 +1,9 @@
 # getAssets
 
+Get the user's single currency asset information.
+
+- **Endpoint:** `/api/v1/private/account/asset/{currency}`
+
 ## Example
 
 ```js

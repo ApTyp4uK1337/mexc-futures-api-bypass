@@ -1,5 +1,9 @@
 # getAssetTransferRecords
 
+Get the user's asset transfer records.
+
+- **Endpoint:** `/api/v1/private/account/transfer_record`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

@@ -1,7 +1,6 @@
-<h1>🔷 MEXC Futures API bypass</h1>
+<h1>🔷 MEXC Futures API Bypass</h1>
 
-This unofficial MEXC Futures API library bypasses current maintenance restrictions in the official endpoints, allowing full trading and account access even when some routes are marked `[Under maintenance](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance)`.
-
+This unofficial MEXC Futures API library bypasses current maintenance restrictions in the official endpoints, allowing full trading and account access even when some routes are marked [`Under maintenance`](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance).
 
 ---
 
@@ -12,7 +11,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - Yes, including market, limit, stop-limit, and trigger orders.
 
 > Can the bypass API fetch account info, open positions, and adjust leverage/margin?
-- Yes. For more info, look at [available methods](#available-methods) section.
+- Yes. For more info, look at [available methods](#-available-methods) section.
 
 > Is the library provided as open source or as compiled/obfuscated code?
 - Currently, everything is open-sourced, nothing is obfuscated.
@@ -79,7 +78,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId</strong></a></td>
-      <td>Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.</td>
+      <td>Cancel the order according to the external order ID</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getTriggerOrders.md"><strong>getTriggerOrders</strong></a></td>
