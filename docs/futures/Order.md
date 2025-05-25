@@ -10,13 +10,13 @@
 | `vol`              | `decimal`  | ✅            | Volume |
 | `leverage`         | `int`      | ❌            | Leverage (required for Isolated Margin) |
 | `side`             | `int`      | ✅            | Order direction ([see values below](#-enum-orderside)) |
-| `type`             | `int`      | ✅            | Order type: <br>1 = Limit, 2 = Post Only, 3 = IOC, 4 = FOK, 5 = Market, 6 = Convert Market to Current |
-| `openType`         | `int`      | ✅            | Open type: 1 = Isolated, 2 = Cross |
+| `type`             | `int`      | ✅            | Order type ([see values below](#-enum-orderlimit)) |
+| `openType`         | `int`      | ✅            | Open type ([see values below](#-enum-orderopentype)) |
 | `positionId`       | `long`     | ❌            | Position ID (recommended when closing) |
 | `externalOid`      | `string`   | ❌            | External order ID |
 | `stopLossPrice`    | `decimal`  | ❌            | Stop-loss price |
 | `takeProfitPrice`  | `decimal`  | ❌            | Take-profit price |
-| `positionMode`     | `int`      | ❌            | Position mode: 1 = Hedge, 2 = One-way. Default = user's config |
+| `positionMode`     | `int`      | ❌            | Position mode ([see values below](#-enum-orderpositionmode)). Default = user's config |
 | `reduceOnly`       | `boolean`  | ❌            | Default: `false`. For One-Way only; ignored in Hedge mode |
 
 ---
@@ -30,11 +30,29 @@
 | `Open Short`   | `'3'`     |
 | `Close Long`   | `'4'`     |
 
+## 🎯 Enum: `Order.Type`
+
+| **Name**       | **Value** |
+|----------------|-----------|
+| `Limit`    | `'1'`     |
+| `Post Only`  | `'2'`     |
+| `IOC`   | `'3'`     |
+| `FOK`   | `'4'`     |
+| `Market`   | `'5'`     |
+| `Convert Market to Current`   | `'6'`     |
+
+## 🎯 Enum: `Order.OpenType`
+
+| **Name**       | **Value** |
+|----------------|-----------|
+| `Isolated`    | `'1'`     |
+| `Cross`  | `'2'`     |
+
+## 🎯 Enum: `Order.PositionMode`
+
+| **Name**       | **Value** |
+|----------------|-----------|
+| `Hedge`    | `'1'`     |
+| `One-way`  | `'2'`     |
+
 ---
-
-### 💡 Советы по улучшению оформления
-
-- Используй эмодзи для акцентов (`📋`, `📦`, `🎯`, `✅`, `❌`, и т.д.).
-- Вставляй ссылки и якоря (`[see values below](#-enum-orderside)`).
-- Можно добавить пример JSON ниже для наглядности.
-- Для больших README — используйте навигацию, `toc`, и делите на разделы.
