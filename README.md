@@ -1,4 +1,4 @@
-# MEXC Futures API bypass
+<h1>MEXC Futures API bypass</h1>
 
 This API is for making requests that have been marked as `Under maintenance` in [MEXC API docs](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance).
 
@@ -23,16 +23,96 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Get the user's single currency asset information</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder</strong></a></td>
-      <td>Create order.</td>
+      <td><a href="#"><strong>assetTransferRecords</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getPositionsHistory</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getOpenPositions</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getOpenOrders</strong></a></td>
+      <td>Coming Soon...</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getOrdersHistory.md"><strong>getOrdersHistory</strong></a></td>
-      <td>Get all of the user's historical orders.</td>
+      <td>Get all of the user's historical orders</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder</strong></a></td>
+      <td>Create order</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelOrder</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelAllOrders</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelOrderWithExternalId</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getTriggerOrders</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>createTriggerOrder</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelTriggerOrder</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelAllTriggerOrders</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getStopLimitOrders</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelStopLimitOrder</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>cancelAllStopLimitOrders</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getRiskLimit</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>changeMargin</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getLeverage</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>changeLeverage</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>getPositionMode</strong></a></td>
+      <td>Coming Soon...</td>
+    </tr>
+    <tr>
+      <td><a href="#"><strong>changePositionMode</strong></a></td>
+      <td>Coming Soon...</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/closeAllPositions.md"><strong>closeAllPositions</strong></a></td>
-      <td>Close all positions.</td>
+      <td>Close all positions</td>
     </tr>
   </tbody>
 </table>
