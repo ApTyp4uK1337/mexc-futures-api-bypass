@@ -1,15 +1,15 @@
-<h1>MEXC Futures API bypass</h1>
+<h1>🔷 MEXC Futures API bypass</h1>
 
-This API is for making requests that have been marked as `Under maintenance` in [MEXC API docs](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance).
+This unofficial MEXC Futures API library bypasses current maintenance restrictions in the official endpoints, allowing full trading and account access even when some routes are marked `[Under maintenance](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance)`.
 
 
 ---
 
 
-<h2>FAQ</h2>
+<h2>❓ FAQ</h2>
 
-> Does it fully support placing, cancelling, and tracking all types of futures orders (market, limit, stop-limit, etc.)?
-- Yes. For more info, look at [available methods](#available-methods) section.
+> Does it fully support placing, cancelling, and tracking all types of futures orders?
+- Yes, including market, limit, stop-limit, and trigger orders.
 
 > Can the bypass API fetch account info, open positions, and adjust leverage/margin?
 - Yes. For more info, look at [available methods](#available-methods) section.
@@ -27,7 +27,7 @@ This API is for making requests that have been marked as `Under maintenance` in 
 ---
 
 
-<h2>Available Methods</h2>
+<h2>💼 Available Methods</h2>
 
 <table style="width:100%">
   <thead>
@@ -66,19 +66,19 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Get all of the user's historical orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder</strong></a></td>
       <td>Create order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders</strong></a></td>
       <td>Cancel the orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders</strong></a></td>
       <td>Cancel all uncompleted orders under a contract</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId</strong></a></td>
       <td>Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.</td>
     </tr>
     <tr>
@@ -86,27 +86,27 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Gets the trigger order list</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createTriggerOrder.md"><strong>createTriggerOrder (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createTriggerOrder.md"><strong>createTriggerOrder</strong></a></td>
       <td>Trigger order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelTriggerOrders.md"><strong>cancelTriggerOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelTriggerOrders.md"><strong>cancelTriggerOrders</strong></a></td>
       <td>Cancel the trigger order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllTriggerOrders.md"><strong>cancelAllTriggerOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllTriggerOrders.md"><strong>cancelAllTriggerOrders</strong></a></td>
       <td>Cancel all trigger orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getStopLimitOrders.md"><strong>getStopLimitOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getStopLimitOrders.md"><strong>getStopLimitOrders</strong></a></td>
       <td>Get the Stop-Limit order list</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelStopLimitOrders.md"><strong>cancelStopLimitOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelStopLimitOrders.md"><strong>cancelStopLimitOrders</strong></a></td>
       <td>Cancel the Stop-Limit trigger order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllStopLimitOrders.md"><strong>cancelAllStopLimitOrders (Bypassed)</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllStopLimitOrders.md"><strong>cancelAllStopLimitOrders</strong></a></td>
       <td>Cancel all Stop-Limit price trigger orders</td>
     </tr>
     <tr>
@@ -143,9 +143,11 @@ This API is for making requests that have been marked as `Under maintenance` in 
 
 ---
 
+## ▶ Live preview: placing and cancelling a futures order
 
 <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" align="center"/>
 
 
-## Questions?
-<a href="https://t.me/aptyp4uk1337"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" title="Telegram"></a>
+## 💌 Contact me
+
+<a href="https://t.me/aptyp4uk1337_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"></a>
