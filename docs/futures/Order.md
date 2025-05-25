@@ -23,34 +23,26 @@
 
 ## Enum: `Order.Side`
 
-| **Name**       | **Value** |
-|----------------|-----------|
-| `Open Long`    | `1`     |
-| `Close Short`  | `2`     |
-| `Open Short`   | `3`     |
-| `Close Long`   | `4`     |
+* `Open Long` (value: `1`)
+* `Close Short` (value: `2`)
+* `Open Short` (value: `3`)
+* `Close Long` (value: `4`)
 
 ## Enum: `Order.Type`
 
-| **Name**       | **Value** |
-|----------------|-----------|
-| `Limit`    | `1`     |
-| `Post Only`  | `2`     |
-| `IOC`   | `3`     |
-| `FOK`   | `4`     |
-| `Market`   | `5`     |
-| `Convert Market to Current`   | `6`     |
+* `Limit` (value: `1`)
+* `Post Only` (value: `2`)
+* `IOC` (value: `3`)
+* `FOK` (value: `4`)
+* `Market` (value: `5`)
+* `Convert Market to Current` (value: `6`)
 
 ## Enum: `Order.OpenType`
 
-| **Name**       | **Value** |
-|----------------|-----------|
-| `Isolated`    | `1`     |
-| `Cross`  | `2`     |
+* `Isolated` (value: `1`)
+* `Cross` (value: `2`)
 
 ## Enum: `Order.PositionMode`
 
-| **Name**       | **Value** |
-|----------------|-----------|
-| `Hedge`    | `1`     |
-| `One-way`  | `2`     |
+* `Hedge` (value: `1`)
+* `One-way` (value: `2`)
