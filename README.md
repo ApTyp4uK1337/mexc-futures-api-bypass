@@ -22,6 +22,18 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getAsset.md"><strong>getAsset</strong></a></td>
       <td>Get the user's single currency asset information</td>
     </tr>
+    <tr>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder</strong></a></td>
+      <td>Create order.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getOrdersHistory.md"><strong>getOrdersHistory</strong></a></td>
+      <td>Get all of the user's historical orders.</td>
+    </tr>
+    <tr>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/closeAllPositions.md"><strong>closeAllPositions</strong></a></td>
+      <td>Close all positions.</td>
+    </tr>
   </tbody>
 </table>
 
