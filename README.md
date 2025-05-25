@@ -37,8 +37,8 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Get the user's single currency asset information</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>assetTransferRecords</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getAssetTransferRecords.md"><strong>getAssetTransferRecords</strong></a></td>
+      <td>Get the user's asset transfer records</td>
     </tr>
     <tr>
       <td><a href="#"><strong>getPositionsHistory</strong></a></td>
