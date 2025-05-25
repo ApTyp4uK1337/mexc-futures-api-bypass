@@ -1,5 +1,9 @@
 # getPositionMode
 
+Get position mode.
+
+- **Endpoint:** `/api/v1/private/position/position_mode`
+
 ## Example
 
 ```js

@@ -1,5 +1,9 @@
 # changeMargin
 
+Increase or decrease margin.
+
+- **Endpoint:** `/api/v1/private/position/change_margin`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

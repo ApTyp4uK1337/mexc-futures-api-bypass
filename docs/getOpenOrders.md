@@ -1,4 +1,8 @@
-# getPositionsHistory
+# getOpenOrders
+
+Get the user's current pending order.
+
+- **Endpoint:** `/api/v1/private/order/list/open_orders/{symbol}`
 
 ## Properties
 

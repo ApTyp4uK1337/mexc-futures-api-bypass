@@ -1,5 +1,9 @@
 # getOrdersHistory
 
+Get all of the user's historical orders.
+
+- **Endpoint:** `/api/v1/private/order/list/history_orders`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

@@ -1,5 +1,9 @@
 # cancelOrders
 
+Cancel the pending order placed before, each time can cancel up to 50 orders.
+
+- **Endpoint:** `/api/v1/private/order/cancel`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

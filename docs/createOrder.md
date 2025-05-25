@@ -1,5 +1,9 @@
 # createOrder
 
+USDT perpetual contract trading offers limit and market orders. You can place an order only you have enough money in your account. Once you place an order, your account funds will be frozen . The amount of funds frozen depends on the type and parameters specified in the order.
+
+- **Endpoint:** `/api/v1/private/order/create`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

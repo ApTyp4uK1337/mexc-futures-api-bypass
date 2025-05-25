@@ -1,5 +1,9 @@
 # cancelTriggerOrders
 
+Cancel the trigger order.
+
+- **Endpoint:** `/api/v1/private/planorder/cancel`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |

@@ -50,7 +50,7 @@
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId</strong></a></td>
-      <td>Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.</td>
+      <td>Cancel the order according to the external order ID</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getTriggerOrders.md"><strong>getTriggerOrders</strong></a></td>

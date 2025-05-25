@@ -1,5 +1,9 @@
 # cancelAllOrders
 
+Cancel all uncompleted orders under a contract.
+
+- **Endpoint:** `/api/v1/private/order/cancel_all`
+
 ## Properties
 
 | **Name**           | **Type**   | **Required** | **Description** |
