@@ -2,8 +2,10 @@ import { MexcClient } from './MexcClient.js';
 
 const client = new MexcClient({ apiKey: 'YOUR_API_KEY', isTestnet: true });
 
-const orders = await client.getOpenOrders({
-  symbol: 'ETH_USDT'
+const result = await client.changeMargin({
+  positionId: 1337,
+  amount: 15,
+  type: "ADD"
 });
 
-console.log(orders);
+console.log(result);
