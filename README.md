@@ -8,11 +8,11 @@ This API is for making requests that have been marked as `Under maintenance` in 
 
 <h2>FAQ</h2>
 
-- Can the library be used with multiple accounts, or is the authentication tied to a single one?
-> No limitation on number of accounts.
+> Can the library be used with multiple accounts, or is the authentication tied to a single one?
+- No limitation on number of accounts.
 
-- Does it use anything third-party to make those requests?
-> No.
+> Does it use anything third-party to make those requests?
+- No.
 
 
 ---
@@ -65,8 +65,8 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Coming Soon...</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelAllOrders</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders</strong></a></td>
+      <td>Cancel all orders under a contract</td>
     </tr>
     <tr>
       <td><a href="#"><strong>cancelOrderWithExternalId</strong></a></td>
