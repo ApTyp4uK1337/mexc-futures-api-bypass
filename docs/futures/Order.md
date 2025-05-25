@@ -6,7 +6,7 @@
 | **Name**           | **Type**   | **Required** | **Description** |
 |--------------------|------------|--------------|------------------|
 | `symbol`           | `string`   | ✅            | Contract name |
-| `price`            | `decimal`  | ✅            | Price |
+| `price`            | `decimal`  | ❌            | Price |
 | `vol`              | `decimal`  | ✅            | Volume |
 | `leverage`         | `int`      | ❌            | Leverage (required for Isolated Margin) |
 | `side`             | `int`      | ✅            | Order direction ([see values below](#enum-orderside)) |
@@ -23,26 +23,26 @@
 
 ## Enum: `Order.Side`
 
-* `Open Long` (value: `1`)
-* `Close Short` (value: `2`)
-* `Open Short` (value: `3`)
-* `Close Long` (value: `4`)
+* `Open Long` (value: `'1'`)
+* `Close Short` (value: `'2'`)
+* `Open Short` (value: `'3'`)
+* `Close Long` (value: `'4'`)
 
 ## Enum: `Order.Type`
 
-* `Limit` (value: `1`)
-* `Post Only` (value: `2`)
-* `IOC` (value: `3`)
-* `FOK` (value: `4`)
-* `Market` (value: `5`)
-* `Convert Market to Current` (value: `6`)
+* `Limit` (value: `'1'`)
+* `Post Only` (value: `'2'`)
+* `IOC` (value: `'3'`)
+* `FOK` (value: `'4'`)
+* `Market` (value: `'5'`)
+* `Convert Market to Current` (value: `'6'`)
 
 ## Enum: `Order.OpenType`
 
-* `Isolated` (value: `1`)
-* `Cross` (value: `2`)
+* `Isolated` (value: `'1'`)
+* `Cross` (value: `'2'`)
 
 ## Enum: `Order.PositionMode`
 
-* `Hedge` (value: `1`)
-* `One-way` (value: `2`)
+* `Hedge` (value: `'1'`)
+* `One-way` (value: `'2'`)
