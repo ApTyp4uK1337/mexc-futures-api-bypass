@@ -1,24 +1,4 @@
-<h1>MEXC Futures API bypass</h1>
-
-This API is for making requests that have been marked as `Under maintenance` in [MEXC API docs](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance).
-
-
----
-
-
-<h2>FAQ</h2>
-
-- Can the library be used with multiple accounts, or is the authentication tied to a single one?
-> No limitation on number of accounts.
-
-- Does it use anything third-party to make those requests?
-> No.
-
-
----
-
-
-<h2>Available Methods</h2>
+<h1>Available Methods</h1>
 
 <table style="width:100%">
   <thead>
@@ -130,13 +110,3 @@ This API is for making requests that have been marked as `Under maintenance` in 
     </tr>
   </tbody>
 </table>
-
-
----
-
-
-<img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" align="center"/>
-
-
-## Questions?
-<a href="https://t.me/aptyp4uk1337"><img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" title="Telegram"></a>
