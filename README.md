@@ -61,16 +61,16 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Create order</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelOrder</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders</strong></a></td>
+      <td>Cancel the orders</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders</strong></a></td>
-      <td>Cancel all orders under a contract</td>
+      <td>Cancel all uncompleted orders under a contract</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelOrderWithExternalId</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId</strong></a></td>
+      <td>Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.</td>
     </tr>
     <tr>
       <td><a href="#"><strong>getTriggerOrders</strong></a></td>
@@ -113,16 +113,16 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Get leverage</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>changeLeverage</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/changeLeverage.md"><strong>changeLeverage</strong></a></td>
+      <td>Switch leverage</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getPositionMode</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getPositionMode.md"><strong>getPositionMode</strong></a></td>
+      <td>Get position mode</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>changePositionMode</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/changePositionMode.md"><strong>changePositionMode</strong></a></td>
+      <td>Change position mode</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/closeAllPositions.md"><strong>closeAllPositions</strong></a></td>
