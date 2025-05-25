@@ -9,14 +9,14 @@
 | `price`            | `decimal`  | ✅            | Price |
 | `vol`              | `decimal`  | ✅            | Volume |
 | `leverage`         | `int`      | ❌            | Leverage (required for Isolated Margin) |
-| `side`             | `int`      | ✅            | Order direction ([see values below](#-enum-orderside)) |
-| `type`             | `int`      | ✅            | Order type ([see values below](#-enum-orderlimit)) |
-| `openType`         | `int`      | ✅            | Open type ([see values below](#-enum-orderopentype)) |
+| `side`             | `int`      | ✅            | Order direction ([see values below](#enum-orderside)) |
+| `type`             | `int`      | ✅            | Order type ([see values below](#enum-orderlimit)) |
+| `openType`         | `int`      | ✅            | Open type ([see values below](#enum-orderopentype)) |
 | `positionId`       | `long`     | ❌            | Position ID (recommended when closing) |
 | `externalOid`      | `string`   | ❌            | External order ID |
 | `stopLossPrice`    | `decimal`  | ❌            | Stop-loss price |
 | `takeProfitPrice`  | `decimal`  | ❌            | Take-profit price |
-| `positionMode`     | `int`      | ❌            | Position mode ([see values below](#-enum-orderpositionmode)). Default = user's config |
+| `positionMode`     | `int`      | ❌            | Position mode ([see values below](#enum-orderpositionmode)). Default = user's config |
 | `reduceOnly`       | `boolean`  | ❌            | Default: `false`. For One-Way only; ignored in Hedge mode |
 
 ---
