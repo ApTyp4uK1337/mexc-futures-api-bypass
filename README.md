@@ -8,6 +8,15 @@ This API is for making requests that have been marked as `Under maintenance` in 
 
 <h2>FAQ</h2>
 
+> Does it fully support placing, cancelling, and tracking all types of futures orders (market, limit, stop-limit, etc.)?
+- Yes. For more info, look at [available methods](#available-methods) section.
+
+> Can the bypass API fetch account info, open positions, and adjust leverage/margin?
+- Yes. For more info, look at [available methods](#available-methods) section.
+
+> Is the library provided as open source or as compiled/obfuscated code?
+- Currently, everything is open-sourced, nothing is obfuscated.
+
 > Can the library be used with multiple accounts, or is the authentication tied to a single one?
 - No limitation on number of accounts.
 
@@ -57,56 +66,56 @@ This API is for making requests that have been marked as `Under maintenance` in 
       <td>Get all of the user's historical orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createOrder.md"><strong>createOrder (Bypassed)</strong></a></td>
       <td>Create order</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrders.md"><strong>cancelOrders (Bypassed)</strong></a></td>
       <td>Cancel the orders</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllOrders.md"><strong>cancelAllOrders (Bypassed)</strong></a></td>
       <td>Cancel all uncompleted orders under a contract</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId</strong></a></td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelOrderWithExternalId.md"><strong>cancelOrderWithExternalId (Bypassed)</strong></a></td>
       <td>Cancel the uncompleted order under a contract according to the specified externalOid, only 1 order for each cancellation.</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getTriggerOrders</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getTriggerOrders.md"><strong>getTriggerOrders</strong></a></td>
+      <td>Gets the trigger order list</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>createTriggerOrder</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/createTriggerOrder.md"><strong>createTriggerOrder (Bypassed)</strong></a></td>
+      <td>Trigger order</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelTriggerOrder</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelTriggerOrders.md"><strong>cancelTriggerOrders (Bypassed)</strong></a></td>
+      <td>Cancel the trigger order</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelAllTriggerOrders</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllTriggerOrders.md"><strong>cancelAllTriggerOrders (Bypassed)</strong></a></td>
+      <td>Cancel all trigger orders</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>getStopLimitOrders</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getStopLimitOrders.md"><strong>getStopLimitOrders (Bypassed)</strong></a></td>
+      <td>Get the Stop-Limit order list</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelStopLimitOrder</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelStopLimitOrders.md"><strong>cancelStopLimitOrders (Bypassed)</strong></a></td>
+      <td>Cancel the Stop-Limit trigger order</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>cancelAllStopLimitOrders</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/cancelAllStopLimitOrders.md"><strong>cancelAllStopLimitOrders (Bypassed)</strong></a></td>
+      <td>Cancel all Stop-Limit price trigger orders</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getRiskLimits.md"><strong>getRiskLimits</strong></a></td>
       <td>Get risk limits</td>
     </tr>
     <tr>
-      <td><a href="#"><strong>changeMargin</strong></a></td>
-      <td>Coming Soon...</td>
+      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/changeMargin.md"><strong>changeMargin</strong></a></td>
+      <td>Increase or decrease margin</td>
     </tr>
     <tr>
       <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/getLeverage.md"><strong>getLeverage</strong></a></td>
