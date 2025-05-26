@@ -173,8 +173,7 @@ const order = await client.createOrder({
 
 ## ▶ Live preview: placing and cancelling a futures order
 
-<img src="https://i.imgur.com/lXAL2gg.mp4" align="center"/>
-
+<div align="center">https://github.com/user-attachments/assets/d51a6a12-a596-440e-bc3c-147ef8aad5b0</div>
 
 ## 💌 Contact me
 
