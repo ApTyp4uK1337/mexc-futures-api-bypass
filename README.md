@@ -25,6 +25,25 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 
 ---
 
+<h2>💥 Create Order Example</h2>
+
+```JS
+import { MexcClient } from './MexcClient.js';
+
+const client = new MexcClient({ apiKey: 'YOUR_API_KEY', isTestnet: true });
+
+const order = await client.createOrder({
+  symbol: 'BTC_USDT',
+  type: 5,
+  side: 1,
+  openType: 2,
+  vol: 15,
+  leverage: 25
+});
+```
+
+---
+
 
 <h2>💼 Available Methods</h2>
 
