@@ -13,6 +13,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - Compatible with any programming language
 - Simple Python & Node.js library
 
+---
 
 <h2>❓ FAQ</h2>
 
