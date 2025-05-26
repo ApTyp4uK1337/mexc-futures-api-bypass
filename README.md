@@ -173,7 +173,7 @@ const order = await client.createOrder({
 
 ## ▶ Live preview: placing and cancelling a futures order
 
-<img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" align="center"/>
+<img src="https://i.imgur.com/lXAL2gg.mp4" align="center"/>
 
 
 ## 💌 Contact me
