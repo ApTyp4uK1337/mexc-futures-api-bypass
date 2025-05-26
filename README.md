@@ -4,6 +4,15 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 
 ---
 
+<h2>🎖 Features</h2>
+
+- Blazing fast
+- No third-party requests
+- Works on mainnet & testnet
+- Fully open source
+- Compatible with any programming language
+- Simple Python & Node.js library
+
 
 <h2>❓ FAQ</h2>
 
