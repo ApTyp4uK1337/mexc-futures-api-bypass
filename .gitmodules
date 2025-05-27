@@ -1,3 +1,4 @@
 [submodule "src"]
 	path = src
 	url = https://github.com/ApTyp4uK1337/mexc-futures-api-bypass-private.git
+  branch = main
