@@ -1,3 +1,7 @@
+<div align="center">
+   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/master/assets/mexc-logo.png?raw=true" height="150" width="150">
+</div>
+
 <h1>🔷 MEXC Futures API Bypass</h1>
 
 This unofficial MEXC Futures API library bypasses current maintenance restrictions in the official endpoints, allowing full trading and account access even when some routes are marked "[Under maintenance](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance)".
