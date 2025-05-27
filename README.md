@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/master/assets/mexc-logo.png?raw=true" height="150" width="150">
+   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/mexc-logo.png?raw=true" height="150" width="150">
 </div>
 
 <h1>🔷 MEXC Futures API Bypass</h1>
