@@ -1,14 +1,24 @@
 import 'dotenv/config';
 import chalk from 'chalk';
-import { MexcClient } from '../src/nodejs/MexcClient.js';
+import { MexcClient } from './MexcClient.js';
 import ora from 'ora';
 import figlet from 'figlet';
 import gradient from 'gradient-string';
 
+// Анимация ожидания
 async function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+// Измерение времени выполнения запроса
+async function measureLatency(fn, ...args) {
+  const start = Date.now();
+  const result = await fn(...args);
+  const latency = Date.now() - start;
+  return { result, latency };
+}
+
+// Красивый заголовок
 async function showBanner() {
   console.clear();
   console.log('\n');
@@ -44,19 +54,26 @@ async function main() {
     await sleep(1000);
     spinner.succeed(chalk.green('MEXC Client initialized successfully\n'));
 
-    // --- Step 1: Get account info ---
+    // Получение баланса с замером latency
     const balanceSpinner = ora(chalk.yellow('Fetching account balance...')).start();
-    const balance = await client.getAsset({ currency: 'USDT' });
-    balanceSpinner.succeed(chalk.green('Balance data received\n'));
+    const { result: balance, latency: balanceLatency } = await measureLatency(
+      client.getAsset.bind(client),
+      { currency: 'USDT' }
+    );
+    balanceSpinner.succeed([
+      chalk.green('Balance data received'),
+      chalk.gray(`(${balanceLatency}ms)`)
+    ].join(' '));
 
     console.log(chalk.gray('┌──────────────────────────────────────────────┐'));
     console.log(chalk.gray('│') + chalk.bold('           ACCOUNT SUMMARY           ') + chalk.gray('│'));
     console.log(chalk.gray('├──────────────────────────────────────────────┤'));
     console.log(chalk.gray('│') + ` 💰 Available: ${chalk.greenBright(`${balance.data.availableBalance.toFixed(2)} USDT`)}${' '.repeat(12)}` + chalk.gray('│'));
     console.log(chalk.gray('│') + ` 📊 Unrealized PnL: ${balance.data.unrealized >= 0 ? chalk.greenBright(`${balance.data.unrealized.toFixed(2)}`) : chalk.redBright(`${balance.data.unrealized.toFixed(2)}`)} USDT` + ' '.repeat(5) + chalk.gray('│'));
+    console.log(chalk.gray('│') + ` ⏱️  Last request latency: ${chalk.cyan(`${balanceLatency}ms`)}${' '.repeat(8)}` + chalk.gray('│'));
     console.log(chalk.gray('└──────────────────────────────────────────────┘\n'));
 
-    // --- Step 2: Open positions ---
+    // --- Step 1: Open positions ---
     const openOrders = [
       { symbol: 'BTC_USDT', side: 1, vol: 15, leverage: 25, emoji: '₿' },
       { symbol: 'ETH_USDT', side: 3, vol: 1, leverage: 10, emoji: 'Ξ' },
@@ -66,6 +83,7 @@ async function main() {
     ];
 
     const openedOrderIds = [];
+    const latencies = [];
 
     console.log(chalk.blue.bold('🛫 OPENING POSITIONS'));
     console.log(chalk.gray('──────────────────────────────────────────────\n'));
@@ -87,11 +105,14 @@ async function main() {
         ...(order.takeProfitPrice && { takeProfitPrice: order.takeProfitPrice }),
       };
 
-      const response = await client.createOrder(params);
+      const { result: response, latency } = await measureLatency(
+        client.createOrder.bind(client),
+        params
+      );
+      latencies.push(latency);
+
       const orderId = response?.data?.orderId;
       if (orderId) openedOrderIds.push(orderId);
-
-      await sleep(300);
 
       const direction = order.side === 1 ?
         chalk.bgGreen.white(' LONG ') :
@@ -103,13 +124,18 @@ async function main() {
         `Volume: ${chalk.yellow(order.vol)}`,
         order.stopLossPrice ? `SL: ${chalk.red(order.stopLossPrice)}` : '',
         order.takeProfitPrice ? `TP: ${chalk.green(order.takeProfitPrice)}` : '',
-        chalk.gray(`ID: ${orderId}`)
+        chalk.gray(`ID: ${orderId}`),
+        chalk.cyan(`${latency}ms`)
       ].filter(Boolean).join(' | '));
 
       await sleep(500);
     }
 
-    // --- Step 3: Cancel some orders ---
+    // Вывод статистики latency
+    const avgLatency = latencies.reduce((a, b) => a + b, 0) / latencies.length;
+    console.log(chalk.gray(`\n📊 Average order latency: ${chalk.cyan(`${avgLatency.toFixed(0)}ms`)}`));
+
+    // --- Step 2: Cancel some orders ---
     console.log(`\n${chalk.magenta.bold('🛑 CANCELLING ORDERS')}`);
     console.log(chalk.gray('──────────────────────────────────────────────\n'));
 
@@ -121,18 +147,21 @@ async function main() {
         color: 'magenta'
       }).start();
 
-      await client.cancelOrders({ ids: idsToCancel });
-      await sleep(800);
+      const { latency: cancelLatency } = await measureLatency(
+        client.cancelOrders.bind(client),
+        { ids: idsToCancel }
+      );
 
       cancelSpinner.succeed([
         chalk.gray('Cancelled orders:'),
-        chalk.yellow(idsToCancel.join(', '))
+        chalk.yellow(idsToCancel.join(', ')),
+        chalk.cyan(`${cancelLatency}ms`)
       ].join(' '));
     } else {
       console.log(chalk.yellow('⚠️ No orders available for cancellation'));
     }
 
-    // --- Step 4: Close positions ---
+    // --- Step 3: Close positions ---
     const closingOrders = [
       { symbol: 'BTC_USDT', side: 4, vol: 15, leverage: 25, emoji: '₿' },
       { symbol: 'ETH_USDT', side: 2, vol: 1, leverage: 10, emoji: 'Ξ' },
@@ -156,14 +185,17 @@ async function main() {
         leverage: order.leverage,
       };
 
-      const response = await client.createOrder(params);
+      const { result: response, latency: closeLatency } = await measureLatency(
+        client.createOrder.bind(client),
+        params
+      );
       const orderId = response?.data?.orderId;
 
-      await sleep(500);
       closeSpinner.succeed([
         `${chalk.bgBlue.white(' CLOSE ')} ${order.emoji} ${chalk.bold(order.symbol)}`,
         `Volume: ${chalk.yellow(order.vol)}`,
-        chalk.gray(`ID: ${orderId}`)
+        chalk.gray(`ID: ${orderId}`),
+        chalk.cyan(`${closeLatency}ms`)
       ].join(' | '));
     }
 
@@ -177,9 +209,15 @@ async function main() {
     }).start();
 
     await sleep(2000);
-    await client.closeAllPositions();
+    const { latency: cleanupLatency } = await measureLatency(
+      client.closeAllPositions.bind(client)
+    );
 
-    cleanupSpinner.succeed(chalk.green('All positions have been force-closed'));
+    cleanupSpinner.succeed([
+      chalk.green('All positions have been force-closed'),
+      chalk.cyan(`${cleanupLatency}ms`)
+    ].join(' '));
+
     console.log(`\n${chalk.bold.green('✅ All operations completed successfully!')}\n`);
 
   } catch (error) {
