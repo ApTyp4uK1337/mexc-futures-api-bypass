@@ -10,6 +10,8 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" title="Telegram">
 </div>
 
+> **Demo file:** [./demo/app.js](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/demo/app.js)
+
 ---
 
 <h2>🎖 Features</h2>
