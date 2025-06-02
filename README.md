@@ -36,6 +36,9 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 > Does it fully support placing, cancelling, and tracking all types of futures orders?
 - Yes, including market, limit, stop-limit, and trigger orders.
 
+> How many orders can be sent per second, per minute, per day?
+- See the [Results of the Rate Limit Test](#-rate-limit-test) for 200 queries.
+
 > Can the bypass API fetch account info, open positions, and adjust leverage/margin?
 - Yes. For more info, look at [available methods](#-available-methods) section.
 
@@ -48,6 +51,19 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 > Does it use anything third-party to make those requests?
 - No.
 
+> Will I get a risk control ban for using the library?
+- In my experience - no. But if you get banned, write to me so I can update this point.
+
+
+---
+
+<h2>⏱️ Rate Limit Test</h2>
+
+<div align="center">
+  <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/rate-limit-test.png?raw=true" title="Telegram">
+</div>
+
+> **Demo file:** [./demo/rate_limit_test.js](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/demo/rate_limit_test.js)
 
 ---
 
@@ -190,7 +206,6 @@ const order = await client.createOrder({
 ## ▶ Live preview: placing and cancelling a futures order
 
 <video src="https://github.com/user-attachments/assets/d51a6a12-a596-440e-bc3c-147ef8aad5b0" align="center">
-  <!-- <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true"> -->
   <a href="https://github.com/user-attachments/assets/d51a6a12-a596-440e-bc3c-147ef8aad5b0">👀 Watch Live Preview</a>
 </video>
 
