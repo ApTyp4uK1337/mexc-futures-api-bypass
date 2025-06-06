@@ -194,7 +194,7 @@ const order = await client.createOrder({
       <td>Change position mode</td>
     </tr>
     <tr>
-      <td><a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/docs/closeAllPositions.md"><strong>closeAllPositions</strong></a></td>
+      <td><a href="/docs/closeAllPositions.md"><strong>closeAllPositions</strong></a></td>
       <td>Close all positions</td>
     </tr>
   </tbody>
