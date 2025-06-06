@@ -37,7 +37,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - Yes, including market, limit, stop-limit, and trigger orders.
 
 > How many orders can be sent per second, per minute, per day?
-- See the [Results of the Rate Limit Test](#-rate-limit-test) for 200 queries.
+- See the [results of the Rate Limit Test](#-rate-limit-test) for 200 requests.
 
 > Can the bypass API fetch account info, open positions, and adjust leverage/margin?
 - Yes. For more info, look at [available methods](#-available-methods) section.
@@ -52,7 +52,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - No.
 
 > Will I get a risk control ban for using the library?
-- In my experience - no. Look For more information on risk control, see here [🛡️ Risk Control on MEXC](/docs/risk_control_en.md).
+- In my experience - no. For more information on risk control, see here [🛡️ Risk Control on MEXC](/docs/risk_control_en.md).
 
 
 ---
