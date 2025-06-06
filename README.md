@@ -52,7 +52,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - No.
 
 > Will I get a risk control ban for using the library?
-- In my experience - no. But if you get banned, write to me so I can update this point.
+- In my experience - no. Look For more information on risk control, see here [🛡️ Risk Control on MEXC](/docs/risk_control_en.md).
 
 
 ---
