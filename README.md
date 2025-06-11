@@ -26,8 +26,9 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - No third-party requests
 - Works on mainnet & testnet
 - Fully open source
+- Multi-accounting and proxy support
 - Compatible with any programming language
-- Simple Python & Node.js library
+- Simple PHP, Python & Node.js library
 
 ---
 
@@ -66,6 +67,18 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 > **Demo file:** [./demo/rate_limit_test.js](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/demo/rate_limit_test.js)
 
 ---
+
+## 🚀 API initialization
+
+```JS
+import { MexcClient } from './MexcClient.js';
+
+const client = new MexcClient({
+  apiKey: 'YOUR_API_KEY',
+  isTestnet: false,
+  proxy: 'socks5://user:pass@127.0.0.1:1080', // socks5://user:pass@host:port || http://user:pass@host:port
+});
+```
 
 ## 💥 Create Order Example
 
