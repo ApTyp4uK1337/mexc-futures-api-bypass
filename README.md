@@ -12,6 +12,10 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 
 > ⚠️ **Note:** The source code of the library is not distributed openly. You can get access by contacting me on Telegram: [@aptyp4uk1337_bot](https://t.me/aptyp4uk1337_bot)
 
+## 🔴 Live Demo
+
+You can test the opening of a position yourself: https://mexc-demo.aptyp4uk1337.xyz/
+
 <div align="center">
   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" title="Telegram">
 </div>
@@ -29,6 +33,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 - Multi-accounting and proxy support
 - Compatible with any programming language
 - Simple PHP, Python & Node.js library
+- Free updates
 
 ---
 
