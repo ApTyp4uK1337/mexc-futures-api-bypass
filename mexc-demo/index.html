@@ -1,169 +1,326 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html class="dark" lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>MEXC Futures API Bypass</title>
   <meta name="description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta name="keywords" content="mexc, futures, api, maintenance, bypass">
+  <meta name="keywords"
+    content="MEXC API, Futures Trading, API Bypass, Crypto Trading, MEXC Futures, Trading During Maintenance, mexc, futures, api, maintenance, bypass">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
   <meta property="og:title" content="MEXC Futures API Bypass">
   <meta property="og:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta property="og:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a2e0c5e6c5.js" crossorigin="anonymous"></script>
+  <meta property="og:image" content="./images/social-preview.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
+  <meta property="twitter:title" content="MEXC Futures API Bypass">
+  <meta property="twitter:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
+  <meta property="twitter:image" content="./images/social-preview.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./favicon.png" type="image/x-icon">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://mexc-demo.aptyp4uk1337.xyz/">
+
+  <!-- Stylesheets -->
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-  <main class="main-container">
-    <section class="section">
-      <header class="header">
-        <h1>MEXC Futures API Bypass</h1>
-        <div class="social-icons">
-          <a href="https://t.me/aptyp4uk1337" target="_blank" class="social-icon">Telegram</a>
-          <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"
-            class="social-icon">GitHub</a>
-        </div>
-      </header>
-
-      <div class="content">
-        <form id="orderForm" class="form-container">
-          <h2>Order Params</h2>
-
-          <div class="form-group">
-            <label for="type">Type</label>
-            <select id="type" name="type">
-              <option value="1">Isolated</option>
-              <option value="2">Cross</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="symbol">Symbol</label>
-            <select id="symbol" name="symbol">
-              <option value="BTC_USDT">BTC_USDT</option>
-              <option value="ETH_USDT">ETH_USDT</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="side">Side</label>
-            <select id="side" name="side">
-              <option value="1">Open Long</option>
-              <option value="2">Open Short</option>
-              <option value="4">Close Long</option>
-              <option value="3">Close Short</option>
-            </select>
-          </div>
-
-          <div class="form-group tooltip-container">
-            <label for="quantity">
-              Quantity
-            </label>
-            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" step="0.00001" />
-          </div>
-
-          <div class="form-group">
-            <label for="leverage">Leverage</label>
-            <input type="number" id="leverage" name="leverage" placeholder="Enter leverage" step="1" min="1" max="500"
-              value="10" />
-          </div>
-
-          <div class="form-group tooltip-container">
-            <label for="token">
-              User Token
-              </span>
-            </label>
-            <input type="password" id="token" name="token" placeholder="Enter user token" />
-          </div>
-
-          <div class="form-group">
-            <label class="switch-label">Using Testnet
-              <div class="switch disabled-switch">
-                <input type="checkbox" checked disabled />
-                <span class="slider"></span>
-              </div>
-              <span class="info-text">Production API is available in full version.</span>
-            </label>
-          </div>
-
-          <button type="submit" class="btn-submit">Submit Order</button>
-          <div id="console" class="console hidden"></div>
-        </form>
-
-        <div class="faq">
-          <h2>FAQ</h2>
-          <div class="faq-item">
-            <button class="faq-question">Is this a real trading platform?</button>
-            <div class="faq-answer">No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is
-              limited, but all methods are available in full version.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Does it use anything third-party to make those requests?</button>
-            <div class="faq-answer">No.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Is the code in the library compiled or obfuscated?</button>
-            <div class="faq-answer">No, nothing is obfuscated in any way.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">How does authentication work - do I need an API key, or does it use something
-              else?</button>
-            <div class="faq-answer">It uses a User Token to authenticate requests.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-question">Is code provided as one time thing or do I need to get a subscription?</button>
-            <div class="faq-answer">It's a one-time purchase.</div>
-          </div>
-        </div>
+  <div class="container">
+    <header class="header">
+      <h1 class="title">MEXC Futures API Bypass</h1>
+      <p class="subtitle">Trade during maintenance periods with our specialized API solution</p>
+      <div class="social-links">
+        <a href="https://t.me/aptyp4uk1337/19" target="_blank" class="social-link">
+          <i class="ti ti-brand-telegram"></i> Telegram
+        </a>
+        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" class="social-link">
+          <i class="ti ti-brand-github"></i> GitHub
+        </a>
       </div>
-    </section>
-  </main>
+    </header>
+
+    <main class="main-content">
+      <section class="card order-section">
+        <div class="card-header">
+          <h2><i class="ti ti-adjustments-alt"></i> Order Parameters</h2>
+        </div>
+        <form class="card-body" id="orderForm">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="type">Position Type</label>
+              <select id="type" name="type" class="form-control">
+                <option value="1">Isolated</option>
+                <option value="2">Cross</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="symbol">Trading Pair</label>
+              <select id="symbol" name="symbol" class="form-control">
+                <option value="BTC_USDT">BTC/USDT</option>
+                <option value="ETH_USDT">ETH/USDT</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="side">Order Side</label>
+              <select id="side" name="side" class="form-control">
+                <option value="1">Open Long</option>
+                <option value="2">Open Short</option>
+                <option value="4">Close Long</option>
+                <option value="3">Close Short</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="quantity">Quantity
+                <span class="tooltip">
+                  <i class="ti ti-info-circle"></i>
+                  <span class="tooltip-content">
+                    <img src="./images/quantity-help.jpg" alt="Quantity help">
+                  </span>
+                </span>
+              </label>
+              <input type="number" id="quantity" name="quantity" class="form-control" placeholder="0.00" step="0.00001"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="leverage">Leverage</label>
+              <input type="number" id="leverage" name="leverage" class="form-control" placeholder="10x" min="1"
+                max="500" value="10" required>
+            </div>
+
+            <div class="form-group">
+              <label for="token">User Token
+                <span class="tooltip">
+                  <i class="ti ti-info-circle"></i>
+                  <span class="tooltip-content">
+                    <img src="./images/token-help.jpg" alt="Token help">
+                  </span>
+                </span>
+              </label>
+              <input type="password" id="token" name="token" class="form-control" placeholder="Enter your user token"
+                required>
+            </div>
+
+            <div class="form-group switch-group">
+              <label>
+                <span>Testnet Mode</span>
+                <div class="switch disabled">
+                  <input type="checkbox" checked disabled>
+                  <span class="slider"></span>
+                </div>
+              </label>
+              <p class="switch-note">Production API available in full version</p>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            <i class="ti ti-send"></i> Submit Order
+          </button>
+
+          <div class="console hidden" id="console"></div>
+        </form>
+      </section>
+
+      <section class="card faq-section">
+        <div class="card-header">
+          <h2><i class="ti ti-help"></i> FAQ</h2>
+        </div>
+        <div class="card-body">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button class="accordion-header">Is this a real trading platform?</button>
+              <div class="accordion-content">
+                <p>No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is limited, but all
+                  methods are available in full version.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Does it use anything third-party to make those requests?</button>
+              <div class="accordion-content">
+                <p>No.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Is the library provided as open source or as compiled/obfuscated
+                code?</button>
+              <div class="accordion-content">
+                <p>Currently, everything is open-sourced, nothing is obfuscated.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Can the library be used with multiple accounts, or is the authentication
+                tied to a single one?</button>
+              <div class="accordion-content">
+                <p>No limitation on number of accounts. Proxy support included.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">How does authentication work - do I need an API key, or does it use
+                something else?</button>
+              <div class="accordion-content">
+                <p>It uses a User Token to authenticate requests.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Where can I find my User Token?</button>
+              <div class="accordion-content">
+                <p>You can find it here: <span class="tooltip">
+                    <i class="ti ti-info-circle"></i>
+                    <span class="tooltip-content">
+                      <img src="./images/token-help.jpg" alt="Token help">
+                    </span>
+                  </span>.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Is code provided as one time thing or do I need to get a
+                subscription?</button>
+              <div class="accordion-content">
+                <p>It's a one-time purchase.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">Where can I find more info?</button>
+              <div class="accordion-content">
+                <p>More info on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"><i
+                      class="ti ti-brand-github"></i> GitHub</a>.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header">How do I get full access to the API?</button>
+              <div class="accordion-content">
+                <p>Contact me on <a href="https://t.me/aptyp4uk1337/19" target="_blank"><i
+                      class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 MEXC Futures API Demo. Made by aptyp4uk1337.</p>
+      <div class="footer-links">
+        <a href="https://t.me/aptyp4uk1337/19" target="_blank"><i class="ti ti-brand-telegram"></i></a>
+        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"><i
+            class="ti ti-brand-github"></i></a>
+      </div>
+    </footer>
+  </div>
 
   <script>
-    const form = document.getElementById('orderForm');
-    const consoleBox = document.getElementById('console');
-    const faqButtons = document.querySelectorAll('.faq-question');
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('orderForm');
+      const consoleBox = document.getElementById('console');
+      const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-    faqButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        btn.classList.toggle('active');
-        const answer = btn.nextElementSibling;
-        answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + 'px';
-      });
-    });
+      // Initialize accordion functionality
+      accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+          const isActive = header.classList.contains('active');
 
-    form.addEventListener('submit', async function (e) {
-      e.preventDefault();
+          // Close all accordion items
+          accordionHeaders.forEach(h => {
+            h.classList.remove('active');
+            h.nextElementSibling.style.maxHeight = null;
+          });
 
-      const data = {
-        type: form.type.value,
-        symbol: form.symbol.value,
-        side: form.side.value,
-        quantity: form.quantity.value,
-        leverage: form.leverage.value,
-        token: form.token.value
-      };
-
-      if (!data.quantity || !data.token) {
-        alert('Please fill in all required fields');
-        return;
-      }
-
-      consoleBox.classList.remove('hidden');
-      consoleBox.innerText = 'Submitting order...';
-
-      try {
-        const response = await fetch('order.php', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
+          // Open clicked item if it wasn't active
+          if (!isActive) {
+            header.classList.add('active');
+            const content = header.nextElementSibling;
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
         });
+      });
 
-        const result = await response.text();
-        consoleBox.innerText = result;
-      } catch (err) {
-        consoleBox.innerText = 'Error: ' + err.message;
+      // Form submission handler
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        // Get form data
+        const data = {
+          type: form.type.value,
+          symbol: form.symbol.value,
+          side: form.side.value,
+          quantity: form.quantity.value,
+          leverage: form.leverage.value,
+          token: form.token.value
+        };
+
+        // Validate required fields
+        if (!data.quantity || !data.token) {
+          showConsoleMessage('Error: Please fill in all required fields', 'error');
+          return;
+        }
+
+        // Show loading state
+        showConsoleMessage('Submitting order...', 'loading');
+
+        try {
+          const response = await fetch('order.php', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Requested-With': 'XMLHttpRequest'
+            },
+            body: JSON.stringify(data)
+          });
+
+          const result = await response.json();
+
+          if (response.ok) {
+            showConsoleMessage(JSON.stringify(result, null, 2), 'success');
+          } else {
+            showConsoleMessage(result.error || 'Unknown error occurred', 'error');
+          }
+        } catch (err) {
+          showConsoleMessage('Network error: ' + err.message, 'error');
+        }
+      });
+
+      function showConsoleMessage(message, type = 'info') {
+        consoleBox.classList.remove('hidden');
+        consoleBox.textContent = typeof message === 'string' ? message : JSON.stringify(message, null, 2);
+        consoleBox.style.color = '';
+
+        switch (type) {
+          case 'error':
+            consoleBox.style.color = 'var(--error)';
+            break;
+          case 'success':
+            consoleBox.style.color = 'var(--success)';
+            break;
+          case 'loading':
+            consoleBox.style.color = 'var(--warning)';
+            break;
+        }
       }
     });
   </script>
