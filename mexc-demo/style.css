@@ -1,0 +1,267 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.section {
+  flex-grow: 1;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.social-icon:hover {
+  color: #24a1de;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.form-container {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.faq {
+  flex: 1 1 300px;
+}
+
+.faq-item {
+  border-bottom: 1px solid #333;
+  padding: 0.5rem 0;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  color: #24a1de;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: #ccc;
+  padding-left: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip-icon {
+  margin-left: 0.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 0.5rem;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  width: 240px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+label {
+  padding-bottom: 0.5rem;
+}
+
+input,
+select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  background-color: #1f1f1f;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-submit {
+  padding: 0.75rem;
+  background-color: #24a1de;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover {
+  background-color: #1c8dcf;
+}
+
+.console {
+  background-color: #1e1e1e;
+  color: #a6e22e;
+  padding: 1rem;
+  border-radius: 6px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-break: break-word;
+  margin-top: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: not-allowed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #666;
+  border-radius: 24px;
+  transition: 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #fff;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #24a1de;
+}
+
+input:checked+.slider::before {
+  transform: translateX(24px);
+}
+
+.disabled-switch {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.info-icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.info-icon {
+  display: inline-block;
+  position: relative;
+  margin-left: 0.5rem;
+  color: #888;
+  cursor: pointer;
+}
+
+.tooltip-image {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  background-color: #000;
+  padding: 0.25rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  width: 240px;
+}
+
+.tooltip-image img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+
+.info-icon:hover .tooltip-image {
+  display: block;
+}

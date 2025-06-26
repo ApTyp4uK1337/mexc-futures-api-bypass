@@ -75,11 +75,11 @@ async function main() {
 
     // --- Step 1: Open positions ---
     const openOrders = [
-      { symbol: 'BTC_USDT', side: 1, vol: 15, leverage: 25, emoji: '₿' },
+      { symbol: 'BTC_USDT', side: 1, vol: 1, leverage: 25, emoji: '₿' },
       { symbol: 'ETH_USDT', side: 3, vol: 1, leverage: 10, emoji: 'Ξ' },
-      { symbol: 'XRP_USDT', side: 1, vol: 100, leverage: 5, emoji: '✕' },
-      { symbol: 'BTC_USDT', side: 3, vol: 50, leverage: 5, stopLossPrice: 112000, takeProfitPrice: 110000, emoji: '₿' },
-      { symbol: 'ETH_USDT', side: 3, vol: 5, leverage: 10, stopLossPrice: 3000, takeProfitPrice: 2400, emoji: 'Ξ' },
+      { symbol: 'XRP_USDT', side: 1, vol: 1, leverage: 5, emoji: '✕' },
+      { symbol: 'BTC_USDT', side: 3, vol: 1, leverage: 5, stopLossPrice: 112000, takeProfitPrice: 110000, emoji: '₿' },
+      { symbol: 'ETH_USDT', side: 3, vol: 1, leverage: 10, stopLossPrice: 3000, takeProfitPrice: 2400, emoji: 'Ξ' },
     ];
 
     const openedOrderIds = [];

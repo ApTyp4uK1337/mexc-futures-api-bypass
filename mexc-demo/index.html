@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEXC Futures API Bypass</title>
+  <meta name="description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
+  <meta name="keywords" content="mexc, futures, api, maintenance, bypass">
+  <meta property="og:title" content="MEXC Futures API Bypass">
+  <meta property="og:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
+  <meta property="og:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0c5e6c5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main class="main-container">
+    <section class="section">
+      <header class="header">
+        <h1>MEXC Futures API Bypass</h1>
+        <div class="social-icons">
+          <a href="https://t.me/aptyp4uk1337" target="_blank" class="social-icon">Telegram</a>
+          <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"
+            class="social-icon">GitHub</a>
+        </div>
+      </header>
+
+      <div class="content">
+        <form id="orderForm" class="form-container">
+          <h2>Order Params</h2>
+
+          <div class="form-group">
+            <label for="type">Type</label>
+            <select id="type" name="type">
+              <option value="1">Isolated</option>
+              <option value="2">Cross</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="symbol">Symbol</label>
+            <select id="symbol" name="symbol">
+              <option value="BTC_USDT">BTC_USDT</option>
+              <option value="ETH_USDT">ETH_USDT</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="side">Side</label>
+            <select id="side" name="side">
+              <option value="1">Open Long</option>
+              <option value="2">Open Short</option>
+              <option value="4">Close Long</option>
+              <option value="3">Close Short</option>
+            </select>
+          </div>
+
+          <div class="form-group tooltip-container">
+            <label for="quantity">
+              Quantity
+            </label>
+            <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" step="0.00001" />
+          </div>
+
+          <div class="form-group">
+            <label for="leverage">Leverage</label>
+            <input type="number" id="leverage" name="leverage" placeholder="Enter leverage" step="1" min="1" max="500"
+              value="10" />
+          </div>
+
+          <div class="form-group tooltip-container">
+            <label for="token">
+              User Token
+              </span>
+            </label>
+            <input type="password" id="token" name="token" placeholder="Enter user token" />
+          </div>
+
+          <div class="form-group">
+            <label class="switch-label">Using Testnet
+              <div class="switch disabled-switch">
+                <input type="checkbox" checked disabled />
+                <span class="slider"></span>
+              </div>
+              <span class="info-text">Production API is available in full version.</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-submit">Submit Order</button>
+          <div id="console" class="console hidden"></div>
+        </form>
+
+        <div class="faq">
+          <h2>FAQ</h2>
+          <div class="faq-item">
+            <button class="faq-question">Is this a real trading platform?</button>
+            <div class="faq-answer">No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is
+              limited, but all methods are available in full version.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Does it use anything third-party to make those requests?</button>
+            <div class="faq-answer">No.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is the code in the library compiled or obfuscated?</button>
+            <div class="faq-answer">No, nothing is obfuscated in any way.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">How does authentication work - do I need an API key, or does it use something
+              else?</button>
+            <div class="faq-answer">It uses a User Token to authenticate requests.</div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is code provided as one time thing or do I need to get a subscription?</button>
+            <div class="faq-answer">It's a one-time purchase.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const form = document.getElementById('orderForm');
+    const consoleBox = document.getElementById('console');
+    const faqButtons = document.querySelectorAll('.faq-question');
+
+    faqButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btn.classList.toggle('active');
+        const answer = btn.nextElementSibling;
+        answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + 'px';
+      });
+    });
+
+    form.addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const data = {
+        type: form.type.value,
+        symbol: form.symbol.value,
+        side: form.side.value,
+        quantity: form.quantity.value,
+        leverage: form.leverage.value,
+        token: form.token.value
+      };
+
+      if (!data.quantity || !data.token) {
+        alert('Please fill in all required fields');
+        return;
+      }
+
+      consoleBox.classList.remove('hidden');
+      consoleBox.innerText = 'Submitting order...';
+
+      try {
+        const response = await fetch('order.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.text();
+        consoleBox.innerText = result;
+      } catch (err) {
+        consoleBox.innerText = 'Error: ' + err.message;
+      }
+    });
+  </script>
+</body>
+
+</html>
