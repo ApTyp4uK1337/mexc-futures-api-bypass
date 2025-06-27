@@ -34,42 +34,34 @@
       <h1 class="title">MEXC Futures API Bypass</h1>
       <p class="subtitle">Trade during maintenance periods with our specialized API solution</p>
       <div class="social-links">
-        <a href="https://t.me/aptyp4uk1337/19" target="_blank" class="social-link">
-          <i class="ti ti-brand-telegram"></i> Telegram
-        </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" class="social-link">
-          <i class="ti ti-brand-github"></i> GitHub
-        </a>
+        <a href="https://t.me/aptyp4uk1337/19" target="_blank" class="social-link"><i
+            class="ti ti-brand-telegram"></i>Telegram</a>
+        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" class="social-link"><i
+            class="ti ti-brand-github"></i>GitHub</a>
       </div>
     </header>
-
     <main class="main-content">
       <section class="card order-section">
         <div class="card-header">
-          <h2><i class="ti ti-adjustments-alt"></i> Order Parameters</h2>
+          <h2><i class="ti ti-adjustments-alt"></i>Order Parameters</h2>
           <p class="card-subtitle">Test the API yourself</p>
         </div>
         <form class="card-body" id="orderForm">
           <div class="form-grid">
-
             <div class="form-group switch-group">
-              <label for="token"><span class="tooltip">
+              <label for="token">
+                <span class="tooltip"
+                  data-tooltip-content="User token is not logged or saved in any way. If you wish to invalidate it, logout from MEXC.">
                   <i class="ti ti-lock" style="color: oklch(72.3% .219 149.579);"></i>
-                  <span class="tooltip-content">
-                    <p>User token is not logged or saved in any way. If you wish to invalidate it, logout from MEXC.</p>
-                  </span>
-                </span> User Token
-                <span class="tooltip">
+                </span>
+                User Token
+                <span class="tooltip" data-tooltip-image="./images/token-help.jpg">
                   <i class="ti ti-info-circle"></i>
-                  <span class="tooltip-content">
-                    <img alt="Token help" src="./images/token-help.jpg">
-                  </span>
                 </span>
               </label>
               <input type="password" class="form-control" id="token" name="token" placeholder="Enter your user token"
                 required>
             </div>
-
             <div class="form-group">
               <label for="symbol">Order Type</label>
               <select class="form-control" id="symbol" name="symbol">
@@ -78,7 +70,6 @@
                 <option value="trigger" disabled>Trigger Order</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="type">Open Type</label>
               <select class="form-control" id="type" name="type">
@@ -86,7 +77,6 @@
                 <option value="2">Cross</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="symbol">Trading Pair</label>
               <select class="form-control" id="symbol" name="symbol">
@@ -99,7 +89,6 @@
                 <option value="PEPE_USDT">PEPE/USDT</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="side">Order Side</label>
               <select class="form-control" id="side" name="side">
@@ -109,41 +98,32 @@
                 <option value="3">Close Short</option>
               </select>
             </div>
-
             <div class="form-group">
               <label for="quantity">Quantity
-                <span class="tooltip">
+                <span class="tooltip" data-tooltip-image="./images/quantity-help.jpg">
                   <i class="ti ti-info-circle"></i>
-                  <span class="tooltip-content">
-                    <img alt="Quantity help" src="./images/quantity-help.jpg">
-                  </span>
                 </span>
               </label>
               <input type="number" class="form-control" id="quantity" name="quantity" placeholder="0.00" required
                 step="0.00001">
             </div>
-
             <div class="form-group">
               <label for="leverage">Leverage</label>
               <input type="number" class="form-control" id="leverage" name="leverage" placeholder="10x" required
                 max="500" min="1" value="10">
             </div>
-
             <div class="form-group">
               <label for="take_profit">Take Profit Price</label>
               <input type="number" class="form-control" id="take_profit" name="take_profit" placeholder="0.00 USDT"
                 step="0.00001">
             </div>
-
             <div class="form-group">
               <label for="stop_loss">Stop Loss Price</label>
               <input type="number" class="form-control" id="stop_loss" name="stop_loss" placeholder="0.00 USDT"
                 step="0.00001">
             </div>
-
             <div class="form-group switch-group">
-              <label>
-                <span>Testnet Mode</span>
+              <label><span>Testnet Mode</span>
                 <div class="disabled switch">
                   <input type="checkbox" checked disabled>
                   <span class="slider"></span>
@@ -152,16 +132,13 @@
               <p class="switch-note">Production API available in full version</p>
             </div>
           </div>
-          <button class="btn btn-primary" type="submit">
-            <i class="ti ti-send"></i> Submit Order
-          </button>
+          <button class="btn btn-primary" type="submit"><i class="ti ti-send"></i>Submit Order</button>
           <div class="console hidden" id="console"></div>
         </form>
       </section>
-
       <section class="card faq-section">
         <div class="card-header">
-          <h2><i class="ti ti-help"></i> FAQ</h2>
+          <h2><i class="ti ti-help"></i>FAQ</h2>
           <p class="card-subtitle">Find answers to common questions about our service</p>
         </div>
         <div class="card-body">
@@ -179,7 +156,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -192,7 +168,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -206,7 +181,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -220,7 +194,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -234,7 +207,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -243,18 +215,15 @@
               </button>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>See the results of the Rate Limit Test for 200 requests:
-                    <span class="tooltip">
-                      <i class="ti ti-info-circle"></i>
-                      <span class="tooltip-content">
-                        <img alt="Rate Limit Test Results" src="./images/rate-limit-test.jpg">
-                      </span>
+                  <p>See the results of the Rate Limit Test for 200 requests:</p>
+                  <p>
+                    <span class="tooltip" data-tooltip-image="./images/rate-limit-test.jpg">
+                      <i class="ti ti-photo"></i> Screenshot
                     </span>
                   </p>
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -263,18 +232,23 @@
               </button>
               <div class="accordion-content">
                 <div class="accordion-body">
-                  <p>You can find it here:
-                    <span class="tooltip">
-                      <i class="ti ti-info-circle"></i>
-                      <span class="tooltip-content">
-                        <img alt="Token help" src="./images/token-help.jpg">
-                      </span>
+                  <p>
+                  <ol>
+                    <li>Log in to your MEXC account.</li>
+                    <li>Open the browser's Developer Tools (Press F12 or right-click and select "Inspect").</li>
+                    <li>Go to the "Application" or "Storage" tab.</li>
+                    <li>Expand the "Cookies" section and select the MEXC domain.</li>
+                    <li>Find the cookie named "u_id" and copy its value (it should start with "WEB").</li>
+                  </ol>
+                  </p>
+                  <p>
+                    <span class="tooltip" data-tooltip-image="./images/token-help.jpg">
+                      <i class="ti ti-photo"></i> Screenshot
                     </span>
                   </p>
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -288,7 +262,6 @@
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -298,11 +271,10 @@
               <div class="accordion-content">
                 <div class="accordion-body">
                   <p>More info on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass"
-                      target="_blank"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
+                      target="_blank"><i class="ti ti-brand-github"></i>GitHub</a>.</p>
                 </div>
               </div>
             </div>
-
             <div class="accordion-item">
               <button class="accordion-header">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
@@ -312,7 +284,7 @@
               <div class="accordion-content">
                 <div class="accordion-body">
                   <p>Contact me on <a href="https://t.me/aptyp4uk1337/19" target="_blank"><i
-                        class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+                        class="ti ti-brand-telegram"></i>Telegram</a>.</p>
                 </div>
               </div>
             </div>
@@ -320,7 +292,6 @@
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <p>© 2025 MEXC Futures API Demo. Made by aptyp4uk1337.</p>
       <div class="footer-links">
@@ -330,7 +301,6 @@
       </div>
     </footer>
   </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       const form = document.getElementById('orderForm');
@@ -339,18 +309,182 @@
       const tooltips = document.querySelectorAll('.tooltip');
       const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-      // Initialize accordion functionality
+      // Improved tooltip positioning logic
+      function positionTooltip(tooltip, content) {
+        if (content.querySelector('img')) {
+          content.style.maxWidth = 'none';
+          content.style.width = 'auto';
+        }
+
+        const triggerRect = tooltip.getBoundingClientRect();
+        const contentRect = content.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const margin = 10;
+
+        // Reset positioning
+        content.style.left = '';
+        content.style.right = '';
+        content.style.top = '';
+        content.style.bottom = '';
+        content.style.transform = '';
+
+        // Calculate available space
+        const space = {
+          top: triggerRect.top - margin,
+          right: viewportWidth - triggerRect.right - margin,
+          bottom: viewportHeight - triggerRect.bottom - margin,
+          left: triggerRect.left - margin
+        };
+
+        // Determine best position (prioritize bottom, right, left, top)
+        if (space.bottom >= contentRect.height || space.bottom >= space.top) {
+          // Position below
+          content.style.top = `${triggerRect.bottom + margin}px`;
+          if (space.right >= contentRect.width) {
+            content.style.left = `${triggerRect.left}px`;
+          } else if (space.left >= contentRect.width) {
+            content.style.right = `${viewportWidth - triggerRect.right}px`;
+          } else {
+            // Not enough space on either side, center it
+            content.style.left = '50%';
+            content.style.transform = 'translateX(-50%)';
+          }
+        } else if (space.right >= contentRect.width) {
+          // Position to the right
+          content.style.left = `${triggerRect.right + margin}px`;
+          if (space.top >= contentRect.height) {
+            content.style.top = `${triggerRect.top}px`;
+          } else {
+            content.style.top = `${triggerRect.bottom - contentRect.height}px`;
+          }
+        } else if (space.left >= contentRect.width) {
+          // Position to the left
+          content.style.right = `${viewportWidth - triggerRect.left + margin}px`;
+          if (space.top >= contentRect.height) {
+            content.style.top = `${triggerRect.top}px`;
+          } else {
+            content.style.top = `${triggerRect.bottom - contentRect.height}px`;
+          }
+        } else {
+          // Position above (last resort)
+          content.style.bottom = `${viewportHeight - triggerRect.top + margin}px`;
+          if (space.right >= contentRect.width) {
+            content.style.left = `${triggerRect.left}px`;
+          } else if (space.left >= contentRect.width) {
+            content.style.right = `${viewportWidth - triggerRect.right}px`;
+          } else {
+            // Not enough space on either side, center it
+            content.style.left = '50%';
+            content.style.transform = 'translateX(-50%)';
+          }
+        }
+      }
+
+      // Initialize tooltips
+      tooltips.forEach(tooltip => {
+        const content = document.createElement('div');
+        content.className = 'tooltip-content';
+
+        if (tooltip.dataset.tooltipImage) {
+          content.style.maxWidth = 'none';
+          content.style.width = 'auto';
+        }
+
+        if (tooltip.dataset.tooltipContent) {
+          content.innerHTML = `<p>${tooltip.dataset.tooltipContent}</p>`;
+        } else if (tooltip.dataset.tooltipImage) {
+          content.innerHTML = `<img src="${tooltip.dataset.tooltipImage}" alt="Tooltip image">`;
+        }
+
+        document.body.appendChild(content);
+        tooltip.contentElement = content;
+
+        let isOpen = false;
+        let hoverTimeout;
+
+        const showTooltip = () => {
+          if (isOpen) return;
+
+          // Hide all other tooltips first
+          document.querySelectorAll('.tooltip-content').forEach(t => {
+            t.style.opacity = '0';
+            t.style.visibility = 'hidden';
+          });
+
+          // Position and show this tooltip
+          positionTooltip(tooltip, content);
+          content.style.opacity = '1';
+          content.style.visibility = 'visible';
+          isOpen = true;
+        };
+
+        const hideTooltip = () => {
+          if (!isOpen) return;
+          content.style.opacity = '0';
+          content.style.visibility = 'hidden';
+          isOpen = false;
+        };
+
+        const toggleTooltip = () => {
+          if (isOpen) {
+            hideTooltip();
+          } else {
+            showTooltip();
+          }
+        };
+
+        if (isTouchDevice) {
+          tooltip.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleTooltip();
+          });
+        } else {
+          tooltip.addEventListener('mouseenter', () => {
+            hoverTimeout = setTimeout(() => {
+              showTooltip();
+            }, 300);
+          });
+
+          tooltip.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimeout);
+            if (isOpen) {
+              hideTooltip();
+            }
+          });
+
+          tooltip.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleTooltip();
+          });
+        }
+
+        document.addEventListener('click', (e) => {
+          if (!tooltip.contains(e.target) && !content.contains(e.target)) {
+            hideTooltip();
+          }
+        });
+      });
+
+      // Handle window resize
+      window.addEventListener('resize', () => {
+        tooltips.forEach(tooltip => {
+          if (tooltip.isOpen) {
+            positionTooltip(tooltip, tooltip.contentElement);
+          }
+        });
+      });
+
+      // Accordion functionality
       accordionHeaders.forEach(header => {
         header.addEventListener('click', () => {
           const isActive = header.classList.contains('active');
-
-          // Close all accordion items
           accordionHeaders.forEach(h => {
             h.classList.remove('active');
             h.nextElementSibling.style.maxHeight = null;
           });
-
-          // Open clicked item if it wasn't active
           if (!isActive) {
             header.classList.add('active');
             const content = header.nextElementSibling;
@@ -359,91 +493,9 @@
         });
       });
 
-      // Initialize tooltips with different behavior for touch and non-touch devices
-      tooltips.forEach(tooltip => {
-        const trigger = tooltip.querySelector('i');
-        const content = tooltip.querySelector('.tooltip-content');
-        let isOpen = false;
-        let hoverTimeout;
-
-        if (isTouchDevice) {
-          // Mobile/touch behavior - click to toggle
-          trigger.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleTooltip();
-          });
-
-          // Close when clicking outside
-          document.addEventListener('click', (e) => {
-            if (!tooltip.contains(e.target)) {
-              hideTooltip();
-            }
-          });
-        } else {
-          // Desktop behavior - hover to show, click to keep open
-          trigger.addEventListener('mouseenter', () => {
-            hoverTimeout = setTimeout(() => {
-              showTooltip();
-            }, 300);
-          });
-
-          trigger.addEventListener('mouseleave', () => {
-            clearTimeout(hoverTimeout);
-
-            if (isOpen) {
-              hideTooltip();
-            }
-          });
-
-          trigger.addEventListener('click', (e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            toggleTooltip();
-          });
-
-          // Close when clicking outside
-          document.addEventListener('click', (e) => {
-            if (!tooltip.contains(e.target)) {
-              hideTooltip();
-            }
-          });
-        }
-
-        function toggleTooltip() {
-          if (isOpen) {
-            hideTooltip();
-          } else {
-            showTooltip();
-          }
-        }
-
-        function showTooltip() {
-          // Close all other tooltips
-          document.querySelectorAll('.tooltip-content').forEach(t => {
-            if (t !== content) {
-              t.style.opacity = '0';
-              t.style.visibility = 'hidden';
-            }
-          });
-
-          content.style.opacity = '1';
-          content.style.visibility = 'visible';
-          isOpen = true;
-        }
-
-        function hideTooltip() {
-          content.style.opacity = '0';
-          content.style.visibility = 'hidden';
-          isOpen = false;
-        }
-      });
-
-      // Form submission handler
+      // Form submission
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
-
-        // Get form data
         const data = {
           type: form.type.value,
           symbol: form.symbol.value,
@@ -455,15 +507,12 @@
           stop_loss: form.stop_loss.value
         };
 
-        // Validate required fields
         if (!data.quantity || !data.token) {
           showConsoleMessage('Error: Please fill in all required fields', 'error');
           return;
         }
 
-        // Show loading state
         showConsoleMessage('Submitting order...', 'loading');
-
         try {
           const response = await fetch('order.php', {
             method: 'POST',
@@ -473,7 +522,6 @@
             },
             body: JSON.stringify(data)
           });
-
           const result = await response.json();
 
           if (response.ok) {
