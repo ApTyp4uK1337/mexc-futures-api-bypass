@@ -327,6 +327,7 @@
       const consoleBox = document.getElementById('console');
       const accordionHeaders = document.querySelectorAll('.accordion-header');
       const tooltips = document.querySelectorAll('.tooltip');
+      const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
       // Initialize accordion functionality
       accordionHeaders.forEach(header => {
@@ -348,20 +349,84 @@
         });
       });
 
-      // Initialize tooltips
+      // Initialize tooltips with different behavior for touch and non-touch devices
       tooltips.forEach(tooltip => {
         const trigger = tooltip.querySelector('i');
         const content = tooltip.querySelector('.tooltip-content');
+        let isOpen = false;
+        let hoverTimeout;
 
-        trigger.addEventListener('mouseenter', () => {
+        if (isTouchDevice) {
+          // Mobile/touch behavior - click to toggle
+          trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleTooltip();
+          });
+
+          // Close when clicking outside
+          document.addEventListener('click', (e) => {
+            if (!tooltip.contains(e.target)) {
+              hideTooltip();
+            }
+          });
+        } else {
+          // Desktop behavior - hover to show, click to keep open
+          trigger.addEventListener('mouseenter', () => {
+            hoverTimeout = setTimeout(() => {
+              showTooltip();
+            }, 300);
+          });
+
+          trigger.addEventListener('mouseleave', () => {
+            clearTimeout(hoverTimeout);
+
+            if (isOpen) {
+              hideTooltip();
+            }
+          });
+
+          trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            toggleTooltip();
+          });
+
+          // Close when clicking outside
+          document.addEventListener('click', (e) => {
+            if (!tooltip.contains(e.target)) {
+              hideTooltip();
+            }
+          });
+        }
+
+        function toggleTooltip() {
+          if (isOpen) {
+            hideTooltip();
+          } else {
+            showTooltip();
+          }
+        }
+
+        function showTooltip() {
+          // Close all other tooltips
+          document.querySelectorAll('.tooltip-content').forEach(t => {
+            if (t !== content) {
+              t.style.opacity = '0';
+              t.style.visibility = 'hidden';
+            }
+          });
+
           content.style.opacity = '1';
           content.style.visibility = 'visible';
-        });
+          isOpen = true;
+        }
 
-        trigger.addEventListener('mouseleave', () => {
+        function hideTooltip() {
           content.style.opacity = '0';
           content.style.visibility = 'hidden';
-        });
+          isOpen = false;
+        }
       });
 
       // Form submission handler

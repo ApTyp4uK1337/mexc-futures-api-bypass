@@ -31,6 +31,7 @@ body {
   color: var(--foreground);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .container {
@@ -173,6 +174,9 @@ body {
   color: var(--foreground);
   font-size: 0.9375rem;
   transition: var(--transition);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form-control:focus {
@@ -182,7 +186,6 @@ body {
 }
 
 select.form-control {
-  appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23aaa' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
@@ -397,17 +400,17 @@ input:checked+.slider:before {
   color: var(--primary);
   margin-left: 0.25rem;
   transition: all 0.2s ease;
-}
-
-.tooltip:hover i {
-  transform: scale(1.1);
+  cursor: pointer;
+  min-width: 24px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tooltip-content {
   position: fixed;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
+  z-index: 1000;
   transform: translate(-50%, -50%);
   padding: 1rem;
   background-color: var(--background-lighter);
@@ -417,20 +420,19 @@ input:checked+.slider:before {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.2s ease, visibility 0.2s ease;
-  max-width: 90vw;
-  max-height: 80vh;
   overflow: auto;
+  pointer-events: none;
 }
 
-.tooltip:hover .tooltip-content {
+.tooltip-content.visible {
   opacity: 1;
   visibility: visible;
+  pointer-events: auto;
 }
 
 .tooltip-content img {
   display: block;
-  max-width: 100%;
-  max-height: 80vh;
+  max-height: 55ch;
   height: auto;
   width: auto;
   margin: 0 auto;
@@ -493,12 +495,86 @@ input:checked+.slider:before {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-control,
+  .btn {
+    padding: 0.875rem 1rem;
+    font-size: 1rem;
+  }
+
+  .card-header {
+    padding: 1rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
   .accordion-header {
     padding: 1rem;
-    gap: 0.75rem;
+    font-size: 0.95rem;
   }
 
   .accordion-body {
-    padding: 1rem 2.5rem 1rem 2.7rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-link {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tooltip-content {
+    width: 95vw;
+    padding: 0.75rem;
+  }
+}
+
+/* Prevent zooming on input focus */
+@media (max-width: 768px) {
+
+  input,
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+
+  .btn,
+  .accordion-header,
+  .social-link {
+    transition: none;
+  }
+
+  .btn:active,
+  .accordion-header:active,
+  .social-link:active {
+    transform: scale(0.98);
   }
 }
