@@ -51,8 +51,36 @@
         </div>
         <form class="card-body" id="orderForm">
           <div class="form-grid">
+
+            <div class="form-group switch-group">
+              <label for="token"><span class="tooltip">
+                  <i class="ti ti-lock" style="color: oklch(72.3% .219 149.579);"></i>
+                  <span class="tooltip-content">
+                    <p>User token is not logged or saved in any way. If you wish to invalidate it, logout from MEXC.</p>
+                  </span>
+                </span> User Token
+                <span class="tooltip">
+                  <i class="ti ti-info-circle"></i>
+                  <span class="tooltip-content">
+                    <img alt="Token help" src="./images/token-help.jpg">
+                  </span>
+                </span>
+              </label>
+              <input type="password" class="form-control" id="token" name="token" placeholder="Enter your user token"
+                required>
+            </div>
+
             <div class="form-group">
-              <label for="type">Position Type</label>
+              <label for="symbol">Order Type</label>
+              <select class="form-control" id="symbol" name="symbol">
+                <option value="market" selected>Market Order</option>
+                <option value="limit" disabled>Limit Order</option>
+                <option value="trigger" disabled>Trigger Order</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="type">Open Type</label>
               <select class="form-control" id="type" name="type">
                 <option value="1">Isolated</option>
                 <option value="2">Cross</option>
@@ -99,24 +127,6 @@
               <label for="leverage">Leverage</label>
               <input type="number" class="form-control" id="leverage" name="leverage" placeholder="10x" required
                 max="500" min="1" value="10">
-            </div>
-
-            <div class="form-group">
-              <label for="token"><span class="tooltip">
-                  <i class="ti ti-lock" style="color: oklch(72.3% .219 149.579);"></i>
-                  <span class="tooltip-content">
-                    <p>User token is not logged or saved in any way. If you wish to invalidate it, logout from MEXC.</p>
-                  </span>
-                </span> User Token
-                <span class="tooltip">
-                  <i class="ti ti-info-circle"></i>
-                  <span class="tooltip-content">
-                    <img alt="Token help" src="./images/token-help.jpg">
-                  </span>
-                </span>
-              </label>
-              <input type="password" class="form-control" id="token" name="token" placeholder="Enter your user token"
-                required>
             </div>
 
             <div class="form-group">
