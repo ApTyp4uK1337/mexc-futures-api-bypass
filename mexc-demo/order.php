@@ -38,7 +38,9 @@ $response = $client->createOrder([
   'openType' => $data['type'],
   'side' => $data['side'],
   'vol' => $data['quantity'],
-  'leverage' => $data['leverage']
+  'leverage' => $data['leverage'],
+  'takeProfitPrice' => $data['take_profit'] ?? null,
+  'stopLossPrice' => $data['stop_loss'] ?? null
 ]);
 
 echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
