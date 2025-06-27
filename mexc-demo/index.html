@@ -1,42 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="dark" lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <title>MEXC Futures API Bypass</title>
-  <meta name="description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta name="keywords"
-    content="MEXC API, Futures Trading, API Bypass, Crypto Trading, MEXC Futures, Trading During Maintenance, mexc, futures, api, maintenance, bypass">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
-  <meta property="og:title" content="MEXC Futures API Bypass">
-  <meta property="og:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta property="og:image" content="./images/social-preview.jpg">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
-  <meta property="twitter:title" content="MEXC Futures API Bypass">
-  <meta property="twitter:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta property="twitter:image" content="./images/social-preview.jpg">
-
-  <!-- Favicon -->
-  <link rel="icon" href="./favicon.png" type="image/x-icon">
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://mexc-demo.aptyp4uk1337.xyz/">
-
-  <!-- Stylesheets -->
+  <meta content="Get your access to MEXC Futures Under Maintenance Trading APIs." name="description">
+  <meta
+    content="MEXC API, Futures Trading, API Bypass, Crypto Trading, MEXC Futures, Trading During Maintenance, mexc, futures, api, maintenance, bypass"
+    name="keywords">
+  <meta content="website" property="og:type">
+  <meta content="https://mexc-demo.aptyp4uk1337.xyz/" property="og:url">
+  <meta content="MEXC Futures API Bypass" property="og:title">
+  <meta content="Get your access to MEXC Futures Under Maintenance Trading APIs." property="og:description">
+  <meta content="./images/social-preview.jpg" property="og:image">
+  <meta content="summary_large_image" property="twitter:card">
+  <meta content="https://mexc-demo.aptyp4uk1337.xyz/" property="twitter:url">
+  <meta content="MEXC Futures API Bypass" property="twitter:title">
+  <meta content="Get your access to MEXC Futures Under Maintenance Trading APIs." property="twitter:description">
+  <meta content="./images/social-preview.jpg" property="twitter:image">
+  <link href="./favicon.png" rel="icon" type="image/x-icon">
+  <link href="https://mexc-demo.aptyp4uk1337.xyz/" rel="canonical">
   <link href="./css/style.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
-
-  <!-- Preconnect to external domains -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 </head>
 
 <body>
@@ -58,12 +47,13 @@
       <section class="card order-section">
         <div class="card-header">
           <h2><i class="ti ti-adjustments-alt"></i> Order Parameters</h2>
+          <p class="card-subtitle">Test the API yourself</p>
         </div>
         <form class="card-body" id="orderForm">
           <div class="form-grid">
             <div class="form-group">
               <label for="type">Position Type</label>
-              <select id="type" name="type" class="form-control">
+              <select class="form-control" id="type" name="type">
                 <option value="1">Isolated</option>
                 <option value="2">Cross</option>
               </select>
@@ -71,18 +61,23 @@
 
             <div class="form-group">
               <label for="symbol">Trading Pair</label>
-              <select id="symbol" name="symbol" class="form-control">
+              <select class="form-control" id="symbol" name="symbol">
                 <option value="BTC_USDT">BTC/USDT</option>
                 <option value="ETH_USDT">ETH/USDT</option>
+                <option value="SOL_USDT">SOL/USDT</option>
+                <option value="XRP_USDT">XRP/USDT</option>
+                <option value="SUI_USDT">SUI/USDT</option>
+                <option value="DOGE_USDT">DOGE/USDT</option>
+                <option value="PEPE_USDT">PEPE/USDT</option>
               </select>
             </div>
 
             <div class="form-group">
               <label for="side">Order Side</label>
-              <select id="side" name="side" class="form-control">
+              <select class="form-control" id="side" name="side">
                 <option value="1">Open Long</option>
-                <option value="2">Open Short</option>
                 <option value="4">Close Long</option>
+                <option value="2">Open Short</option>
                 <option value="3">Close Short</option>
               </select>
             </div>
@@ -92,18 +87,18 @@
                 <span class="tooltip">
                   <i class="ti ti-info-circle"></i>
                   <span class="tooltip-content">
-                    <img src="./images/quantity-help.jpg" alt="Quantity help">
+                    <img alt="Quantity help" src="./images/quantity-help.jpg">
                   </span>
                 </span>
               </label>
-              <input type="number" id="quantity" name="quantity" class="form-control" placeholder="0.00" step="0.00001"
-                required>
+              <input type="number" class="form-control" id="quantity" name="quantity" placeholder="0.00" required
+                step="0.00001">
             </div>
 
             <div class="form-group">
               <label for="leverage">Leverage</label>
-              <input type="number" id="leverage" name="leverage" class="form-control" placeholder="10x" min="1"
-                max="500" value="10" required>
+              <input type="number" class="form-control" id="leverage" name="leverage" placeholder="10x" required
+                max="500" min="1" value="10">
             </div>
 
             <div class="form-group">
@@ -111,18 +106,30 @@
                 <span class="tooltip">
                   <i class="ti ti-info-circle"></i>
                   <span class="tooltip-content">
-                    <img src="./images/token-help.jpg" alt="Token help">
+                    <img alt="Token help" src="./images/token-help.jpg">
                   </span>
                 </span>
               </label>
-              <input type="password" id="token" name="token" class="form-control" placeholder="Enter your user token"
+              <input type="password" class="form-control" id="token" name="token" placeholder="Enter your user token"
                 required>
+            </div>
+
+            <div class="form-group">
+              <label for="take_profit">Take Profit Price</label>
+              <input type="number" class="form-control" id="take_profit" name="take_profit" placeholder="0.00 USDT"
+                step="0.00001">
+            </div>
+
+            <div class="form-group">
+              <label for="stop_loss">Stop Loss Price</label>
+              <input type="number" class="form-control" id="stop_loss" name="stop_loss" placeholder="0.00 USDT"
+                step="0.00001">
             </div>
 
             <div class="form-group switch-group">
               <label>
                 <span>Testnet Mode</span>
-                <div class="switch disabled">
+                <div class="disabled switch">
                   <input type="checkbox" checked disabled>
                   <span class="slider"></span>
                 </div>
@@ -130,11 +137,9 @@
               <p class="switch-note">Production API available in full version</p>
             </div>
           </div>
-
-          <button type="submit" class="btn btn-primary">
+          <button class="btn btn-primary" type="submit">
             <i class="ti ti-send"></i> Submit Order
           </button>
-
           <div class="console hidden" id="console"></div>
         </form>
       </section>
@@ -142,93 +147,158 @@
       <section class="card faq-section">
         <div class="card-header">
           <h2><i class="ti ti-help"></i> FAQ</h2>
+          <p class="card-subtitle">Find answers to common questions about our service</p>
         </div>
         <div class="card-body">
           <div class="accordion">
             <div class="accordion-item">
-              <button class="accordion-header">Is this a real trading platform?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Is this a real trading platform?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is limited, but all
-                  methods are available in full version.</p>
+                <div class="accordion-body">
+                  <p>No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is limited, but
+                    all methods are available in full version.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">Does it use anything third-party to make those requests?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Does it use anything third-party to make those requests?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>No.</p>
+                <div class="accordion-body">
+                  <p>No.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">Is the library provided as open source or as compiled/obfuscated
-                code?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Is the library provided as open source or as compiled/obfuscated
+                  code?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>Currently, everything is open-sourced, nothing is obfuscated.</p>
+                <div class="accordion-body">
+                  <p>Currently, everything is open-sourced, nothing is obfuscated.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">Can the library be used with multiple accounts, or is the authentication
-                tied to a single one?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Can the library be used with multiple accounts, or is the authentication
+                  tied to a single one?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>No limitation on number of accounts. Proxy support included.</p>
+                <div class="accordion-body">
+                  <p>No limitation on number of accounts. Proxy support included.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">How does authentication work - do I need an API key, or does it use
-                something else?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">How does authentication work - do I need an API key, or does it use
+                  something else?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>It uses a User Token to authenticate requests.</p>
+                <div class="accordion-body">
+                  <p>It uses a User Token to authenticate requests.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">How many orders can be sent per second, per minute, per day?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">How many orders can be sent per second, per minute, per day?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>See the results of the Rate Limit Test for 200 requests: <span class="tooltip">
-                    <i class="ti ti-info-circle"></i>
-                    <span class="tooltip-content">
-                      <img src="./images/rate-limit-test.jpg" alt="Rate Limit Test Results">
+                <div class="accordion-body">
+                  <p>See the results of the Rate Limit Test for 200 requests:
+                    <span class="tooltip">
+                      <i class="ti ti-info-circle"></i>
+                      <span class="tooltip-content">
+                        <img alt="Rate Limit Test Results" src="./images/rate-limit-test.jpg">
+                      </span>
                     </span>
-                  </span>.</p>
+                  </p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">Where can I find my User Token?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Where can I find my User Token?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>You can find it here: <span class="tooltip">
-                    <i class="ti ti-info-circle"></i>
-                    <span class="tooltip-content">
-                      <img src="./images/token-help.jpg" alt="Token help">
+                <div class="accordion-body">
+                  <p>You can find it here:
+                    <span class="tooltip">
+                      <i class="ti ti-info-circle"></i>
+                      <span class="tooltip-content">
+                        <img alt="Token help" src="./images/token-help.jpg">
+                      </span>
                     </span>
-                  </span>.</p>
+                  </p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">Is code provided as one time thing or do I need to get a
-                subscription?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Is code provided as one time thing or do I need to get a
+                  subscription?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>It's a one-time purchase.</p>
+                <div class="accordion-body">
+                  <p>It's a one-time purchase.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">Where can I find more info?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">Where can I find more info?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>More info on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"><i
-                      class="ti ti-brand-github"></i> GitHub</a>.</p>
+                <div class="accordion-body">
+                  <p>More info on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass"
+                      target="_blank"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
+                </div>
               </div>
             </div>
 
             <div class="accordion-item">
-              <button class="accordion-header">How do I get full access to the API?</button>
+              <button class="accordion-header">
+                <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
+                <span class="accordion-title">How do I get full access to the API?</span>
+                <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
+              </button>
               <div class="accordion-content">
-                <p>Contact me on <a href="https://t.me/aptyp4uk1337/19" target="_blank"><i
-                      class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+                <div class="accordion-body">
+                  <p>Contact me on <a href="https://t.me/aptyp4uk1337/19" target="_blank"><i
+                        class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -251,6 +321,7 @@
       const form = document.getElementById('orderForm');
       const consoleBox = document.getElementById('console');
       const accordionHeaders = document.querySelectorAll('.accordion-header');
+      const tooltips = document.querySelectorAll('.tooltip');
 
       // Initialize accordion functionality
       accordionHeaders.forEach(header => {
@@ -272,6 +343,22 @@
         });
       });
 
+      // Initialize tooltips
+      tooltips.forEach(tooltip => {
+        const trigger = tooltip.querySelector('i');
+        const content = tooltip.querySelector('.tooltip-content');
+
+        trigger.addEventListener('mouseenter', () => {
+          content.style.opacity = '1';
+          content.style.visibility = 'visible';
+        });
+
+        trigger.addEventListener('mouseleave', () => {
+          content.style.opacity = '0';
+          content.style.visibility = 'hidden';
+        });
+      });
+
       // Form submission handler
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
@@ -283,7 +370,9 @@
           side: form.side.value,
           quantity: form.quantity.value,
           leverage: form.leverage.value,
-          token: form.token.value
+          token: form.token.value,
+          take_profit: form.take_profit.value,
+          stop_loss: form.stop_loss.value
         };
 
         // Validate required fields
