@@ -63,16 +63,16 @@
                 required>
             </div>
             <div class="form-group">
-              <label for="symbol">Order Type</label>
-              <select class="form-control" id="symbol" name="symbol">
+              <label for="order_type">Order Type</label>
+              <select class="form-control" id="order_type" name="order_type">
                 <option value="market" selected>Market Order</option>
                 <option value="limit" disabled>Limit Order</option>
                 <option value="trigger" disabled>Trigger Order</option>
               </select>
             </div>
             <div class="form-group">
-              <label for="type">Open Type</label>
-              <select class="form-control" id="type" name="type">
+              <label for="open_type">Open Type</label>
+              <select class="form-control" id="open_type" name="open_type">
                 <option value="1">Isolated</option>
                 <option value="2">Cross</option>
               </select>
@@ -497,12 +497,12 @@
       form.addEventListener('submit', async function (e) {
         e.preventDefault();
         const data = {
-          type: form.type.value,
+          token: form.token.value,
+          open_type: form.open_type.value,
           symbol: form.symbol.value,
           side: form.side.value,
           quantity: form.quantity.value,
           leverage: form.leverage.value,
-          token: form.token.value,
           take_profit: form.take_profit.value,
           stop_loss: form.stop_loss.value
         };
