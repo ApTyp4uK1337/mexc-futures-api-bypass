@@ -50,12 +50,13 @@ body {
 
 .title {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: .5rem;
   background: linear-gradient(90deg, var(--primary), #3b82f6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  line-height: 1.2;
 }
 
 .subtitle {
@@ -453,6 +454,56 @@ input:checked+.slider:before {
   object-fit: contain;
 }
 
+.cta-section {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.cta-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255 255 255 / 0.85);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cta {
+  max-width: 240px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.85rem 1.5rem;
+  background-color: #fff;
+  color: var(--primary-dark);
+  border: 2px solid transparent;
+  border-radius: var(--radius);
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-cta:hover,
+.btn-cta:focus {
+  background-color: transparent;
+  color: #fff;
+  border-color: #fff;
+  text-decoration: none;
+  outline: none;
+}
+
 .footer {
   margin-top: auto;
   padding-top: 2rem;
@@ -464,11 +515,22 @@ input:checked+.slider:before {
   gap: 1rem;
 }
 
+.footer-link {
+  color: var(--foreground-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
-  margin-top: 1rem;
+  gap: 0.5rem;
 }
 
 .footer-links a {
@@ -483,15 +545,15 @@ input:checked+.slider:before {
 }
 
 .footer-icon {
-  color: var(--foreground-muted);
-  font-size: 1.5rem;
-  transition: var(--transition);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+  background-color: var(--background-lighter);
+  color: var(--foreground-muted);
+  transition: var(--transition);
   text-decoration: none;
 }
 
@@ -543,6 +605,11 @@ input:checked+.slider:before {
   .accordion-body {
     padding: 1rem 1.5rem;
     font-size: .9rem;
+  }
+
+  .accordion-body ol,
+  .accordion-body ul {
+    padding-left: 1rem;
   }
 
   .social-links {
