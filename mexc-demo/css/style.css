@@ -292,6 +292,24 @@ input:checked+.slider:before {
   display: none;
 }
 
+.response-time {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--foreground-muted);
+  font-family: 'Courier New', Courier, monospace;
+  transition: var(--transition);
+}
+
+.response-time.hidden {
+  display: none;
+}
+
+.response-time i {
+  color: var(--primary);
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
 .accordion {
   display: flex;
   flex-direction: column;
