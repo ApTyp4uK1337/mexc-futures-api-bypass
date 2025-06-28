@@ -200,8 +200,10 @@ document.addEventListener('DOMContentLoaded', function () {
       side: form.side.value,
       quantity: form.quantity.value,
       leverage: form.leverage.value,
-      take_profit: form.take_profit.value,
-      stop_loss: form.stop_loss.value
+      take_profit_price: form.take_profit_price.value,
+      take_profit_type: form.take_profit_type.value,
+      stop_loss_price: form.stop_loss_price.value,
+      stop_loss_type: form.stop_loss_type.value
     };
 
     if (!data.quantity || !data.token) {

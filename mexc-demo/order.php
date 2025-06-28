@@ -37,8 +37,15 @@ if (!preg_match('/^WEB[0-9a-f]{64}$/i', $data['token'])) {
   exit;
 }
 
-$data['take_profit'] = (isset($data['take_profit']) && $data['take_profit'] > 0) ? $data['take_profit'] : null;
-$data['stop_loss'] = (isset($data['stop_loss']) && $data['stop_loss'] > 0) ? $data['stop_loss'] : null;
+if (!isset($data['take_profit_price']) || $data['take_profit_price'] <= 0) {
+  $data['take_profit_price'] = null;
+  $data['take_profit_type'] = null;
+}
+
+if (!isset($data['stop_loss_price']) || $data['stop_loss_price'] <= 0) {
+  $data['stop_loss_price'] = null;
+  $data['stop_loss_type'] = null;
+}
 
 include("{$_SERVER['DOCUMENT_ROOT']}/MexcClient.php");
 
@@ -52,8 +59,10 @@ $response = $client->createOrder([
   'side' => $data['side'],
   'vol' => $data['quantity'],
   'leverage' => $data['leverage'],
-  'takeProfitPrice' => $data['take_profit'],
-  'stopLossPrice' => $data['stop_loss']
+  'takeProfitPrice' => $data['take_profit_price'],
+  'profitTrend' => $data['take_profit_type'],
+  'stopLossPrice' => $data['stop_loss_price'],
+  'lossTrend' => $data['stop_loss_type']
 ]);
 
 echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
