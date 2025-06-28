@@ -15,7 +15,7 @@ if (json_last_error() !== JSON_ERROR_NONE) {
   exit;
 }
 
-$required = ['type', 'symbol', 'side', 'quantity', 'leverage', 'token'];
+$required = ['open_type', 'symbol', 'side', 'quantity', 'leverage', 'token'];
 
 foreach ($required as $key) {
   if (empty($data[$key])) {
@@ -48,7 +48,7 @@ $response = $client->createOrder([
   'symbol' => $data['symbol'],
   'side' => $data['side'],
   'type' => 5,
-  'openType' => $data['type'],
+  'openType' => $data['open_type'],
   'side' => $data['side'],
   'vol' => $data['quantity'],
   'leverage' => $data['leverage'],
