@@ -1,8 +1,5 @@
 <?php
 
-error_reporting(0);
-ini_set('display_errors', 0);
-
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
 
@@ -50,7 +47,7 @@ if (!isset($data['stop_loss_price']) || $data['stop_loss_price'] <= 0) {
   $data['stop_loss_type'] = null;
 }
 
-include("{$_SERVER['DOCUMENT_ROOT']}/MexcClient.php");
+include("{$_SERVER['DOCUMENT_ROOT']}/libs/MexcClient.php");
 
 $client = new MexcClient($data['token'], true);
 

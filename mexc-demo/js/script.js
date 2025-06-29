@@ -216,7 +216,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const startTime = performance.now();
 
     try {
-      const response = await fetch('order.php', {
+      const response = await fetch('order', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
