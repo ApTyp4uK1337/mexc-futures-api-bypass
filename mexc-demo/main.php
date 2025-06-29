@@ -10,15 +10,15 @@
   <meta name="keywords"
     content="MEXC API bypass, MEXC API, futures trading during maintenance, MEXC futures API, crypto trading API, bypass exchange restrictions, MEXC trading solution, Futures Trading, API Bypass, Crypto Trading, MEXC Futures, Trading During Maintenance, mexc, futures, api, maintenance, bypass">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
+  <meta property="og:url" content="<?php echo $_SERVER['URL']; ?>/">
   <meta property="og:title" content="MEXC Futures API Bypass - Trade During Maintenance">
   <meta property="og:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta property="og:image" content="./images/social-preview.jpg">
+  <meta property="og:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://mexc-demo.aptyp4uk1337.xyz/">
+  <meta name="twitter:url" content="<?php echo $_SERVER['URL']; ?>/">
   <meta name="twitter:title" content="MEXC Futures API Bypass - Trade During Maintenance">
   <meta name="twitter:description" content="Get your access to MEXC Futures Under Maintenance Trading APIs.">
-  <meta name="twitter:image" content="./images/social-preview.jpg">
+  <meta name="twitter:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -31,18 +31,18 @@
       },
       "offers": {
         "@type": "Offer",
-        "url": "https://mexc-demo.aptyp4uk1337.xyz/",
+        "url": "<?php echo $_SERVER['URL']; ?>/",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock"
       }
     }
   </script>
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <link rel="canonical" href="https://mexc-demo.aptyp4uk1337.xyz/">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $_SERVER['URL']; ?>/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $_SERVER['URL']; ?>/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SERVER['URL']; ?>/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo $_SERVER['URL']; ?>/site.webmanifest">
+  <link rel="canonical" href="<?php echo $_SERVER['URL']; ?>/">
+  <link rel="stylesheet" href="<?php echo $_SERVER['URL']; ?>/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -56,11 +56,11 @@
       <p class="subtitle">Trade during maintenance periods with our specialized API solution</p>
       <div class="social-links">
         <a href="https://t.me/aptyp4uk1337/19" target="_blank" rel="noopener noreferrer" class="social-link">
-          <i class="ti ti-brand-telegram"></i>Telegram
+          <i class="ti ti-brand-telegram"></i> Telegram
         </a>
         <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" rel="noopener noreferrer"
           class="social-link">
-          <i class="ti ti-brand-github"></i>GitHub
+          <i class="ti ti-brand-github"></i> GitHub
         </a>
       </div>
     </header>
@@ -80,7 +80,7 @@
                   <i class="ti ti-lock" style="color: oklch(72.3% .219 149.579);"></i>
                 </span>
                 User Token
-                <span class="tooltip" data-tooltip-image="./images/token-help.jpg">
+                <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/token-help.jpg">
                   <i class="ti ti-info-circle"></i>
                 </span>
               </label>
@@ -135,7 +135,7 @@
             <div class="form-group">
               <label for="quantity">
                 Quantity
-                <span class="tooltip" data-tooltip-image="./images/quantity-help.jpg">
+                <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/quantity-help.jpg">
                   <i class="ti ti-info-circle"></i>
                 </span>
               </label>
@@ -288,8 +288,8 @@
                 <div class="accordion-body">
                   <p>See the results of the Rate Limit Test for 200 requests:</p>
                   <p>
-                    <span class="tooltip" data-tooltip-image="./images/rate-limit-test.jpg">
-                      <i class="ti ti-photo"></i>Screenshot
+                    <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/rate-limit-test.jpg">
+                      <i class="ti ti-photo"></i> Screenshot
                     </span>
                   </p>
                 </div>
@@ -312,7 +312,7 @@
                     <li>Find the cookie named "u_id" and copy its value (it should start with "WEB").</li>
                   </ol>
                   <p>
-                    <span class="tooltip" data-tooltip-image="./images/token-help.jpg">
+                    <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/token-help.jpg">
                       <i class="ti ti-photo"></i> Screenshot
                     </span>
                   </p>
@@ -329,7 +329,7 @@
               </button>
               <div class="accordion-content" id="faq8">
                 <div class="accordion-body">
-                  <p>It's a one-time purchase.</p>
+                  <p>This is a one-time purchase and updates are free.</p>
                 </div>
               </div>
             </div>
@@ -356,8 +356,9 @@
               </button>
               <div class="accordion-content" id="faq10">
                 <div class="accordion-body">
-                  <p>Contact me on <a href="https://t.me/aptyp4uk1337/19" target="_blank" rel="noopener noreferrer"><i
-                        class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+                  <p>Contact me on <a
+                      href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
+                      target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-telegram"></i> Telegram</a>.</p>
                 </div>
               </div>
             </div>
@@ -369,7 +370,7 @@
     <section class="cta-section">
       <div class="cta-container">
         <h2 class="cta-title"><i class="ti ti-rocket"></i> Ready to unlock full access?</h2>
-        <p class="cta-text">Get the full version with unlimited API features.</p>
+        <p class="cta-text">Get the full libraries with unlimited API features.</p>
         <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
           target="_blank" rel="noopener noreferrer" class="btn btn-cta">
           <i class="ti ti-shopping-cart"></i>Purchase Now
@@ -379,9 +380,9 @@
 
     <footer class="footer">
       <div class="footer-links">
-        <a href="/privacy" class="footer-link">Privacy Policy</a>
+        <a href="<?php echo $_SERVER['URL']; ?>/privacy" class="footer-link">Privacy Policy</a>
         <span>·</span>
-        <a href="/terms" class="footer-link">Terms of Service</a>
+        <a href="<?php echo $_SERVER['URL']; ?>/terms" class="footer-link">Terms of Service</a>
       </div>
       <p>© 2025 MEXC Futures API Bypass<br>Made with ❤️ by <a href="https://github.com/aptyp4uk1337" class="footer-link"
           target="_blank" rel="noopener noreferrer">@aptyp4uk1337</a></p>
@@ -398,7 +399,7 @@
     </footer>
   </div>
 
-  <script src="./js/script.js"></script>
+  <script src="<?php echo $_SERVER['URL']; ?>/js/script.js"></script>
 </body>
 
 </html>

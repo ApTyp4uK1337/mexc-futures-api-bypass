@@ -193,6 +193,7 @@ body {
 .card-body a {
   color: var(--primary);
   text-decoration: none;
+  transition: all var(--transition-fast);
 }
 
 .card-body a:hover {
@@ -469,6 +470,19 @@ input:checked+.slider:before {
 
 .accordion-body a:hover {
   text-decoration: underline;
+}
+
+.accordion-body .tooltip {
+  color: var(--primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.accordion-body .tooltip:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-color: var(--primary);
 }
 
 /* Подсказки */

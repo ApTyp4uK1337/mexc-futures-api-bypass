@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Terms of Service - MEXC Futures API Bypass</title>
   <meta name="description" content="Terms of Service for MEXC Futures API Bypass service." />
-  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="manifest" href="./site.webmanifest">
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $_SERVER['URL']; ?>/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $_SERVER['URL']; ?>/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SERVER['URL']; ?>/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo $_SERVER['URL']; ?>/site.webmanifest">
+  <link rel="stylesheet" href="<?php echo $_SERVER['URL']; ?>/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,7 +74,7 @@
           <h2><i class="ti ti-lock-access"></i> Privacy</h2>
         </div>
         <div class="card-body">
-          <p>Your privacy is important to us. Please refer to our <a href="/privacy">Privacy Policy</a> for detailed
+          <p>Your privacy is important to us. Please refer to our <a href="<?php echo $_SERVER['URL']; ?>/privacy">Privacy Policy</a> for detailed
             information on data
             collection and usage.</p>
         </div>
@@ -104,12 +104,12 @@
 
     <footer class="footer">
       <div class="footer-links">
-        <a href="/" class="footer-link">Home</a>
+        <a href="<?php echo $_SERVER['URL']; ?>/" class="footer-link">Home</a>
       </div>
       <div class="footer-links">
-        <a href="/privacy" class="footer-link">Privacy Policy</a>
+        <a href="<?php echo $_SERVER['URL']; ?>/privacy" class="footer-link">Privacy Policy</a>
         <span>·</span>
-        <a href="/terms" class="footer-link">Terms of Service</a>
+        <a href="<?php echo $_SERVER['URL']; ?>/terms" class="footer-link">Terms of Service</a>
       </div>
       <p>
         © 2025 MEXC Futures API Bypass<br />
