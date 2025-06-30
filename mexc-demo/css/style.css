@@ -548,8 +548,14 @@ input:checked+.slider:before {
   text-align: center;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
+  transition: transform var(--transition), box-shadow var(--transition);
   overflow: hidden;
   position: relative;
+}
+
+.cta-section:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
 }
 
 .cta-container {
