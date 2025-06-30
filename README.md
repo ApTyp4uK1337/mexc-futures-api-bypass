@@ -14,7 +14,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 
 ## 🔴 Live Demo
 
-You can test the opening of a position yourself: https://mexc-demo.aptyp4uk1337.xyz/
+You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 <div align="center">
   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" title="Telegram">
