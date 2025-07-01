@@ -125,17 +125,17 @@
             <div class="form-group">
               <label for="symbol">Trading Pair</label>
               <select class="form-control" id="symbol" name="symbol">
-                <option value="BTC_USDT">BTC/USDT</option>
-                <option value="ETH_USDT">ETH/USDT</option>
-                <option value="SOL_USDT">SOL/USDT</option>
-                <option value="XRP_USDT">XRP/USDT</option>
-                <option value="SUI_USDT">SUI/USDT</option>
-                <option value="DOGE_USDT">DOGE/USDT</option>
-                <option value="PEPE_USDT">PEPE/USDT</option>
-                <option value="SEI_USDT">SEI/USDT</option>
-                <option value="LINK_USDT">LINK/USDT</option>
-                <option value="TRX_USDT">TRX/USDT</option>
-                <option value="SHIB_USDT">SHIB/USDT</option>
+                <option value="BTC_USDT">BTC_USDT</option>
+                <option value="ETH_USDT">ETH_USDT</option>
+                <option value="SOL_USDT">SOL_USDT</option>
+                <option value="XRP_USDT">XRP_USDT</option>
+                <option value="SUI_USDT">SUI_USDT</option>
+                <option value="DOGE_USDT">DOGE_USDT</option>
+                <option value="PEPE_USDT">PEPE_USDT</option>
+                <option value="SEI_USDT">SEI_USDT</option>
+                <option value="LINK_USDT">LINK_USDT</option>
+                <option value="TRX_USDT">TRX_USDT</option>
+                <option value="SHIB_USDT">SHIB_USDT</option>
               </select>
             </div>
 
