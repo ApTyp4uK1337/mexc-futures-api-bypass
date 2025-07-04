@@ -44,7 +44,7 @@
       },
       "offers": {
         "@type": "Offer",
-        "price": "175.00",
+        "price": "125.00",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
         "url": "<?php echo $_SERVER['URL']; ?>/"
