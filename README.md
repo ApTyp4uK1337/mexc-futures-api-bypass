@@ -6,6 +6,12 @@
   ![Paid Access](https://img.shields.io/badge/access-paid-blue)
 </div>
 
+<div align="center">
+  <img src="https://img.shields.io/badge/php-%23777BB4.svg?&logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" alt="Node.js">
+</div>
+
 # 🔷 MEXC Futures API Bypass
 
 This unofficial MEXC Futures API library bypasses current maintenance restrictions in the official endpoints, allowing full trading and account access even when some routes are marked "[Under maintenance](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance)".
@@ -22,6 +28,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 </div>
 
 > **Demo file:** [./demo/app.js](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/demo/app.js)
+
 
 ---
 
@@ -147,3 +154,4 @@ const order = await client.createOrder({
 ## 💌 Contact me
 
 <a href="https://t.me/aptyp4uk1337_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"></a>
+<a href="mailto:aptyp4uk1337@gmail.com?subject=MEXC API Bypass"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" title="Email"></a>
