@@ -1,5 +1,5 @@
 <div align="center">
-   <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/mexc-logo.png?raw=true" height="150" width="150">
+   <img src="/assets/mexc-logo.png" height="150" width="150">
 
   ![License: Proprietary](https://img.shields.io/badge/license-proprietary-red)
   ![Private Code](https://img.shields.io/badge/source-private-orange)
@@ -24,10 +24,10 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 <div align="center">
-  <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/preview.gif?raw=true" title="Telegram">
+  <img src="/assets/preview.gif" title="Telegram">
 </div>
 
-> **Demo file:** [./demo/app.js](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/demo/app.js)
+> **Demo file:** [./demo/app.js](/main/demo/app.js)
 
 
 ---
@@ -66,7 +66,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 - No.
 
 > Will I get a risk control ban for using the library?
-- In my experience - no. For more information on risk control, see here [🛡️ Risk Control on MEXC](/docs/risk_control_en.md).
+- In my experience - no. For more information on risk control, see here 🛡️ [Risk Control on MEXC](/docs/risk_control_en.md).
 
 
 ---
@@ -74,10 +74,10 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 ## ⏱️ Rate Limit Test
 
 <div align="center">
-  <img src="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/assets/rate-limit-test.png?raw=true" title="Telegram">
+  <img src="/assets/rate-limit-test.png" title="Telegram">
 </div>
 
-> **Demo file:** [./demo/rate_limit_test.js](https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/blob/main/demo/rate_limit_test.js)
+> **Demo file:** [./demo/rate_limit_test.js](/demo/rate_limit_test.js)
 
 ---
 
@@ -154,7 +154,7 @@ const order = await client.createOrder({
 ## ▶ Live preview: placing and cancelling a futures order
 
 <video src="https://github.com/user-attachments/assets/d51a6a12-a596-440e-bc3c-147ef8aad5b0" align="center">
-  <a href="https://www.youtube.com/shorts/wMQ-Iq3xHHQ">👀 Watch Live Preview</a>
+  👀 <a href="https://www.youtube.com/shorts/wMQ-Iq3xHHQ">Watch Live Preview</a>
 </video>
 
 ## 💌 Contact me
