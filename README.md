@@ -117,6 +117,12 @@ const order = await client.createOrder({
 
 | Method | Description |
 |--------|-------------|
+| [**getCustomerInfo**](/docs/methods/getCustomerInfo.md) | Get customer info |
+| [**getUserInfo**](/docs/methods/getUserInfo.md) | Get user info |
+| [**getWallet**](/docs/methods/getWallet.md) | Get user wallet info |
+| [**getContract**](/docs/methods/getContract.md) | Get contract info |
+| [**getIndexPrice**](/docs/methods/getIndexPrice.md) | Get contract index price |
+| [**getFairPrice**](/docs/methods/getFairPrice.md) | Get contract fair price |
 | [**getAssets**](/docs/methods/getAssets.md) | Get all informations of user's asset |
 | [**getAsset**](/docs/methods/getAsset.md) | Get the user's single currency asset information |
 | [**getAssetTransferRecords**](/docs/methods/getAssetTransferRecords.md) | Get the user's asset transfer records |

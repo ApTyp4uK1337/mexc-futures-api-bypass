@@ -109,6 +109,7 @@ async function main() {
         client.createOrder.bind(client),
         params
       );
+
       latencies.push(latency);
 
       const orderId = response?.data?.orderId;
