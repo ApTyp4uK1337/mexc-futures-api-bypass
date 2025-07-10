@@ -1,0 +1,4 @@
+/.env
+/node_modules
+/src/MexcBypass.js
+/package-lock.json
