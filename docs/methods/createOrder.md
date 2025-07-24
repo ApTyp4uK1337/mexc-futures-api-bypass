@@ -18,7 +18,10 @@ USDT perpetual contract trading offers limit and market orders. You can place an
 | `positionId`       | `long`     | ❌            | Position ID (recommended when closing) |
 | `externalOid`      | `string`   | ❌            | External order ID |
 | `stopLossPrice`    | `decimal`  | ❌            | Stop-loss price |
+| `stopLossTrend`    | `int`      | ❌            | Stop-loss trend |
 | `takeProfitPrice`  | `decimal`  | ❌            | Take-profit price |
+| `takeProfitTrend`  | `int`      | ❌            | Take-profit trend |
+| `priceProtect`     | `int`      | ❌            | priceProtect |
 | `positionMode`     | `int`      | ❌            | Position mode ([see values below](#enum-createorderpositionmode)). Default = user's config |
 | `reduceOnly`       | `boolean`  | ❌            | Default: `false`. For One-Way only; ignored in Hedge mode |
 

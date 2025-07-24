@@ -81,10 +81,10 @@ console.log(user);
 | `email`                   | `string`   | Masked email address. |
 | `authLevel`               | `string`   | Authentication level. |
 | `secondAuthType`          | `number`   | Type of 2FA enabled. |
-| `account`                 | `string`   | Account login (usually email). |
+| `account`                 | `string`   | Account login. |
 | `lastLoginIp`             | `string`   | Last login IP address. |
 | `lastLoginTime`           | `number`   | Last login time (timestamp in ms). |
-| `kycStatus`               | `number`   | KYC status (e.g., 1 = verified). |
+| `kycStatus`               | `number`   | KYC status. |
 | `country`                 | `string`   | Country/region code. |
 | `inviteCode`              | `string`   | User's referral code. |
 | `kycInfo`                 | `object`   | KYC level details. |
@@ -94,7 +94,7 @@ console.log(user);
 | ├─ `maxAuthTimes`         | `number`   | Maximum times KYC can be retried. |
 | `institutionInfo.level`   | `string`   | Institution user level, if applicable. |
 | `userVipLevel`            | `object`   | VIP level details (empty if none). |
-| `kycMode`                 | `number`   | KYC mode (e.g., 0 = personal). |
+| `kycMode`                 | `number`   | KYC mode. |
 | `isAgent`                 | `boolean`  | Whether user is a registered agent. |
 | `registerTime`            | `number`   | Account registration time (timestamp in ms). |
 | `pageLanguage`            | `string`   | User’s preferred language. |

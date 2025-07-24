@@ -31,10 +31,10 @@ console.log(overview);
 ```JSON
 {
   "data": {
-    "total": "6.86149725",
+    "total": "1337.1337",
     "spot": "0",
     "otc": "0",
-    "contract": "6.86149725",
+    "contract": "1337.1337",
     "strategy": "0",
     "robot": "0",
     "alpha": "0"
@@ -69,17 +69,17 @@ console.log(overview);
     {
       "currency": "BTC",
       "coinId": "febc9973be4d4d53bb374476239eb219",
-      "total": "0.00005917",
+      "total": "0.011511",
       "spot": "0",
       "otc": "0",
-      "contract": "0.00005917",
+      "contract": "0.011511",
       "strategy": "0",
       "robot": "0",
       "alpha": "0",
-      "originTotal": "0.00005917",
+      "originTotal": "0.01151",
       "originSpot": "0",
       "originOtc": "0",
-      "originContract": "0.00005917",
+      "originContract": "0.011511",
       "originStrategy": "0",
       "originRobot": "0",
       "originAlpha": "0"
