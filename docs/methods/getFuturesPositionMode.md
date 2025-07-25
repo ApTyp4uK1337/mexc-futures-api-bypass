@@ -1,6 +1,6 @@
 # getFuturesPositionMode
 
-Get the server time.
+Get the current position mode for the account.
 
 - **Endpoint:** `/v1/getFuturesPositionMode`
 
