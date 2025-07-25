@@ -79,38 +79,3 @@ X-MEXC-PROXY: socks5://user:pass@127.0.0.1:9050
 ```
 
 This allows you to tunnel traffic through your own proxy or TOR node for added security.
-
-
----
-
-
-
-## Available Methods (Deprecated)
-
-| Method | Description |
-|--------|-------------|
-| [**getAssets**](/docs/methods_deprecated/getAssets.md) | Get all informations of user's asset |
-| [**getAsset**](/docs/methods_deprecated/getAsset.md) | Get the user's single currency asset information |
-| [**getAssetTransferRecords**](/docs/methods_deprecated/getAssetTransferRecords.md) | Get the user's asset transfer records |
-| [**getPositionsHistory**](/docs/methods_deprecated/getPositionsHistory.md) | Get the user’s history position information |
-| [**getOpenPositions**](/docs/methods_deprecated/getOpenPositions.md) | Get the user's current holding position |
-| [**getOpenOrders**](/docs/methods_deprecated/getOpenOrders.md) | Get the user's current pending order |
-| [**getOrdersHistory**](/docs/methods_deprecated/getOrdersHistory.md) | Get all of the user's historical orders |
-| [**createOrder**](/docs/methods_deprecated/createOrder.md) | Create order |
-| [**cancelOrders**](/docs/methods_deprecated/cancelOrders.md) | Cancel the orders |
-| [**cancelAllOrders**](/docs/methods_deprecated/cancelAllOrders.md) | Cancel all uncompleted orders under a contract |
-| [**cancelOrderWithExternalId**](/docs/methods_deprecated/cancelOrderWithExternalId.md) | Cancel the order according to the external order ID |
-| [**getTriggerOrders**](/docs/methods_deprecated/getTriggerOrders.md) | Gets the trigger order list |
-| [**createTriggerOrder**](/docs/methods_deprecated/createTriggerOrder.md) | Trigger order |
-| [**cancelTriggerOrders**](/docs/methods_deprecated/cancelTriggerOrders.md) | Cancel the trigger order |
-| [**cancelAllTriggerOrders**](/docs/methods_deprecated/cancelAllTriggerOrders.md) | Cancel all trigger orders |
-| [**getStopLimitOrders**](/docs/methods_deprecated/getStopLimitOrders.md) | Get the Stop-Limit order list |
-| [**cancelStopLimitOrders**](/docs/methods_deprecated/cancelStopLimitOrders.md) | Cancel the Stop-Limit trigger order |
-| [**cancelAllStopLimitOrders**](/docs/methods_deprecated/cancelAllStopLimitOrders.md) | Cancel all Stop-Limit price trigger orders |
-| [**getRiskLimits**](/docs/methods_deprecated/getRiskLimits.md) | Get risk limits |
-| [**changeMargin**](/docs/methods_deprecated/changeMargin.md) | Increase or decrease margin |
-| [**getLeverage**](/docs/methods_deprecated/getLeverage.md) | Get leverage |
-| [**changeLeverage**](/docs/methods_deprecated/changeLeverage.md) | Switch leverage |
-| [**getPositionMode**](/docs/methods_deprecated/getPositionMode.md) | Get position mode |
-| [**changePositionMode**](/docs/methods_deprecated/changePositionMode.md) | Change position mode |
-| [**closeAllPositions**](/docs/methods_deprecated/closeAllPositions.md) | Close all positions |

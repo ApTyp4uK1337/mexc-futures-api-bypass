@@ -20,7 +20,7 @@ This unofficial MEXC Futures API library bypasses current maintenance restrictio
 > [!NOTE]
 > The source code of the library is not distributed openly. You can get access by contacting me on Telegram: [@aptyp4uk1337_bot](https://t.me/aptyp4uk1337_bot)
 
-## 🔴 Live Demo
+### 🔴 Live Demo
 
 You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
@@ -45,7 +45,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 ---
 
-## 💳 Pricing
+### 💳 Pricing
 
 | Option          | Price      | Duration         | Includes                        |
 |-----------------|------------|------------------|----------------------------------|
@@ -56,7 +56,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 ---
 
-## ❓ FAQ
+### ❓ FAQ
 
 > Does it fully support placing, cancelling, and tracking all types of futures orders?
 - Yes, including market, limit, stop-limit, and trigger orders.
@@ -82,7 +82,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 ---
 
-## ⏱️ Rate Limit Test
+### ⏱️ Rate Limit Test
 
 <div align="center">
   <img src="/assets/rate-limit-test.png" title="Telegram">
@@ -92,7 +92,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 ---
 
-## 🚀 API initialization
+### 🚀 API initialization
 
 ```JS
 import { MexcClient } from './MexcClient.js';
@@ -104,7 +104,7 @@ const client = new MexcClient({
 });
 ```
 
-## 💥 Create Order Example
+### 💥 Create Order Example
 
 ```JS
 import { MexcClient } from './MexcClient.js';
@@ -124,7 +124,7 @@ const order = await client.createOrder({
 ---
 
 
-## 📖 Available Methods
+### 📖 Available Methods
 
 The library supports **30+ endpoints** including:
 
@@ -133,19 +133,17 @@ The library supports **30+ endpoints** including:
 - Managing open positions, leverage and margin
 - Retrieving contract info and price feeds
 
-📚 **[Full method documentation](/docs#-available-methods)** is available in `/docs/methods/`.
-
-> ✅ Compatible with official contract API structure.
+📚 **[Full method documentation](/docs#-available-methods)** is available in `/docs/methods/`
 
 ---
 
-## ▶ Live preview: placing and cancelling a futures order
+### ▶ Live preview: placing and cancelling a futures order
 
 <video src="https://github.com/user-attachments/assets/d51a6a12-a596-440e-bc3c-147ef8aad5b0" align="center">
   👀 <a href="https://www.youtube.com/shorts/wMQ-Iq3xHHQ">Watch Live Preview</a>
 </video>
 
-## 💌 Contact me
+### 💌 Contact me
 
 <a href="https://t.me/aptyp4uk1337_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"></a>
 <a href="mailto:aptyp4uk1337@gmail.com?subject=MEXC API Bypass"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" title="Email"></a>
