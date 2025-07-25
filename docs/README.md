@@ -32,17 +32,23 @@ All requests must include the following headers:
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | Get an overview of your asset balances. |
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Get detailed balance data for your futures account. |
 | [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Get the list of asset transfer records on your futures account. |
-| [**getFuturesContract**](/docs/methods/getFuturesContract.md) | Get details of one or all futures contracts. |
-| [**getFuturesTicker**](/docs/methods/getFuturesTicker.md) | Get the latest market ticker for a futures contract. |
+| [**getFuturesContracts**](/docs/methods/getFuturesContracts.md) | Get details of one or all futures contracts. |
+| [**getFuturesTickers**](/docs/methods/getFuturesTickers.md) | Get the latest market ticker for a futures contract. |
 | [**getFuturesPendingOrders**](/docs/methods/getFuturesPendingOrders.md) | Get a list of your open (pending) futures orders. |
 | [**getFuturesOrdersHistory**](/docs/methods/getFuturesOrdersHistory.md) | Get historical futures orders (filled, cancelled, etc.) |
 | [**getFuturesOpenPositions**](/docs/methods/getFuturesOpenPositions.md) | Get currently open futures positions. |
+| [**getFuturesPositionsHistory**](/docs/methods/getFuturesPositionsHistory.md) | Retrieve the historical closed positions for a specific contract. |
 | [**closeAllFuturesPositions**](/docs/methods/closeAllFuturesPositions.md) | Close all currently open futures positions for the account. |
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Create a new futures order. |
+| [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Create a new futures order. |
+| [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Cancel the pending order placed before, each time can cancel up to 50 orders. |
 | [**cancelAllFuturesOrders**](/docs/methods/cancelAllFuturesOrders.md) | Cancel all open futures orders for a given symbol. |
 | [**getFuturesPositionMode**](/docs/methods/getFuturesPositionMode.md) | Get the current position mode for the account. |
 | [**getFuturesLeverage**](/docs/methods/getFuturesLeverage.md) | Get leverage and margin information for a specific futures contract. |
 | [**getFuturesRiskLimits**](/docs/methods/getFuturesRiskLimits.md) | Get risk limit tiers for a specific futures contract. |
+| [**changeFuturesPositionMargin**](/docs/methods/changeFuturesPositionMargin.md) | Change the margin amount of an open futures position. |
+| [**changeFuturesPositionLeverage**](/docs/methods/changeFuturesPositionLeverage.md) | Change the leverage of a position. If the position does not exist yet, additional info is required. |
+| [**changeFuturesPositionMode**](/docs/methods/changeFuturesPositionMode.md) | Change the position mode for your futures account. |
 
 ---
 

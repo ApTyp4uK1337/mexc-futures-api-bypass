@@ -1,8 +1,8 @@
-# getFuturesTicker
+# getFuturesTickers
 
 Get the latest market ticker for a futures contract.
 
-- **Endpoint:** `/v1/getFuturesTicker`
+- **Endpoint:** `/v1/getFuturesTickers`
 
 ---
 
