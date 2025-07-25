@@ -1,4 +1,4 @@
-# `getFuturesAssetTransferRecords`
+# getFuturesAssetTransferRecords
 
 Get the list of asset transfer records on your futures account.
 
@@ -13,8 +13,8 @@ Get the list of asset transfer records on your futures account.
 | `currency`     | `string`   | No           | Filter by specific currency (e.g., `USDT`).                                     | *All*       |
 | `state`        | `string`   | No           | Transfer state: `PENDING`, `SUCCESS`, `FAILED`.                                 | *All*       |
 | `type`         | `string`   | No           | Direction of transfer: `IN` (into futures), `OUT` (from futures).               | *All*       |
-| `pageNum`      | `number`   | No           | Page number for pagination.                                                     | `1`         |
-| `pageSize`     | `number`   | No           | Number of records per page.                                                     | `20`        |
+| `page_num`     | `number`   | No           | Page number for pagination.                                                     | `1`         |
+| `page_size`    | `number`   | No           | Number of records per page.                                                     | `20`        |
 
 ---
 

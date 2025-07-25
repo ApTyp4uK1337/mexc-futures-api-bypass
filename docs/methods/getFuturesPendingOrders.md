@@ -1,4 +1,4 @@
-# `getFuturesPendingOrders`
+# getFuturesPendingOrders
 
 Get a list of your open (pending) futures orders.
 
