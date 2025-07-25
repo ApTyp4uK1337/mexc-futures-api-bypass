@@ -30,6 +30,7 @@ All requests must include the following headers:
 | [**getUserInfo**](/docs/methods/getUserInfo.md) | Get brief information about the authenticated user. |
 | [**getReferralsList**](/docs/methods/getReferralsList.md) | Get referral invite list and their commission statistics. |
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | Get an overview of your asset balances. |
+| [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Get detailed balance data for your futures account. |
 
 ---
 
