@@ -1,8 +1,8 @@
-# getFuturesContract
+# getFuturesContracts
 
 Get details of one or all futures contracts.
 
-- **Endpoint:** `/v1/getFuturesContract`
+- **Endpoint:** `/v1/getFuturesContracts`
 
 ---
 
