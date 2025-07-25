@@ -3,6 +3,7 @@
 
   ![License: Proprietary](https://img.shields.io/badge/license-proprietary-red)
   ![Private Code](https://img.shields.io/badge/source-private-orange)
+  ![Paid Access](https://img.shields.io/badge/subscription-available-yellow)
   ![Paid Access](https://img.shields.io/badge/access-paid-blue)
 </div>
 
@@ -37,11 +38,21 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 - Blazing fast
 - No third-party requests
 - Works on mainnet & testnet
-- Fully open source
 - Multi-accounting and proxy support
 - Compatible with any programming language
 - Simple PHP, Python & Node.js library
 - Free updates
+
+---
+
+## 💳 Pricing
+
+| Option          | Price      | Duration         | Includes                        |
+|-----------------|------------|------------------|----------------------------------|
+| 🔓 Subscription | $30 | 30 days          | Full access to all methods + updates |
+| 💾 Source Code  | $125 | Lifetime (one-time) | Full source, no limits, no expiration |
+
+📬 [Contact me on Telegram](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
 
 ---
 
@@ -113,41 +124,18 @@ const order = await client.createOrder({
 ---
 
 
-## 💼 Available Methods
+## 📖 Available Methods
 
-| Method | Description |
-|--------|-------------|
-| [**getCustomerInfo**](/docs/methods/getCustomerInfo.md) | Get customer info |
-| [**getUserInfo**](/docs/methods/getUserInfo.md) | Get user info |
-| [**getWallet**](/docs/methods/getWallet.md) | Get user wallet info |
-| [**getContract**](/docs/methods/getContract.md) | Get contract info |
-| [**getIndexPrice**](/docs/methods/getIndexPrice.md) | Get contract index price |
-| [**getFairPrice**](/docs/methods/getFairPrice.md) | Get contract fair price |
-| [**getAssets**](/docs/methods/getAssets.md) | Get all informations of user's asset |
-| [**getAsset**](/docs/methods/getAsset.md) | Get the user's single currency asset information |
-| [**getAssetTransferRecords**](/docs/methods/getAssetTransferRecords.md) | Get the user's asset transfer records |
-| [**getPositionsHistory**](/docs/methods/getPositionsHistory.md) | Get the user’s history position information |
-| [**getOpenPositions**](/docs/methods/getOpenPositions.md) | Get the user's current holding position |
-| [**getOpenOrders**](/docs/methods/getOpenOrders.md) | Get the user's current pending order |
-| [**getOrdersHistory**](/docs/methods/getOrdersHistory.md) | Get all of the user's historical orders |
-| [**createOrder**](/docs/methods/createOrder.md) | Create order |
-| [**cancelOrders**](/docs/methods/cancelOrders.md) | Cancel the orders |
-| [**cancelAllOrders**](/docs/methods/cancelAllOrders.md) | Cancel all uncompleted orders under a contract |
-| [**cancelOrderWithExternalId**](/docs/methods/cancelOrderWithExternalId.md) | Cancel the order according to the external order ID |
-| [**getTriggerOrders**](/docs/methods/getTriggerOrders.md) | Gets the trigger order list |
-| [**createTriggerOrder**](/docs/methods/createTriggerOrder.md) | Trigger order |
-| [**cancelTriggerOrders**](/docs/methods/cancelTriggerOrders.md) | Cancel the trigger order |
-| [**cancelAllTriggerOrders**](/docs/methods/cancelAllTriggerOrders.md) | Cancel all trigger orders |
-| [**getStopLimitOrders**](/docs/methods/getStopLimitOrders.md) | Get the Stop-Limit order list |
-| [**cancelStopLimitOrders**](/docs/methods/cancelStopLimitOrders.md) | Cancel the Stop-Limit trigger order |
-| [**cancelAllStopLimitOrders**](/docs/methods/cancelAllStopLimitOrders.md) | Cancel all Stop-Limit price trigger orders |
-| [**getRiskLimits**](/docs/methods/getRiskLimits.md) | Get risk limits |
-| [**changeMargin**](/docs/methods/changeMargin.md) | Increase or decrease margin |
-| [**getLeverage**](/docs/methods/getLeverage.md) | Get leverage |
-| [**changeLeverage**](/docs/methods/changeLeverage.md) | Switch leverage |
-| [**getPositionMode**](/docs/methods/getPositionMode.md) | Get position mode |
-| [**changePositionMode**](/docs/methods/changePositionMode.md) | Change position mode |
-| [**closeAllPositions**](/docs/methods/closeAllPositions.md) | Close all positions |
+The library supports **30+ endpoints** including:
+
+- Placing, modifying and cancelling orders (market, limit, trigger, stop-limit)
+- Accessing wallet and asset data
+- Managing open positions, leverage and margin
+- Retrieving contract info and price feeds
+
+📚 **[Full method documentation](/docs#-available-methods)** is available in `/docs/methods/`.
+
+> ✅ Compatible with official contract API structure.
 
 ---
 
