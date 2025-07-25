@@ -33,6 +33,8 @@ All requests must include the following headers:
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Get detailed balance data for your futures account. |
 | [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Get the list of asset transfer records on your futures account. |
 | [**getFuturesContracts**](/docs/methods/getFuturesContracts.md) | Get details of one or all futures contracts. |
+| [**getFuturesContractIndexPrice**](/docs/methods/getFuturesContractIndexPrice.md) | Retrieve the index price of a specific futures contract. |
+| [**getFuturesContractFairPrice**](/docs/methods/getFuturesContractFairPrice.md) | Fetch the fair price of a specific futures contract. |
 | [**getFuturesTickers**](/docs/methods/getFuturesTickers.md) | Get the latest market ticker for a futures contract. |
 | [**getFuturesPendingOrders**](/docs/methods/getFuturesPendingOrders.md) | Get a list of your open (pending) futures orders. |
 | [**getFuturesOrdersHistory**](/docs/methods/getFuturesOrdersHistory.md) | Get historical futures orders (filled, cancelled, etc.) |
