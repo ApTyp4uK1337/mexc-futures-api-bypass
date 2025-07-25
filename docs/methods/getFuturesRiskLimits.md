@@ -14,7 +14,7 @@ Get risk limit tiers for a specific futures contract.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {

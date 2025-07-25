@@ -17,7 +17,7 @@ Retrieve the historical closed positions for a specific contract.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {

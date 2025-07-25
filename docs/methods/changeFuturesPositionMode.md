@@ -17,17 +17,7 @@ Change the position mode for your futures account.
 
 ---
 
-### 📌 Example request
-
-```json
-{
-  "position_mode": 2
-}
-```
-
----
-
-###### Response (example)
+###### Response
 
 ```json
 {

@@ -29,7 +29,7 @@ Create a new futures order.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {

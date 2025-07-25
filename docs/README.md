@@ -44,7 +44,11 @@ All requests must include the following headers:
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Create a new futures order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Create a new futures order. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Cancel the pending order placed before, each time can cancel up to 50 orders. |
+| [**cancelFuturesOrderWithExternalId**](/docs/methods/cancelFuturesOrderWithExternalId.md) | Cancel a futures order using an external order ID. |
 | [**cancelAllFuturesOrders**](/docs/methods/cancelAllFuturesOrders.md) | Cancel all open futures orders for a given symbol. |
+| [**createFuturesTriggerOrder**](/docs/methods/createFuturesTriggerOrder.md) | Create a trigger (planned) futures order that executes once market conditions are met. |
+| [**cancelAllFutureesTriggerOrders**](/docs/methods/cancelAllFutureesTriggerOrders.md) | Cancel all open trigger (planned) futures orders. You can cancel all at once, or only for a specific symbol. |
+| [**cancelAllFuturesStopLimitOrders**](/docs/methods/cancelAllFuturesStopLimitOrders.md) | Cancel all stop-limit (stoporder) futures orders. |
 | [**getFuturesPositionMode**](/docs/methods/getFuturesPositionMode.md) | Get the current position mode for the account. |
 | [**getFuturesLeverage**](/docs/methods/getFuturesLeverage.md) | Get leverage and margin information for a specific futures contract. |
 | [**getFuturesRiskLimits**](/docs/methods/getFuturesRiskLimits.md) | Get risk limit tiers for a specific futures contract. |

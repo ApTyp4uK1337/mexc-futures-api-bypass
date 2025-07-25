@@ -14,7 +14,7 @@ Get leverage and margin information for a specific futures contract.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {
