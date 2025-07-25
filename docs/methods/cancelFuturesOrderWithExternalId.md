@@ -10,8 +10,8 @@ Cancel a futures order using an external order ID.
 
 | **Parameter**      | **Type**   | **Required** | **Description**                          |
 |-------------------|------------|--------------|------------------------------------------|
-| `symbol`          | `string`   | Yes          | Contract symbol (e.g. BTC_USDT).         |
-| `external_id`     | `string`   | Yes          | External order ID to cancel.             |
+| `symbol`          | `string`   | ✅          | Contract symbol (e.g. BTC_USDT).         |
+| `external_id`     | `string`   | ✅          | External order ID to cancel.             |
 
 ---
 

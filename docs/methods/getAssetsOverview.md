@@ -10,7 +10,7 @@ Get an overview of your asset balances.
 
 | **Parameter** | **Type**  | **Required** | **Description**                       | **Default** |
 |---------------|-----------|--------------|---------------------------------------|-------------|
-| `convert`     | `boolean` | No           | Return balances in converted format. | `false`     |
+| `convert`     | `boolean` | ❌           | Return balances in converted format. | `false`     |
 
 ---
 

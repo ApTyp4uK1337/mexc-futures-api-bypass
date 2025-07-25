@@ -10,7 +10,7 @@ Cancel all open trigger (planned) futures orders. You can cancel all at once, or
 
 | **Parameter** | **Type** | **Required** | **Description**                                                                 |
 |---------------|----------|--------------|---------------------------------------------------------------------------------|
-| `symbol`      | `string` | No           | Contract symbol (e.g. `BTC_USDT`). If provided, only cancel orders for this contract. If omitted, cancels **all** trigger orders. |
+| `symbol`      | `string` | ❌           | Contract symbol (e.g. `BTC_USDT`). If provided, only cancel orders for this contract. If omitted, cancels **all** trigger orders. |
 
 ---
 

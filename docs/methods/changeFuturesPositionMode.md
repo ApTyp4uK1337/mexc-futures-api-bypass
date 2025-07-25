@@ -13,7 +13,7 @@ Change the position mode for your futures account.
 
 | **Parameter**     | **Type**   | **Required** | **Description**                                                                 |
 |------------------|------------|--------------|---------------------------------------------------------------------------------|
-| `position_mode`   | `int`      | Yes          | `1` for Hedge Mode, `2` for One-way Mode                                        |
+| `position_mode`   | `int`      | ✅          | `1` for Hedge Mode, `2` for One-way Mode                                        |
 
 ---
 

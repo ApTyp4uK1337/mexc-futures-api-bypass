@@ -10,14 +10,14 @@ Get historical futures orders (filled, cancelled, etc.)
 
 | Parameter     | Type     | Required | Description                                                   | Default |
 |---------------|----------|----------|---------------------------------------------------------------|---------|
-| symbol        | string   | No       | Trading pair symbol (e.g. `BTC_USDT`)                         | All     |
-| states        | string   | No       | Filter by order state(s), comma-separated                     | All     |
-| category      | number   | No       | 1 = Limit, 2 = System takeover, 3 = Close, 4 = ADL            | -       |
-| side          | number   | No       | 1 = Open Long, 2 = Close Short, 3 = Open Short, 4 = Close Long| -       |
-| start_time    | number   | No       | Start timestamp (ms)                                          | -       |
-| end_time      | number   | No       | End timestamp (ms)                                            | -       |
-| page_num      | number   | No       | Page number                                                   | 1       |
-| page_size     | number   | No       | Number of records per page                                    | 20      |
+| symbol        | string   | ❌       | Trading pair symbol (e.g. `BTC_USDT`)                         | All     |
+| states        | string   | ❌       | Filter by order state(s), comma-separated                     | All     |
+| category      | number   | ❌       | 1 = Limit, 2 = System takeover, 3 = Close, 4 = ADL            | -       |
+| side          | number   | ❌       | 1 = Open Long, 2 = Close Short, 3 = Open Short, 4 = Close Long| -       |
+| start_time    | number   | ❌       | Start timestamp (ms)                                          | -       |
+| end_time      | number   | ❌       | End timestamp (ms)                                            | -       |
+| page_num      | number   | ❌       | Page number                                                   | 1       |
+| page_size     | number   | ❌       | Number of records per page                                    | 20      |
 
 ---
 

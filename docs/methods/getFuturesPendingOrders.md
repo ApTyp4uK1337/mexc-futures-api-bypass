@@ -10,9 +10,9 @@ Get a list of your open (pending) futures orders.
 
 | **Parameter**   | **Type**   | **Required** | **Description**                                 | **Default** |
 |------------------|------------|--------------|--------------------------------------------------|-------------|
-| `symbol`         | `string`   | No           | Trading pair symbol (e.g. `BTC_USDT`).           | *All*       |
-| `page_num`       | `number`   | No           | Page number for pagination.                      | `1`         |
-| `page_size`      | `number`   | No           | Number of records per page.                      | `20`        |
+| `symbol`         | `string`   | ❌           | Trading pair symbol (e.g. `BTC_USDT`).           | *All*       |
+| `page_num`       | `number`   | ❌           | Page number for pagination.                      | `1`         |
+| `page_size`      | `number`   | ❌           | Number of records per page.                      | `20`        |
 
 ---
 
