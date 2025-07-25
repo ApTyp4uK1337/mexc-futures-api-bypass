@@ -28,6 +28,8 @@ All requests must include the following headers:
 | [**getServerTime**](/docs/methods/getServerTime.md) | Get the server time. |
 | [**getCustomerInfo**](/docs/methods/getCustomerInfo.md) | Get brief information about the authenticated user. |
 | [**getUserInfo**](/docs/methods/getUserInfo.md) | Get brief information about the authenticated user. |
+| [**getReferralsList**](/docs/methods/getReferralsList.md) | Get referral invite list and their commission statistics. |
+| [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | Get an overview of your asset balances. |
 
 ---
 

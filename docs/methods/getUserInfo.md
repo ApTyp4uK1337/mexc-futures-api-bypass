@@ -1,4 +1,4 @@
-# `getUserInfo`
+# getUserInfo
 
 Get brief information about the authenticated user.
 
