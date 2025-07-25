@@ -31,6 +31,8 @@ All requests must include the following headers:
 | [**getReferralsList**](/docs/methods/getReferralsList.md) | Get referral invite list and their commission statistics. |
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | Get an overview of your asset balances. |
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Get detailed balance data for your futures account. |
+| [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Get the list of asset transfer records on your futures account. |
+| [**getFuturesPendingOrders**](/docs/methods/getFuturesPendingOrders.md) | Get a list of your open (pending) futures orders. |
 
 ---
 
