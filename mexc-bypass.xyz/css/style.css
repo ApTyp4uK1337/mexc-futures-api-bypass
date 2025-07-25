@@ -980,6 +980,17 @@ input:checked+.slider:before {
   flex: 1;
 }
 
+.simple-methods-link {
+  text-align: center;
+  margin: var(--space-xl) 0;
+}
+
+.simple-methods-link .btn {
+  width: auto;
+  display: inline-flex;
+  padding: var(--space-sm) var(--space-lg);
+}
+
 /* Адаптивность */
 @media (max-width: 768px) {
   .container {
