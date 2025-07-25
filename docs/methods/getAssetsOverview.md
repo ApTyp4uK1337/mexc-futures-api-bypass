@@ -1,4 +1,4 @@
-# `getAssetsOverview`
+# getAssetsOverview
 
 Get an overview of your asset balances.
 
