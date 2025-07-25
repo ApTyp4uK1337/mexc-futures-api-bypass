@@ -396,6 +396,117 @@
       </section>
     </main>
 
+    <section class="card pricing-section">
+      <div class="card-header">
+        <h2><i class="ti ti-currency-dollar"></i> Pricing Options</h2>
+        <p class="card-subtitle">Choose the best option for your trading needs</p>
+      </div>
+      <div class="card-body">
+        <div class="pricing-grid">
+          <!-- Subscription Option -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3>API Subscription</h3>
+              <div class="pricing-price">
+                <span class="price">$30</span>
+                <span class="period">/ 30 days</span>
+              </div>
+              <div class="pricing-badge pricing-badge-hot">
+                <span>🔥 <s>$45</s> <span class="new-price">$30</span> / 30 days</span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="ti ti-check"></i> Full API access</li>
+              <li><i class="ti ti-check"></i> Regular updates</li>
+              <li><i class="ti ti-check"></i> Priority support</li>
+              <li><i class="ti ti-check"></i> Multi-account support</li>
+              <li><i class="ti ti-check"></i> Proxy integration</li>
+            </ul>
+            <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20API%20Subscription"
+              class="btn btn-subscription"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="ti ti-shopping-cart"></i> Get Subscription
+            </a>
+          </div>
+
+          <!-- Source Code Option -->
+          <div class="pricing-card pricing-card-featured">
+            <div class="pricing-badge pricing-badge-popular">
+              <span>Most Popular</span>
+            </div>
+            <div class="pricing-header">
+              <h3>Source Code</h3>
+              <div class="pricing-price">
+                <span class="price">$125</span>
+                <span class="period">one-time</span>
+              </div>
+              <div class="pricing-badge pricing-badge-hot">
+                <span>🔥 <s>$175</s> <span class="new-price">$125</span></span>
+              </div>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="ti ti-check"></i> Full source code</li>
+              <li><i class="ti ti-check"></i> Lifetime access</li>
+              <li><i class="ti ti-check"></i> Free updates</li>
+              <li><i class="ti ti-check"></i> Full customization</li>
+              <li><i class="ti ti-check"></i> Commercial use</li>
+            </ul>
+            <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20Source%20Code%20purchase"
+              class="btn btn-source-code"
+              target="_blank"
+              rel="noopener noreferrer">
+              <span class="btn-text"><i class="ti ti-shopping-cart"></i> Buy Source Code</span>
+              <span class="btn-hover-text">Get Full Access</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pricing-features-grid">
+          <div class="feature-item">
+            <i class="ti ti-bolt"></i>
+            <h4>Blazing Fast</h4>
+            <p>High-speed order execution with minimal latency</p>
+          </div>
+          <div class="feature-item">
+            <i class="ti ti-shield-lock"></i>
+            <h4>Direct Access</h4>
+            <p>No third-party requests - direct to MEXC</p>
+          </div>
+          <div class="feature-item">
+            <i class="ti ti-world"></i>
+            <h4>Network Support</h4>
+            <p>Works on both mainnet & testnet</p>
+          </div>
+          <div class="feature-item">
+            <i class="ti ti-users"></i>
+            <h4>Multi-Account</h4>
+            <p>Support for multiple accounts with proxy integration</p>
+          </div>
+          <div class="feature-item">
+            <i class="ti ti-code"></i>
+            <h4>Language Support</h4>
+            <p>Compatible with any programming language</p>
+          </div>
+          <div class="feature-item">
+            <i class="ti ti-git-fork"></i>
+            <h4>Ready Libraries</h4>
+            <p>Simple PHP, Python & Node.js libraries included</p>
+          </div>
+        </div>
+
+        <div class="pricing-disclaimer">
+          <div class="disclaimer-content">
+            <i class="ti ti-alert-triangle"></i>
+            <div>
+              <p><strong>Important:</strong> This is not an official MEXC method and I am not affiliated with MEXC.</p>
+              <p>Payment methods: USDT, BTC, ETH, BNB, and other cryptocurrencies</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="cta-section">
       <div class="cta-container">
         <h2 class="cta-title"><i class="ti ti-rocket"></i> Ready to unlock full access?</h2>
