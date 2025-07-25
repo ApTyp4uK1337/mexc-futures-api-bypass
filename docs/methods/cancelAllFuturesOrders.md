@@ -10,7 +10,7 @@ Cancel all open futures orders for a given symbol.
 
 | **Parameter** | **Type**   | **Required** | **Description**                                 |
 |---------------|------------|--------------|-------------------------------------------------|
-| `symbol`      | `string`   | No           | Contract symbol (e.g., `ETH_USDT`). Optional.   |
+| `symbol`      | `string`   | ❌           | Contract symbol (e.g., `ETH_USDT`). Optional.   |
 
 ---
 

@@ -10,10 +10,10 @@ Get referral invite list and their commission statistics.
 
 | **Parameter**     | **Type**   | **Required** | **Description**                                | **Default**                                  |
 |------------------|------------|--------------|------------------------------------------------|----------------------------------------------|
-| `start_time`     | `number`   | No           | Start of the time range (timestamp in ms).     | Monday of the current week (00:00:00)        |
-| `end_time`       | `number`   | No           | End of the time range (timestamp in ms).       | Sunday of the current week (23:59:59)    |
-| `page_num`       | `number`   | No           | Page number for pagination.                    | 1                                            |
-| `page_size`      | `number`   | No           | Number of results per page.                    | 10                                           |
+| `start_time`     | `number`   | ❌           | Start of the time range (timestamp in ms).     | Monday of the current week (00:00:00)        |
+| `end_time`       | `number`   | ❌           | End of the time range (timestamp in ms).       | Sunday of the current week (23:59:59)    |
+| `page_num`       | `number`   | ❌           | Page number for pagination.                    | 1                                            |
+| `page_size`      | `number`   | ❌           | Number of results per page.                    | 10                                           |
 
 ---
 

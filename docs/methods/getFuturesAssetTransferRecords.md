@@ -10,11 +10,11 @@ Get the list of asset transfer records on your futures account.
 
 | **Parameter**  | **Type**   | **Required** | **Description**                                                                 | **Default** |
 |----------------|------------|--------------|---------------------------------------------------------------------------------|-------------|
-| `currency`     | `string`   | No           | Filter by specific currency (e.g., `USDT`).                                     | *All*       |
-| `state`        | `string`   | No           | Transfer state: `PENDING`, `SUCCESS`, `FAILED`.                                 | *All*       |
-| `type`         | `string`   | No           | Direction of transfer: `IN` (into futures), `OUT` (from futures).               | *All*       |
-| `page_num`     | `number`   | No           | Page number for pagination.                                                     | `1`         |
-| `page_size`    | `number`   | No           | Number of records per page.                                                     | `20`        |
+| `currency`     | `string`   | ❌           | Filter by specific currency (e.g., `USDT`).                                     | *All*       |
+| `state`        | `string`   | ❌           | Transfer state: `PENDING`, `SUCCESS`, `FAILED`.                                 | *All*       |
+| `type`         | `string`   | ❌           | Direction of transfer: `IN` (into futures), `OUT` (from futures).               | *All*       |
+| `page_num`     | `number`   | ❌           | Page number for pagination.                                                     | `1`         |
+| `page_size`    | `number`   | ❌           | Number of records per page.                                                     | `20`        |
 
 ---
 

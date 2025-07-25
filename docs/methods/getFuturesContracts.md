@@ -10,7 +10,7 @@ Get details of one or all futures contracts.
 
 | **Parameter** | **Type** | **Required** | **Description**                                     | **Default** |
 |---------------|----------|--------------|-----------------------------------------------------|-------------|
-| `symbol`      | `string` | No           | Trading pair symbol (e.g., `BTC_USDT`). If omitted, returns all contracts. | `null`      |
+| `symbol`      | `string` | ❌           | Trading pair symbol (e.g., `BTC_USDT`). If omitted, returns all contracts. | `null`      |
 
 ---
 

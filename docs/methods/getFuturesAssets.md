@@ -10,7 +10,7 @@ Get detailed balance data for your futures account.
 
 | **Parameter** | **Type**  | **Required** | **Description**                                  | **Default** |
 |---------------|-----------|--------------|--------------------------------------------------|-------------|
-| `currency`    | `string`  | No           | Filter by specific asset symbol (e.g., `USDT`). | *All assets* |
+| `currency`    | `string`  | ❌           | Filter by specific asset symbol (e.g., `USDT`). | *All assets* |
 
 ---
 

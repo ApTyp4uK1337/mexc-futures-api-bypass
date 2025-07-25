@@ -10,7 +10,7 @@ Get the latest market ticker for a futures contract.
 
 | **Parameter** | **Type**   | **Required** | **Description**                                 |
 |---------------|------------|--------------|-------------------------------------------------|
-| `symbol`      | `string`   | No           | Contract symbol (e.g., `BTC_USDT`). Optional.   |
+| `symbol`      | `string`   | ❌           | Contract symbol (e.g., `BTC_USDT`). Optional.   |
 
 ---
 

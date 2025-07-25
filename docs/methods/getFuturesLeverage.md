@@ -10,7 +10,7 @@ Get leverage and margin information for a specific futures contract.
 
 | **Parameter** | **Type** | **Required** | **Description**                      |
 |---------------|----------|--------------|--------------------------------------|
-| `symbol`      | `string` | Yes          | Trading pair symbol (e.g., `BTC_USDT`) |
+| `symbol`      | `string` | ✅          | Trading pair symbol (e.g., `BTC_USDT`) |
 
 ---
 

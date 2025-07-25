@@ -11,8 +11,8 @@ You can cancel by `symbol`, by `positionId`, or **all at once**.
 
 | **Parameter**  | **Type** | **Required** | **Description**                                                                 |
 |----------------|----------|--------------|---------------------------------------------------------------------------------|
-| `positionId`   | `long`   | No           | If provided, cancels only stop-limit orders tied to this position. Requires `symbol` to also be provided. |
-| `symbol`       | `string` | No           | The contract symbol (e.g. `BTC_USDT`). Cancels only orders for this symbol if filled. If omitted, cancels all. |
+| `positionId`   | `long`   | ❌           | If provided, cancels only stop-limit orders tied to this position. Requires `symbol` to also be provided. |
+| `symbol`       | `string` | ❌           | The contract symbol (e.g. `BTC_USDT`). Cancels only orders for this symbol if filled. If omitted, cancels all. |
 
 ---
 

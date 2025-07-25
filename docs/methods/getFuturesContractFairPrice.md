@@ -10,7 +10,7 @@ Fetch the fair price of a specific futures contract.
 
 | **Parameter**   | **Type**   | **Required** | **Description**                  |
 |----------------|------------|--------------|----------------------------------|
-| `symbol`       | `string`   | Yes          | Contract symbol (e.g. BTC_USDT) |
+| `symbol`       | `string`   | ✅          | Contract symbol (e.g. BTC_USDT) |
 
 ---
 

@@ -10,9 +10,9 @@ Change the margin amount of an open futures position.
 
 | **Parameter**    | **Type**   | **Required** | **Description**                                                                 |
 |------------------|------------|--------------|---------------------------------------------------------------------------------|
-| `position_id`    | `long`     | Yes          | The ID of the position you want to adjust.                                      |
-| `amount`         | `decimal`  | Yes          | The amount of margin to add or remove.                                          |
-| `type`           | `int`      | Yes          | type: `ADD` - increase; `SUB` - decrease                                            |
+| `position_id`    | `long`     | ✅          | The ID of the position you want to adjust.                                      |
+| `amount`         | `decimal`  | ✅          | The amount of margin to add or remove.                                          |
+| `type`           | `int`      | ✅          | type: `ADD` - increase; `SUB` - decrease                                            |
 
 ---
 

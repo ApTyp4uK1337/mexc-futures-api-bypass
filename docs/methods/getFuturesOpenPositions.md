@@ -10,7 +10,7 @@ Get currently open futures positions.
 
 | **Parameter** | **Type**   | **Required** | **Description**                        |
 |---------------|------------|--------------|----------------------------------------|
-| `symbol`      | `string`   | No           | Contract symbol (e.g., `BTC_USDT`). If omitted, returns all open positions. |
+| `symbol`      | `string`   | ❌           | Contract symbol (e.g., `BTC_USDT`). If omitted, returns all open positions. |
 
 ---
 

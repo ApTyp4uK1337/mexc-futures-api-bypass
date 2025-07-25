@@ -10,7 +10,7 @@ Get risk limit tiers for a specific futures contract.
 
 | **Parameter** | **Type**   | **Required** | **Description**                                     |
 |---------------|------------|--------------|-----------------------------------------------------|
-| `symbol`      | `string`   | No           | Contract symbol (e.g., `BTC_USDT`). Optional.       |
+| `symbol`      | `string`   | ❌           | Contract symbol (e.g., `BTC_USDT`). Optional.       |
 
 ---
 

@@ -10,10 +10,10 @@ Retrieve the historical closed positions for a specific contract.
 
 | **Parameter** | **Type**   | **Required** | **Description**                                           | **Default** |
 |---------------|------------|--------------|-----------------------------------------------------------|-------------|
-| `symbol`      | `string`   | No           | Contract symbol (e.g., `BTC_USDT`).                       | —           |
-| `type`        | `number`   | No           | Position type filter: `1` long, `2` short.                | —           |
-| `page_num`    | `number`   | No           | Page number for pagination.                               | `1`         |
-| `page_size`   | `number`   | No           | Number of results per page.                               | `20`        |
+| `symbol`      | `string`   | ❌           | Contract symbol (e.g., `BTC_USDT`).                       | —           |
+| `type`        | `number`   | ❌           | Position type filter: `1` long, `2` short.                | —           |
+| `page_num`    | `number`   | ❌           | Page number for pagination.                               | `1`         |
+| `page_size`   | `number`   | ❌           | Number of results per page.                               | `20`        |
 
 ---
 
