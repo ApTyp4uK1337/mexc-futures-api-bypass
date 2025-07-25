@@ -18,31 +18,7 @@ Change the leverage of a position. If the position does not exist yet, additiona
 
 ---
 
-### 📌 Example requests
-
-- **Existing position:**
-
-```json
-{
-  "positionId": 87192342,
-  "leverage": 20
-}
-```
-
-- **No existing position:**
-
-```json
-{
-  "openType": 1,
-  "leverage": 20,
-  "symbol": "BTC_USDT",
-  "positionType": 1
-}
-```
-
----
-
-###### Response (example)
+###### Response
 
 ```json
 {

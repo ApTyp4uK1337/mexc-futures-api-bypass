@@ -14,7 +14,7 @@ Get the latest market ticker for a futures contract.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {

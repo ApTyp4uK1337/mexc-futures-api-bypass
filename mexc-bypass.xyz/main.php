@@ -509,7 +509,7 @@
             <i class="ti ti-alert-triangle"></i>
             <div>
               <p><strong>Important:</strong> This is not an official MEXC method and I am not affiliated with MEXC.</p>
-              <p>Payment methods: USDT, BTC, ETH, BNB, and other cryptocurrencies</p>
+              <p>Payment methods: <b>USDT</b>, <b>BTC</b>, <b>ETH</b>, <b>TON</b>, <b>BNB</b></p>
             </div>
           </div>
         </div>

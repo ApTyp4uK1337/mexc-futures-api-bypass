@@ -12,7 +12,7 @@ This endpoint does **not** accept any parameters.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {

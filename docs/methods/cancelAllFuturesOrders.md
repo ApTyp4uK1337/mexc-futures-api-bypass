@@ -14,7 +14,7 @@ Cancel all open futures orders for a given symbol.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {

@@ -14,7 +14,7 @@ Get currently open futures positions.
 
 ---
 
-###### Response (example)
+###### Response
 
 ```json
 {
