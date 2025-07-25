@@ -32,7 +32,10 @@ All requests must include the following headers:
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | Get an overview of your asset balances. |
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Get detailed balance data for your futures account. |
 | [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Get the list of asset transfer records on your futures account. |
+| [**getFuturesContract**](/docs/methods/getFuturesContract.md) | Get details of one or all futures contracts. |
 | [**getFuturesPendingOrders**](/docs/methods/getFuturesPendingOrders.md) | Get a list of your open (pending) futures orders. |
+| [**getFuturesOrdersHistory**](/docs/methods/getFuturesOrdersHistory.md) | Get historical futures orders (filled, cancelled, etc.) |
+| [**getFuturesLeverage**](/docs/methods/getFuturesLeverage.md) | Get leverage and margin information for a specific futures contract. |
 
 ---
 

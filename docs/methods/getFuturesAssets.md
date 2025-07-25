@@ -1,4 +1,4 @@
-# `getFuturesAssets`
+# getFuturesAssets
 
 Get detailed balance data for your futures account.
 

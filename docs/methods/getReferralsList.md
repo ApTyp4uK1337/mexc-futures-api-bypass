@@ -12,7 +12,7 @@ Get referral invite list and their commission statistics.
 |------------------|------------|--------------|------------------------------------------------|----------------------------------------------|
 | `start_time`     | `number`   | No           | Start of the time range (timestamp in ms).     | Monday of the current week (00:00:00)        |
 | `end_time`       | `number`   | No           | End of the time range (timestamp in ms).       | Sunday of the current week (23:59:59)    |
-| `page`           | `number`   | No           | Page number for pagination.                    | 1                                            |
+| `page_num`       | `number`   | No           | Page number for pagination.                    | 1                                            |
 | `page_size`      | `number`   | No           | Number of results per page.                    | 10                                           |
 
 ---
