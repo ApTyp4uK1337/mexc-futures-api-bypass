@@ -35,6 +35,8 @@ All requests must include the following headers:
 | [**getFuturesContract**](/docs/methods/getFuturesContract.md) | Get details of one or all futures contracts. |
 | [**getFuturesPendingOrders**](/docs/methods/getFuturesPendingOrders.md) | Get a list of your open (pending) futures orders. |
 | [**getFuturesOrdersHistory**](/docs/methods/getFuturesOrdersHistory.md) | Get historical futures orders (filled, cancelled, etc.) |
+| [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Create a new futures order. |
+| [**getFuturesPositionMode**](/docs/methods/getFuturesPositionMode.md) | Get leverage and margin information for a specific futures contract. |
 | [**getFuturesLeverage**](/docs/methods/getFuturesLeverage.md) | Get leverage and margin information for a specific futures contract. |
 
 ---

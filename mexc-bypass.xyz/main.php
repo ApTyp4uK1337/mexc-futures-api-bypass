@@ -495,6 +495,15 @@
           </div>
         </div>
 
+        <div class="simple-methods-link">
+          <a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/tree/main/docs#-available-methods"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-secondary">
+            <i class="ti ti-code"></i> View All API Methods on GitHub
+          </a>
+        </div>
+
         <div class="pricing-disclaimer">
           <div class="disclaimer-content">
             <i class="ti ti-alert-triangle"></i>
