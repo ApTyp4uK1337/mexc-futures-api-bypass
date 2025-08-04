@@ -9,7 +9,7 @@ Create a new futures order.
 ## 📥 Request parameters
 
 | **Parameter**       **Type**    | **Required** | **Description**                                                                 |
-|----------------------------|--------------------------|-------------|--------------|---------------------------------------------------------------------------------|
+|-----------------------------------|-------------|--------------|---------------------------------------------------------------------------------|
 | `symbol`                      | `string`    | ✅          | Name of the contract (e.g., `BTC_USDT`).                                       |
 | `price`                         | `decimal`   | ✅          | Order price.                                                                   |
 | `type`                        | `int`       | ✅          | Order type:<br>1 = Limit<br>2 = Post Only<br>3 = Fill or Kill<br>4 = All or None<br>5 = Market<br>6 = Market to Current |
