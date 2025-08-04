@@ -5,7 +5,7 @@ This project provides a wrapper around the MEXC Futures API with support for pro
 ## 🌐 Base URL
 
 ```
-https://api.mexc-bypass.xyz
+https://api.mexc-bypass.xyz/v1
 ```
 
 ## 📌 Headers
@@ -65,8 +65,9 @@ All requests must include the following headers:
 ## 📦 Quick Example (with cURL)
 
 ```bash
-curl -X GET 'https://api.mexc-bypass.xyz/getServerTime' \
+curl -X GET 'https://api.mexc-bypass.xyz/v1/getServerTime' \
   -H 'X-MEXC-BYPASS-API-KEY: <your-api-key>' \
+  -H 'X-MEXC-WEB-KEY: <your-mexc-web-key>' \
   -H 'X-MEXC-NETWORK: TESTNET'
 ```
 
@@ -78,4 +79,4 @@ curl -X GET 'https://api.mexc-bypass.xyz/getServerTime' \
 X-MEXC-PROXY: socks5://user:pass@127.0.0.1:9050
 ```
 
-This allows you to tunnel traffic through your own proxy or TOR node for added security.
+This allows you to tunnel traffic through your own proxy.
