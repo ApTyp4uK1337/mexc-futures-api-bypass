@@ -8,7 +8,7 @@ Create a new futures order.
 
 ## 📥 Request parameters
 
-| **Parameter**       **Type**    | **Required** | **Description**                                                                 |
+| **Parameter**   |    **Type**    | **Required** | **Description**                                                                 |
 |-----------------------------------|-------------|--------------|---------------------------------------------------------------------------------|
 | `symbol`                      | `string`    | ✅          | Name of the contract (e.g., `BTC_USDT`).                                       |
 | `price`                         | `decimal`   | ✅          | Order price.                                                                   |
