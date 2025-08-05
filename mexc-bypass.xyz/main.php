@@ -156,8 +156,8 @@
               <select class="form-control" id="side" name="side">
                 <option value="1">Open Long</option>
                 <option value="4">Close Long</option>
-                <option value="2">Open Short</option>
-                <option value="3">Close Short</option>
+                <option value="3">Open Short</option>
+                <option value="2">Close Short</option>
               </select>
             </div>
 
