@@ -80,3 +80,28 @@ X-MEXC-PROXY: socks5://user:pass@127.0.0.1:9050
 ```
 
 This allows you to tunnel traffic through your own proxy.
+
+
+---
+
+## 📚 Documentation & Guides
+
+Expand your knowledge and integrate faster with these helpful articles:
+
+| Title | Description |
+|-------|-------------|
+| [🔢 Volume Calculation Guide](./docs/volume_calculation.md) | Learn how to calculate the correct `vol` value when placing futures orders using MEXC Bypass API. |
+| [🛡️ What is Risk Control?](./docs/risk_control_en.md) | Understand how MEXC’s internal risk control systems might affect your orders and how to handle it. |
+
+---
+
+## 📥 Postman Collection
+
+Want to test the API easily?
+
+- **Download collection:** [postman_collection.json](/docs/assets/postman_collection.json)
+- **Importing into Postman:**
+  1. Open Postman
+  2. Click **Import**
+  3. Choose **Link** or **Upload File**
+  4. Paste the link above or select the file

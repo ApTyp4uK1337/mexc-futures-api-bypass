@@ -8,9 +8,9 @@
 </div>
 
 <div align="center">
-  <img src="https://img.shields.io/badge/php-%23777BB4.svg?&logo=php&logoColor=white" alt="PHP">
-  <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" alt="Node.js">
+  <a href="/packages/php"><img src="https://img.shields.io/badge/php-%23777BB4.svg?&logo=php&logoColor=white" alt="PHP"></a>
+  <a href="/packages/python"><img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white" alt="Python"></a>
+  <a href="/packages/nodejs"><img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" alt="Node.js"></a>
 </div>
 
 # 🔷 MEXC Futures API Bypass

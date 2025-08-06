@@ -1,0 +1,2194 @@
+{
+	"info": {
+		"_postman_id": "b456bbee-f603-45b2-845e-b274504ca009",
+		"name": "api.mexc-bypass.xyz",
+		"description": "GitHub: https://github.com/ApTyp4uK1337/mexc-futures-api-bypass",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8565399",
+		"_collection_link": "https://grey-sunset-312375.postman.co/workspace/kood~1545d60d-5d20-4275-b5fb-c107a0286f38/collection/8565399-b456bbee-f603-45b2-845e-b274504ca009?action=share&source=collection_link&creator=8565399"
+	},
+	"item": [
+		{
+			"name": "getServerTime",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'data', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Success field is a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Code field is an integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.code).to.be.a('number').and.to.be.integer;",
+							"});",
+							"",
+							"",
+							"pm.test(\"The is_testnet field must be a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.is_testnet).to.exist.and.to.be.a('boolean');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getServerTime",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getServerTime"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getReferralsList",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the structure of the data object\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.exist.and.to.be.an('object');",
+							"    ",
+							"    pm.expect(responseData.data).to.have.all.keys('total', 'invites');",
+							"    pm.expect(responseData.data.total).to.be.a('number');",
+							"    ",
+							"    pm.expect(responseData.data.invites).to.be.an('array');",
+							"    responseData.data.invites.forEach(function(invite) {",
+							"        pm.expect(invite).to.be.an('object');",
+							"        pm.expect(invite).to.have.all.keys('memberId', 'account', 'regTime', 'totalCommission', 'exchange', 'contract', 'dex', 'margin', 'uid');",
+							"        pm.expect(invite.account).to.be.a('string');",
+							"        pm.expect(invite.regTime).to.be.a('number');",
+							"        pm.expect(invite.totalCommission).to.be.a('string');",
+							"        pm.expect(invite.exchange).to.be.a('string');",
+							"        pm.expect(invite.contract).to.be.a('string');",
+							"        pm.expect(invite.dex).to.be.a('string');",
+							"        pm.expect(invite.margin).to.satisfy(value => value === null || typeof value === 'number');",
+							"        pm.expect(invite.uid).to.be.a('string');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Total is a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data.total).to.be.a('number').and.to.be.at.least(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The invites array should be present in the response\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.have.property('invites').that.is.an('array');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Each invite object has non-empty account and valid regTime format\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.have.property('invites').that.is.an('array');",
+							"",
+							"    responseData.data.invites.forEach(invite => {",
+							"        pm.expect(invite.account).to.exist.and.to.have.lengthOf.at.least(1, \"Account should not be empty\");",
+							"        pm.expect(invite.regTime).to.be.a('number').and.to.be.greaterThan(0, \"regTime should be a valid positive number\");",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getReferralsList",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getReferralsList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAssetsOverview",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('data', 'code', 'msg', 'timestamp', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate that the 'data' object contains the expected fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.exist.and.to.be.an('object');",
+							"    pm.expect(responseData.data).to.have.all.keys('total', 'spot', 'otc', 'contract', 'strategy', 'robot', 'alpha');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Code is a number and equals 0\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.code).to.be.a('number').and.to.equal(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate that 'is_testnet' is a boolean value\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.is_testnet).to.be.a('boolean');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getAssetsOverview",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getAssetsOverview"
+					],
+					"query": [
+						{
+							"key": "convert",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesAssets",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'data', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate that numerical values in the data object are non-negative\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('object').that.has.property('data').that.is.an('object');",
+							"    ",
+							"    const numericalFields = [",
+							"        'positionMargin', ",
+							"        'availableBalance', ",
+							"        'cashBalance', ",
+							"        'frozenBalance', ",
+							"        'equity', ",
+							"        'unrealized', ",
+							"        'bonus', ",
+							"        'availableCash', ",
+							"        'availableOpen'",
+							"    ];",
+							"",
+							"    numericalFields.forEach(field => {",
+							"        pm.expect(responseData.data[field]).to.be.a('number').that.is.at.least(0, `${field} should be non-negative`);",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"The success field must be of boolean type\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"The is_testnet field must be of boolean type\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.is_testnet).to.be.a('boolean');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesAssets?currency=USDT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesAssets"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomerInfo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'data', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Success field is of boolean type\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"The code field must be a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.have.property('code').that.is.a('number').and.is.at.least(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The data object contains memberId, digitalId, and customerServiceToken as non-empty strings\", function () {",
+							"    const responseData = pm.response.json();",
+							"",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.exist.and.to.be.an('object');",
+							"",
+							"    const dataProperties = ['memberId', 'digitalId', 'customerServiceToken'];",
+							"    ",
+							"    dataProperties.forEach(function(prop) {",
+							"        pm.expect(responseData.data[prop]).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, `${prop} should not be empty`);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getCustomerInfo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getCustomerInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserInfo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The success field should be true\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('success', true);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The data object contains the required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.be.an('object').that.includes.all.keys(",
+							"        'memberId', 'userToken', 'digitalId', 'status', 'mobile', ",
+							"        'email', 'authLevel', 'secondAuthType', 'account', ",
+							"        'lastLoginIp', 'lastLoginTime', 'kycStatus', 'country', ",
+							"        'inviteCode', 'kycInfo', 'institutionInfo', ",
+							"        'userVipLevel', 'kycMode', 'isAgent', 'registerTime', ",
+							"        'pageLanguage', 'customerServiceToken', 'notSetPassword', ",
+							"        'dexOpened'",
+							"    );",
+							"    ",
+							"    pm.expect(responseData.data.kycInfo).to.be.an('object').that.includes.all.keys(",
+							"        'junior', 'senior', 'level1', 'level2', 'level3', 'maxAuthTimes'",
+							"    );",
+							"",
+							"    pm.expect(responseData.data.kycInfo.junior).to.be.an('object').that.includes.all.keys(",
+							"        'country', 'countryCode', 'authName', 'authRealName', ",
+							"        'firstName', 'lastName', 'cardNo', 'cardType', ",
+							"        'status', 'note', 'passTime', 'dateOfBirth', ",
+							"        'realDateOfBirth'",
+							"    );",
+							"",
+							"    pm.expect(responseData.data.kycInfo.senior).to.be.an('object').that.includes.all.keys(",
+							"        'country', 'countryCode', 'authName', 'authRealName', ",
+							"        'firstName', 'lastName', 'cardNo', 'cardType', ",
+							"        'status', 'note', 'passTime', 'dateOfBirth', ",
+							"        'realDateOfBirth'",
+							"    );",
+							"",
+							"    pm.expect(responseData.data.institutionInfo).to.be.an('object').that.includes.all.keys('level');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Email must be in a valid format\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.have.property('email');",
+							"    pm.expect(responseData.data.email).to.match(/^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/, \"Email format is invalid\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"KYC Info Contains Junior and Senior Objects with Expected Properties\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data.kycInfo).to.exist.and.to.be.an('object');",
+							"    ",
+							"    const kycInfo = responseData.data.kycInfo;",
+							"    ",
+							"    pm.expect(kycInfo.junior).to.exist.and.to.be.an('object');",
+							"    pm.expect(kycInfo.senior).to.exist.and.to.be.an('object');",
+							"    ",
+							"    const juniorProperties = ['country', 'countryCode', 'authName', 'authRealName', 'firstName', 'lastName', 'cardNo', 'cardType', 'status', 'note', 'passTime', 'dateOfBirth', 'realDateOfBirth'];",
+							"    const seniorProperties = ['country', 'countryCode', 'authName', 'authRealName', 'firstName', 'lastName', 'cardNo', 'cardType', 'status', 'note', 'passTime', 'dateOfBirth', 'realDateOfBirth'];",
+							"    ",
+							"    juniorProperties.forEach(property => {",
+							"        pm.expect(kycInfo.junior).to.have.property(property);",
+							"    });",
+							"    ",
+							"    seniorProperties.forEach(property => {",
+							"        pm.expect(kycInfo.senior).to.have.property(property);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getUserInfo",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getUserInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesAssetTransferRecords",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Validate the structure of the data object\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.exist.and.to.be.an('object');",
+							"    ",
+							"    pm.expect(responseData.data).to.have.all.keys('pageSize', 'totalCount', 'totalPage', 'currentPage', 'resultList');",
+							"    pm.expect(responseData.data.pageSize).to.be.a('number');",
+							"    pm.expect(responseData.data.totalCount).to.be.a('number');",
+							"    pm.expect(responseData.data.totalPage).to.be.a('number');",
+							"    pm.expect(responseData.data.currentPage).to.be.a('number');",
+							"    ",
+							"    pm.expect(responseData.data.resultList).to.be.an('array');",
+							"    responseData.data.resultList.forEach(item => {",
+							"        pm.expect(item).to.be.an('object');",
+							"        pm.expect(item).to.have.all.keys('id', 'txid', 'currency', 'amount', 'type', 'state', 'createTime', 'updateTime');",
+							"        pm.expect(item.id).to.be.a('number');",
+							"        pm.expect(item.txid).to.be.a('string');",
+							"        pm.expect(item.currency).to.be.a('string');",
+							"        pm.expect(item.amount).to.be.a('number');",
+							"        pm.expect(item.type).to.be.a('string');",
+							"        pm.expect(item.state).to.be.a('string');",
+							"        pm.expect(item.createTime).to.be.a('number');",
+							"        pm.expect(item.updateTime).to.be.a('number');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"ResultList is an array and contains expected fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data.resultList).to.be.an('array');",
+							"",
+							"    responseData.data.resultList.forEach(function(item) {",
+							"        pm.expect(item).to.be.an('object');",
+							"        pm.expect(item).to.have.all.keys('id', 'txid', 'currency', 'amount', 'type', 'state', 'createTime', 'updateTime');",
+							"        pm.expect(item.id).to.be.a('number');",
+							"        pm.expect(item.txid).to.be.a('string');",
+							"        pm.expect(item.currency).to.be.a('string');",
+							"        pm.expect(item.amount).to.be.a('number');",
+							"        pm.expect(item.type).to.be.a('string');",
+							"        pm.expect(item.state).to.be.a('string');",
+							"        pm.expect(item.createTime).to.be.a('number');",
+							"        pm.expect(item.updateTime).to.be.a('number');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Amount is a non-negative number\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    ",
+							"    responseData.data.resultList.forEach(function(record) {",
+							"        pm.expect(record.amount).to.be.a('number').and.to.be.at.least(0, \"Amount should be non-negative\");",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"createTime and updateTime are valid timestamps\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    ",
+							"    responseData.data.resultList.forEach(record => {",
+							"        pm.expect(record.createTime).to.be.a('number').that.is.above(0, \"createTime should be a valid timestamp\");",
+							"        pm.expect(record.updateTime).to.be.a('number').that.is.above(0, \"updateTime should be a valid timestamp\");",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesAssetTransferRecords",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesAssetTransferRecords"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesPendingOrders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains a success field that is true\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.property('success', true);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains a code field with a value of 0\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.have.property('code', 0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields: data and is_testnet\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object').that.includes.all.keys('data', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Data should be an array and empty as expected\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.be.an('array').that.is.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesPendingOrders",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesPendingOrders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesOrdersHistory",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains a success flag set to true\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('success', true);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response structure and data array validation\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'data', 'is_testnet');",
+							"    ",
+							"    pm.expect(responseData.data).to.be.an('array').that.is.not.empty;",
+							"",
+							"    responseData.data.forEach(order => {",
+							"        pm.expect(order).to.be.an('object');",
+							"        pm.expect(order).to.have.all.keys('orderId', 'symbol', 'positionId', 'price', 'priceStr', 'vol', 'leverage', 'side', 'category', 'orderType', 'dealAvgPrice', 'dealAvgPriceStr', 'dealVol', 'orderMargin', 'takerFee', 'makerFee', 'profit', 'feeCurrency', 'openType', 'state', 'externalOid', 'errorCode', 'usedMargin', 'createTime', 'updateTime', 'positionMode', 'version', 'showCancelReason', 'showProfitRateShare', 'pnlRate', 'openAvgPrice', 'bboTypeNum', 'totalFee', 'zeroSaveTotalFeeBinance', 'zeroTradeTotalFeeBinance');",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"The orderId must be a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.be.an('array').that.is.not.empty;",
+							"    ",
+							"    responseData.data.forEach(order => {",
+							"        pm.expect(order.orderId).to.exist.and.to.be.a('string').and.to.have.lengthOf.at.least(1, \"orderId should not be empty\");",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Verify numeric fields are non-negative integers\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.exist;",
+							"    pm.expect(responseData.data).to.be.an('array');",
+							"",
+							"    responseData.data.forEach(order => {",
+							"        pm.expect(order.price).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.vol).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.leverage).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.orderId).to.exist;",
+							"        pm.expect(order.positionId).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.category).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.orderType).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.state).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.externalOid).to.exist;",
+							"        pm.expect(order.errorCode).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.positionMode).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.version).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.showCancelReason).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.showProfitRateShare).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.pnlRate).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.openAvgPrice).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.bboTypeNum).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.totalFee).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.zeroSaveTotalFeeBinance).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"        pm.expect(order.zeroTradeTotalFeeBinance).to.be.a('number').and.to.be.at.least(0).and.to.satisfy(Number.isInteger);",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesOrdersHistory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesOrdersHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesContracts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesContracts?symbol=BTC_USDT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesContracts"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancelAllFuturesOrders",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains success field that is true\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.property('success', true);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains code field with value of 0\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.property('code', 0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains an is_testnet field that is a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.property('is_testnet').that.is.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response time is less than 200ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/cancelAllFuturesOrders?symbol=BTC_USDT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cancelAllFuturesOrders"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesTickers",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesTickers?symbol=BTC_USDT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesTickers"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesContractIndexPrice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesContractIndexPrice?symbol=BTC_USDT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesContractIndexPrice"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesContractFairPrice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesContractFairPrice?symbol=BTC_USDT",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesContractFairPrice"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesLeverage",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'message', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Success field is a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"The code field must be an integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.code).to.be.a('number').and.to.satisfy(Number.isInteger);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The message should be a string and either empty or contain a valid message\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.message).to.be.a('string').and.satisfy(function(msg) {",
+							"        return msg === \"\" || msg.length > 0;",
+							"    }, \"Message should be empty or contain a valid message\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesLeverage",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesLeverage"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesRiskLimits",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains success field with value true\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('success', true);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains a code field with value 0\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('code', 0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Data object contains non-empty arrays for each symbol\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('data').that.is.an('object');",
+							"",
+							"    Object.keys(responseData.data).forEach(symbol => {",
+							"        pm.expect(responseData.data[symbol]).to.be.an('array').that.is.not.empty;",
+							"    });",
+							"});",
+							"",
+							"",
+							"pm.test(\"Each symbol's data contains required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.have.property('data').that.is.an('object');",
+							"",
+							"    Object.keys(responseData.data).forEach(symbol => {",
+							"        const symbolDataArray = responseData.data[symbol];",
+							"        pm.expect(symbolDataArray).to.be.an('array').that.is.not.empty;",
+							"",
+							"        symbolDataArray.forEach(item => {",
+							"            pm.expect(item).to.include.all.keys('level', 'maxVol', 'mmr', 'imr', 'maxLeverage', 'symbol', 'positionType', 'openType', 'leverage', 'limitBySys', 'currentMmr');",
+							"        });",
+							"    });",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesRiskLimits",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesRiskLimits"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesPositionMode",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response Content-Type is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Success field should be true\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.true;",
+							"});",
+							"",
+							"",
+							"pm.test(\"The code field must be 0\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.code).to.equal(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The is_testnet property must be a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.is_testnet).to.be.a('boolean');",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesPositionMode",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesPositionMode"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesOpenPositions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response has the required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'data', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Success field is a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Code is an integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.code).to.be.a('number').and.to.satisfy(Number.isInteger);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Data is an empty array\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.be.an('array').that.is.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesOpenPositions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesOpenPositions"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesPositionsHistory",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesPositionsHistory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesPositionsHistory"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeFuturesMargin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/getFuturesPositionsHistory",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesPositionsHistory"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeFuturesPositionLeverage",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"position_id\": \"\",\r\n    \"leverage\": 10,\r\n    \"open_type\": null,\r\n    \"symbol\": null,\r\n    \"position_type\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/changeFuturesPositionLeverage",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"changeFuturesPositionLeverage"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeFuturesPositionMode",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"position_mode\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/changeFuturesPositionMode",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"changeFuturesPositionMode"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "closeAllFuturesPositions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.eql(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'message', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"Success field is a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.success).to.be.a('boolean');",
+							"});",
+							"",
+							"",
+							"pm.test(\"The code field must be a non-negative integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.code).to.be.a('number').and.to.be.at.least(0);",
+							"});",
+							"",
+							"",
+							"pm.test(\"The message field must be a string and can be empty\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.message).to.exist.and.to.be.a('string');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/closeAllFuturesPositions",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"closeAllFuturesPositions"
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "BTC_USDT",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createFuturesOrder",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.expect(pm.response.code).to.equal(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response contains required fields\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData).to.have.all.keys('success', 'code', 'data', 'is_testnet');",
+							"});",
+							"",
+							"",
+							"pm.test(\"OrderId must be a non-empty string\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.have.property('orderId').that.is.a('string').and.has.lengthOf.at.least(1, \"OrderId should not be empty\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Timestamp (ts) must be a positive integer\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.data).to.exist.and.to.have.property('ts');",
+							"    pm.expect(responseData.data.ts).to.be.a('number').and.to.be.above(0, \"Timestamp must be a positive integer\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"The is_testnet property should be a boolean\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData).to.be.an('object');",
+							"    pm.expect(responseData.is_testnet).to.exist.and.to.be.a('boolean');",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"symbol\": \"LINK_USDT\",\r\n    \"price\": null,\r\n    \"type\": 5,\r\n    \"open_type\": 1,\r\n    \"position_mode\": 1,\r\n    \"side\": 1,\r\n    \"vol\": 200,\r\n    \"leverage\": 10,\r\n    \"position_id\": null,\r\n    \"external_id\": null,\r\n    \"take_profit_price\": null,\r\n    \"take_profit_trend\": 1,\r\n    \"stop_loss_price\": null,\r\n    \"stop_loss_trend\": 1,\r\n    \"price_protect\": 0,\r\n    \"reduce_only\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/createFuturesOrder",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"createFuturesOrder"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFuturesOrdersById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-BYPASS-API-KEY",
+						"value": "{{X-MEXC-BYPASS-API-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-WEB-KEY",
+						"value": "{{X-MEXC-WEB-KEY}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-NETWORK",
+						"value": "{{X-MEXC-NETWORK}}",
+						"type": "text"
+					},
+					{
+						"key": "X-MEXC-PROXY",
+						"value": "{{X-MEXC-PROXY}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ids\": \"703806886603997696,703768036296968192\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/getFuturesOrdersById",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"getFuturesOrdersById"
+					],
+					"query": [
+						{
+							"key": "ids",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://api.mexc-bypass.xyz/v1",
+			"type": "default"
+		},
+		{
+			"key": "X-MEXC-BYPASS-API-KEY",
+			"value": "YOUR-MEXC-BYYPASS-API-KEY",
+			"type": "default"
+		},
+		{
+			"key": "X-MEXC-WEB-KEY",
+			"value": "YOUR-MEXC-WEB-KEY",
+			"type": "default"
+		},
+		{
+			"key": "X-MEXC-NETWORK",
+			"value": "TESTNET",
+			"type": "default"
+		},
+		{
+			"key": "X-MEXC-PROXY",
+			"value": "socks5://user:pass@127.0.0.1:9050",
+			"type": "default"
+		}
+	]
+}
