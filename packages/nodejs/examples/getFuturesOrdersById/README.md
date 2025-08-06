@@ -21,9 +21,9 @@ Get detailed information about a specific futures order by ID.
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const order = await api.getFuturesOrderById({
+const order = await mexc.getFuturesOrderById({
   orderId: '1337'
 });
 

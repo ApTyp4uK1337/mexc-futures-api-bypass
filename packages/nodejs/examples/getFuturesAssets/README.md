@@ -19,9 +19,9 @@ Retrieve information about the user's futures account assets.
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const assets = await api.getFuturesAssets();
+const assets = await mexc.getFuturesAssets();
 
 console.log(assets);
 ```
@@ -57,9 +57,9 @@ console.log(assets);
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const asset = await api.getFuturesAssets({
+const asset = await mexc.getFuturesAssets({
   currency: 'USDT'
 });
 

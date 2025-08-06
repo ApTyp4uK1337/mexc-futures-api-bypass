@@ -2,10 +2,6 @@ import { MexcBypass } from '../../src/MexcBypass.js';
 
 const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const order = await mexc.getFuturesOrdersById({
-  ids: [
-    '1337'
-  ]
-});
+const result = await mexc.getServerTime();
 
-console.log(order);
+console.log(result);

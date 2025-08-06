@@ -17,9 +17,9 @@ This endpoint does not require any parameters.
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const user = await api.getUserInfo();
+const user = await mexc.getUserInfo();
 
 console.log(user);
 ```

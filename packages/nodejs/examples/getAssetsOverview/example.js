@@ -1,12 +1,12 @@
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const overview = await api.getAssetsOverview();
+const overview = await mexc.getAssetsOverview();
 
 console.log(overview);
 
-const converted = await api.getAssetsOverview({
+const converted = await mexc.getAssetsOverview({
   'convert': true
 });
 
