@@ -32,10 +32,10 @@ Pass the URL as the third parameter to the constructor.
 ### General Endpoints
 
 - `getServerTime()`
-- `getCustomerInfo()`
-- `getUserInfo()`
+- [`getCustomerInfo()`](./examples/getCustomerInfo/)
+- [`getUserInfo()`](./examples/getUserInfo/)
 - `getReferralsList(params)`
-- `getAssetsOverview(params)`
+- [`getAssetsOverview(params)`](./examples/getAssetsOverview/)
 
 ### Contract Endpoints
 
@@ -46,15 +46,15 @@ Pass the URL as the third parameter to the constructor.
 
 #### Assets & Transfers
 
-- `getFuturesAssets(params)`
+- [`getFuturesAssets(params)`](./examples/getFuturesAssets/)
 - `getFuturesAssetTransferRecords(params)`
 
 #### Orders
 
 - `createFuturesOrder(params)`
-- `getFuturesOrdersById(params)`
+- [`getFuturesOrdersById(params)`](./examples/getFuturesOrdersById/)
 - `cancelFuturesOrders(params)`
-- `cancelFuturesOrderWithExternalId(params)`
+- [`cancelFuturesOrderWithExternalId(params)`](./examples/getFuturesOrdersByExternalId/)
 - `cancelAllFuturesOrders(params)`
 
 #### Trigger Orders
