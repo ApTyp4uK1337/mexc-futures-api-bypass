@@ -2,8 +2,6 @@
 
 Get brief information about the authenticated user.
 
-<!-- - **Endpoint:** `/api/` -->
-
 ## 📥 Request parameters
 
 This endpoint does not require any parameters.
@@ -17,9 +15,9 @@ This endpoint does not require any parameters.
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const customer = await api.getCustomerInfo();
+const customer = await mexc.getCustomerInfo();
 
 console.log(customer);
 ```

@@ -7,14 +7,10 @@
 ```php
 require 'MexcBypass.php';
 
-$api_key = 'YOUR_API_KEY';
-$is_estnet = false;
-$proxy = 'socks5://username:password@host:port';
+$mexc = new MexcBypass('YOUR_API_KEY', false, null);
 
-$mexc = new MexcBypass($api_key, $is_estnet, $proxy);
-
-// Example: Get server time
 $response = $mexc->getServerTime();
+
 print_r($response);
 ```
 

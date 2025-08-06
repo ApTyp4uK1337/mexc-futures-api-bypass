@@ -2,8 +2,6 @@
 
 Get a summary of user's assets, optionally converted to a specific currency (e.g., USDT).
 
-<!-- - **Endpoint:** `/api/` -->
-
 ## 📥 Request parameters
 
 | **Name**   | **Type**   | **Required** | **Description** |
@@ -19,9 +17,9 @@ Get a summary of user's assets, optionally converted to a specific currency (e.g
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const overview = await api.getAssetsOverview();
+const overview = await mexc.getAssetsOverview();
 
 console.log(overview);
 ```
@@ -52,9 +50,9 @@ console.log(overview);
 ```js
 import { MexcBypass } from '../../src/MexcBypass.js';
 
-const api = new MexcBypass('YOUR_API_KEY', false);
+const mexc = new MexcBypass('YOUR_API_KEY', false);
 
-const overview = await api.getAssetsOverview({
+const overview = await mexc.getAssetsOverview({
   'convert': true
 });
 

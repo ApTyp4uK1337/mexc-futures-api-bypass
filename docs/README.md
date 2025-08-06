@@ -36,6 +36,7 @@ All requests must include the following headers:
 | [**getFuturesContracts**](/docs/methods/getFuturesContracts.md) | Futures | Get details of one or all futures contracts. |
 | [**getFuturesContractIndexPrice**](/docs/methods/getFuturesContractIndexPrice.md) | Futures | Retrieve the index price of a specific futures contract. |
 | [**getFuturesContractFairPrice**](/docs/methods/getFuturesContractFairPrice.md) | Futures | Fetch the fair price of a specific futures contract. |
+| [**getFuturesContractKlineData**](/docs/methods/getFuturesContractKlineData.md) | Futures | Get contract K-line data. |
 | [**getFuturesTickers**](/docs/methods/getFuturesTickers.md) | Futures | Get the latest market ticker for a futures contract. |
 | [**getFuturesPendingOrders**](/docs/methods/getFuturesPendingOrders.md) | Futures | Get a list of your open (pending) futures orders. |
 | [**getFuturesOrdersHistory**](/docs/methods/getFuturesOrdersHistory.md) | Futures | Get historical futures orders (filled, cancelled, etc.) |
