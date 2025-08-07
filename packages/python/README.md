@@ -1,8 +1,6 @@
 # 📘 MEXC API Bypass :: Python Library
 
-"""
-MexcBypass is a Python class to interact with the MEXC cryptocurrency exchange APIs with optional proxy support (HTTP/HTTPS/SOCKS5).
-"""
+**MexcBypass** is a Python class to interact with the MEXC cryptocurrency exchange APIs with optional proxy support (HTTP/HTTPS/SOCKS5).
 
 ## 📦 Installation
 
