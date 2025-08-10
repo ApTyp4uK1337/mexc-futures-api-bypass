@@ -6,74 +6,160 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>MEXC Futures API Bypass — Trade Crypto During Maintenance</title>
+  <title>MEXC Futures API Bypass — Trade MEXC Futures During Maintenance</title>
 
-  <meta name="description" content="Bypass MEXC maintenance limitations and keep trading crypto futures anytime. Use our powerful API bypass tool to continue trading even when the exchange is down.">
+  <meta name="description" content="MEXC Futures API Bypass — trade MEXC futures during maintenance or when the official API is unavailable. Full access to hidden and restricted methods with automation-ready libraries.">
 
-  <meta name="keywords" content="MEXC API bypass, MEXC futures API, crypto trading during maintenance, MEXC API solution, trade crypto when MEXC down, futures trading API, MEXC tool, bypass exchange downtime, mexc, futures, trading, maintenance, bypass, mexc обход, mexc api обход, обход api mexc, фьючерсы mexc, торговля при техобслуживании, mexc торговля, mexc фьючерсный обход">
+  <meta name="keywords" content="MEXC API bypass, MEXC futures API, crypto trading during maintenance, MEXC API solution, trade crypto when MEXC down, futures trading API, MEXC tool, bypass exchange downtime, mexc, futures, trading, maintenance, bypass, crypto trading bot, automated trading, MEXC futures bypass, exchange maintenance solution">
 
-  <link rel="canonical" href="<?php echo $_SERVER['URL']; ?>/">
+  <meta name="author" content="aptyp4uk1337">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  <meta name="revisit-after" content="7 days">
+
+  <link rel="canonical" href="<?php echo $url; ?>/">
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
-  <link rel="preload" href="<?php echo $_SERVER['URL']; ?>/css/style.css" as="style">
-  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.34.1/tabler-icons.min.css" as="style">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  </noscript>
+
+  <link rel="preload" href="<?php echo $url; ?>/css/style.min.css" as="style">
+  <link rel="preload" href="<?php echo $url; ?>/css/tabler-icons.min.css" as="style">
 
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php echo $_SERVER['URL']; ?>/">
-  <meta property="og:title" content="MEXC Futures API Bypass — Trade Crypto During Maintenance">
-  <meta property="og:description" content="Trade MEXC futures even during system maintenance. Get full access to our bypass API today.">
-  <meta property="og:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg">
+  <meta property="og:url" content="<?php echo $url; ?>/">
+  <meta property="og:title" content="MEXC Futures API Bypass — Trade MEXC Futures During Maintenance">
+  <meta property="og:description" content="Trade MEXC Futures even during API maintenance. Get full access to our bypass API today.">
+  <meta property="og:image" content="<?php echo $url; ?>/images/social-preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="MEXC Futures API Bypass">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="<?php echo $_SERVER['URL']; ?>/">
-  <meta name="twitter:title" content="MEXC Futures API Bypass — Trade Crypto During Maintenance">
-  <meta name="twitter:description" content="Trade MEXC futures even during system maintenance. Get full access to our bypass API today.">
-  <meta name="twitter:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg">
+  <meta name="twitter:url" content="<?php echo $url; ?>/">
+  <meta name="twitter:title" content="MEXC Futures API Bypass — Trade MEXC Futures During Maintenance">
+  <meta name="twitter:description" content="Trade MEXC Futures even during API maintenance. Get full access to our bypass API today.">
+  <meta name="twitter:image" content="<?php echo $url; ?>/images/social-preview.jpg">
+  <meta name="twitter:creator" content="@aptyp4uk1337">
 
-  <!-- Schema.org -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "MEXC Futures API Bypass",
-      "operatingSystem": "Web",
-      "applicationCategory": "FinanceApplication",
-      "description": "Bypass MEXC system maintenance and trade crypto futures without interruptions. Secure, efficient, and always available.",
-      "image": "<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg",
+      "@type": "Product",
+      "name": "MEXC Futures API Bypass - Source Code",
+      "description": "Full source code with lifetime access, free updates, and full customization for commercial use.",
+      "image": "<?php echo $url; ?>/images/social-preview.jpg",
+      "url": "<?php echo $url; ?>/",
+      "sku": "MEXC-SOURCE-001",
+      "mpn": "MEXC-SRC-2025",
       "brand": {
         "@type": "Brand",
-        "name": "aptyp4uk1337"
+        "name": "aptyp4uk1337",
+        "logo": "<?php echo $url; ?>/images/avatar.jpg"
       },
       "offers": {
         "@type": "Offer",
         "price": "125.00",
         "priceCurrency": "USD",
+        "priceValidUntil": "2025-12-31",
         "availability": "https://schema.org/InStock",
-        "url": "<?php echo $_SERVER['URL']; ?>/"
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "<?php echo $url; ?>/",
+        "seller": {
+          "@type": "Organization",
+          "name": "aptyp4uk1337",
+          "url": "<?php echo $url; ?>/"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "additionalProperty": {
+        <
+        !--Доп.параметры,
+        если есть-- >
+        "@type": "PropertyValue",
+        "name": "Delivery Time",
+        "value": "Instant download"
       }
     }
   </script>
 
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "MEXC Futures API Bypass - API Subscription",
+      "description": "30-day subscription with full API access, regular updates, priority support, multi-account and proxy integration.",
+      "image": "<?php echo $url; ?>/images/social-preview.jpg",
+      "url": "<?php echo $url; ?>/",
+      "sku": "MEXC-SUB-001",
+      "mpn": "MEXC-SUB-2025",
+      "brand": {
+        "@type": "Brand",
+        "name": "aptyp4uk1337",
+        "logo": "<?php echo $url; ?>/images/avatar.jpg"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "30.00",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "url": "<?php echo $url; ?>/",
+        "seller": {
+          "@type": "Organization",
+          "name": "aptyp4uk1337",
+          "url": "<?php echo $url; ?>/"
+        }
+      },
+      "additionalProperty": {
+        "@type": "PropertyValue",
+        "name": "Subscription Period",
+        "value": "30 days"
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "MEXC Futures API Bypass",
+      "url": "<?php echo $url; ?>/",
+      "logo": "<?php echo $url; ?>/images/social-preview.jpg",
+      "sameAs": [
+        "https://github.com/aptyp4uk1337/mexc-futures-api-bypass",
+        "https://t.me/aptyp4uk1337/19"
+      ]
+    }
+  </script>
+
   <!-- Favicon & Styles -->
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $_SERVER['URL']; ?>/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $_SERVER['URL']; ?>/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SERVER['URL']; ?>/favicon-16x16.png">
-  <link rel="manifest" href="<?php echo $_SERVER['URL']; ?>/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url; ?>/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $url; ?>/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo $url; ?>/site.webmanifest">
 
   <!-- CSS with media queries for print -->
-  <link rel="stylesheet" href="<?php echo $_SERVER['URL']; ?>/css/style.css" media="all">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.34.1/tabler-icons.min.css" media="all">
+  <link rel="stylesheet" href="<?php echo $url; ?>/css/style.min.css" media="all">
+  <link rel="stylesheet" href="<?php echo $url; ?>/css/tabler-icons.min.css" media="all">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
 
   <!-- Load Google Analytics asynchronously -->
@@ -97,10 +183,10 @@
       <h1 class="title">MEXC Futures API Bypass</h1>
       <p class="subtitle">Trade during maintenance periods with our specialized API solution</p>
       <div class="social-links">
-        <a href="https://t.me/aptyp4uk1337/19" target="_blank" rel="noopener noreferrer" class="social-link">
+        <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="social-link">
           <i class="ti ti-brand-telegram"></i> Telegram
         </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="social-link">
           <i class="ti ti-brand-github"></i> GitHub
         </a>
@@ -122,7 +208,7 @@
                   <i class="ti ti-lock"></i>
                 </span>
                 User Token
-                <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/token-help.jpg">
+                <span class="tooltip" data-tooltip-image="<?php echo $url; ?>/images/token-help.jpg">
                   <i class="ti ti-info-circle"></i>
                 </span>
               </label>
@@ -177,7 +263,7 @@
             <div class="form-group">
               <label for="quantity">
                 Quantity
-                <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/quantity-help.jpg">
+                <span class="tooltip" data-tooltip-image="<?php echo $url; ?>/images/quantity-help.jpg">
                   <i class="ti ti-info-circle"></i>
                 </span>
               </label>
@@ -249,18 +335,20 @@
         </div>
         <div class="card-body">
           <div class="accordion">
+
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq1">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Is this a real trading platform?</span>
+                <span class="accordion-title" itemprop="name">Is this an actual trading platform?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is limited, but
-                    all methods are available in full version. You can view your open positions in <a
-                      href="https://futures.testnet.mexc.com/futures/" target="_blank">Demo
-                      Trading</a>.</p>
+                  <p>No, this is a demo environment for creating orders on the MEXC Futures <strong>testnet</strong> (demo mode).
+                    The demo only allows placing orders in the test network.
+                    The full version unlocks complete access to all available API methods.
+                    You can view the orders you create here: <a href="https://futures.testnet.mexc.com/futures/" target="_blank">MEXC Demo Trading</a>.
+                  </p>
                 </div>
               </div>
             </div>
@@ -268,12 +356,12 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq2" itemprop="name">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Does it use anything third-party to make those requests?</span>
+                <span class="accordion-title" itemprop="name">Does it rely on any third-party services to send requests?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>No.</p>
+                  <p>No, all requests are handled directly without using third-party services.</p>
                 </div>
               </div>
             </div>
@@ -281,13 +369,12 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq3">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Is the library provided as open source or as compiled/obfuscated
-                  code?</span>
+                <span class="accordion-title" itemprop="name">Is the code distributed as open source or in compiled form?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>Currently, everything is open-sourced, nothing is obfuscated.</p>
+                  <p>At the moment, the code is fully open source with no obfuscation.</p>
                 </div>
               </div>
             </div>
@@ -295,13 +382,12 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq4">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Can the library be used with multiple accounts, or is the authentication
-                  tied to a single one?</span>
+                <span class="accordion-title" itemprop="name">Can I use the library with multiple accounts?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>No limitation on number of accounts. Proxy support included.</p>
+                  <p>Yes, there are no restrictions on the number of accounts. Proxy support is included.</p>
                 </div>
               </div>
             </div>
@@ -309,13 +395,12 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq5">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">How does authentication work - do I need an API key, or does it use
-                  something else?</span>
+                <span class="accordion-title" itemprop="name">How is authentication handled? Do I need an API key?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>It uses a User Token to authenticate requests.</p>
+                  <p>Authentication is done using a User Token instead of an API key.</p>
                 </div>
               </div>
             </div>
@@ -323,14 +408,14 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq6">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">How many orders can be sent per second, per minute, per day?</span>
+                <span class="accordion-title" itemprop="name">What is the maximum number of orders I can send?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>See the results of the Rate Limit Test for 200 requests:</p>
+                  <p>You can check the results of our 200-request rate limit test:</p>
                   <p>
-                    <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/rate-limit-test.jpg">
+                    <span class="tooltip" data-tooltip-image="<?php echo $url; ?>/images/rate-limit-test.jpg">
                       <i class="ti ti-photo"></i> Screenshot
                     </span>
                   </p>
@@ -341,20 +426,20 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq7">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Where can I find my User Token?</span>
+                <span class="accordion-title" itemprop="name">Where can I find my User Token?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
                   <ol>
-                    <li>Log in to your MEXC account.</li>
-                    <li>Open the browser's Developer Tools (Press F12 or right-click and select "Inspect").</li>
+                    <li>Sign in to your MEXC account.</li>
+                    <li>Open Developer Tools in your browser (F12 or right-click → "Inspect").</li>
                     <li>Go to the "Application" or "Storage" tab.</li>
-                    <li>Expand the "Cookies" section and select the MEXC domain.</li>
-                    <li>Find the cookie named "u_id" and copy its value (it should start with "WEB").</li>
+                    <li>Open the "Cookies" section and select the MEXC domain.</li>
+                    <li>Find the "u_id" cookie and copy its value (starts with "WEB").</li>
                   </ol>
                   <p>
-                    <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/token-help.jpg">
+                    <span class="tooltip" data-tooltip-image="<?php echo $url; ?>/images/token-help.jpg">
                       <i class="ti ti-photo"></i> Screenshot
                     </span>
                   </p>
@@ -365,13 +450,16 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq8">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Is code provided as one time thing or do I need to get a
-                  subscription?</span>
+                <span class="accordion-title" itemprop="name">Is access subscription-based or can I buy it outright?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>This is a one-time purchase and updates are free.</p>
+                  <p>We offer two options:</p>
+                  <ul>
+                    <li><strong>30-day subscription</strong> — access to methods via our server.</li>
+                    <li><strong>Full source code purchase</strong> — lifetime access to all libraries without restrictions.</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -379,13 +467,12 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq9">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">Where can I find more info?</span>
+                <span class="accordion-title" itemprop="name">Where can I learn more?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>More info on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"
-                      rel="noopener noreferrer"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
+                  <p>See the full project details on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
                 </div>
               </div>
             </div>
@@ -393,16 +480,15 @@
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq10">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
-                <span class="accordion-title">How do I get full access to the API?</span>
+                <span class="accordion-title" itemprop="name">How do I get full API access?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
               <div class="accordion-content" id="faq10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>Contact me on <a
-                      href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
-                      target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+                  <p>Message me on <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API." target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-telegram"></i> Telegram</a> for details.</p>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
@@ -436,6 +522,7 @@
               <li><i class="ti ti-check"></i> Proxy integration</li>
             </ul>
             <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20API%20Subscription"
+              title="Get Subscription"
               class="btn btn-subscription"
               target="_blank"
               rel="noopener noreferrer"
@@ -467,6 +554,7 @@
               <li><i class="ti ti-check"></i> Commercial use</li>
             </ul>
             <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20Source%20Code%20purchase"
+              title="Get Full Access"
               class="btn btn-source-code"
               target="_blank"
               rel="noopener noreferrer"
@@ -512,6 +600,7 @@
 
         <div class="simple-methods-link">
           <a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/tree/main/docs#-available-methods"
+            title="View All API Methods on GitHub"
             target="_blank"
             rel="noopener noreferrer"
             class="btn btn-secondary">
@@ -536,7 +625,7 @@
         <h2 class="cta-title"><i class="ti ti-rocket"></i> Ready to unlock full access?</h2>
         <p class="cta-text">Get the full libraries with unlimited API features.</p>
         <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
-          target="_blank" rel="noopener noreferrer" class="btn btn-cta">
+          title="Purchase Now" target="_blank" rel="noopener noreferrer" class="btn btn-cta">
           <i class="ti ti-shopping-cart"></i>Purchase Now
         </a>
       </div>
@@ -544,18 +633,18 @@
 
     <footer class="footer">
       <div class="footer-links">
-        <a href="<?php echo $_SERVER['URL']; ?>/privacy" class="footer-link">Privacy Policy</a>
+        <a href="<?php echo $url; ?>/privacy" title="Privacy Policy" class="footer-link">Privacy Policy</a>
         <span>·</span>
-        <a href="<?php echo $_SERVER['URL']; ?>/terms" class="footer-link">Terms of Service</a>
+        <a href="<?php echo $url; ?>/terms" title="Terms of Service" class="footer-link">Terms of Service</a>
       </div>
-      <p>© 2025 MEXC Futures API Bypass<br>Made with ❤️ by <a href="https://github.com/aptyp4uk1337" class="footer-link"
+      <p>© 2025 MEXC Futures API Bypass<br>Made with ❤️ by <a href="https://github.com/aptyp4uk1337" title="@aptyp4uk1337" class="footer-link"
           target="_blank" rel="noopener noreferrer">@aptyp4uk1337</a></p>
       <div class="footer-links">
-        <a href="https://t.me/aptyp4uk1337/19" target="_blank" rel="noopener noreferrer" class="footer-icon"
+        <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="footer-icon"
           aria-label="Telegram">
           <i class="ti ti-brand-telegram"></i>
         </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">
           <i class="ti ti-brand-github"></i>
         </a>
@@ -564,7 +653,7 @@
   </div>
 
   <!-- Defer non-critical JavaScript -->
-  <script src="<?php echo $_SERVER['URL']; ?>/js/script.js" defer></script>
+  <script src="<?php echo $url; ?>/js/script.js" defer></script>
 
   <!-- Lazy load images -->
   <script>

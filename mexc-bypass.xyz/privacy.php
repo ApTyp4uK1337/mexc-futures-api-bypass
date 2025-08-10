@@ -6,13 +6,29 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Privacy Policy - MEXC Futures API Bypass</title>
-  <meta name="description" content="Privacy Policy for MEXC Futures API Bypass service." />
+  <meta name="description" content="Privacy Policy for MEXC Futures API Bypass service. Learn about data collection, security measures, and your privacy rights." />
+  <meta name="keywords" content="MEXC API bypass privacy, data protection, security policy, privacy rights, MEXC futures API privacy" />
+
+  <link rel="canonical" href="<?php echo $url; ?>/privacy">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php echo $url; ?>/privacy">
+  <meta property="og:title" content="Privacy Policy - MEXC Futures API Bypass">
+  <meta property="og:description" content="Privacy Policy for MEXC Futures API Bypass service. Learn about data protection and security.">
+  <meta property="og:image" content="<?php echo $url; ?>/images/social-preview.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy - MEXC Futures API Bypass">
+  <meta name="twitter:description" content="Privacy Policy for MEXC Futures API Bypass service.">
+
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url; ?>/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $url; ?>/favicon-16x16.png">
   <link rel="manifest" href="<?php echo $url; ?>/site.webmanifest">
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="<?php echo $url; ?>/css/style.min.css" />
+  <link rel="stylesheet" href="<?php echo $url; ?>/css/tabler-icons.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -100,7 +116,7 @@
 
           <p>🔹 Opt out of any non-essential data collection.</p>
 
-          <p>To exercise these rights or ask questions, please contact us via <a href="https://t.me/aptyp4uk1337_bot"
+          <p>To exercise these rights or ask questions, please contact us via <a href="https://t.me/aptyp4uk1337_bot" title="Telegram"
               target="_blank"><i class="ti ti-brand-telegram"></i> Telegram</a>.</p>
         </div>
       </section>
@@ -108,25 +124,25 @@
 
     <footer class="footer">
       <div class="footer-links">
-        <a href="<?php echo $url; ?>/" class="footer-link">Home</a>
+        <a href="<?php echo $url; ?>/" title="Home" class="footer-link">Home</a>
       </div>
       <div class="footer-links">
-        <a href="<?php echo $url; ?>/privacy" class="footer-link">Privacy Policy</a>
+        <a href="<?php echo $url; ?>/privacy" title="Privacy Policy" class="footer-link">Privacy Policy</a>
         <span>·</span>
-        <a href="<?php echo $url; ?>/terms" class="footer-link">Terms of Service</a>
+        <a href="<?php echo $url; ?>/terms" title="Terms of Service" class="footer-link">Terms of Service</a>
       </div>
       <p>
         © 2025 MEXC Futures API Bypass<br />
         Made with ❤️ by
-        <a href="https://github.com/aptyp4uk1337" class="footer-link" target="_blank"
+        <a href="https://github.com/aptyp4uk1337" title="@aptyp4uk1337" class="footer-link" target="_blank"
           rel="noopener noreferrer">@aptyp4uk1337</a>
       </p>
       <div class="footer-links">
-        <a href="https://t.me/aptyp4uk1337/19" target="_blank" rel="noopener noreferrer" class="footer-icon"
+        <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="footer-icon"
           aria-label="Telegram">
           <i class="ti ti-brand-telegram"></i>
         </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">
           <i class="ti ti-brand-github"></i>
         </a>
