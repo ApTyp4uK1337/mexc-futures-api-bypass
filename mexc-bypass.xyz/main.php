@@ -2,31 +2,44 @@
 <html class="dark" lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <title>MEXC Futures API Bypass — Trade Crypto During Maintenance</title>
 
-  <meta name="description" content="Bypass MEXC maintenance limitations and keep trading crypto futures anytime. Use our powerful API bypass tool to continue trading even when the exchange is down." />
+  <meta name="description" content="Bypass MEXC maintenance limitations and keep trading crypto futures anytime. Use our powerful API bypass tool to continue trading even when the exchange is down.">
 
-  <meta name="keywords" content="MEXC API bypass, MEXC futures API, crypto trading during maintenance, MEXC API solution, trade crypto when MEXC down, futures trading API, MEXC tool, bypass exchange downtime, mexc, futures, trading, maintenance, bypass, mexc обход, mexc api обход, обход api mexc, фьючерсы mexc, торговля при техобслуживании, mexc торговля, mexc фьючерсный обход" />
+  <meta name="keywords" content="MEXC API bypass, MEXC futures API, crypto trading during maintenance, MEXC API solution, trade crypto when MEXC down, futures trading API, MEXC tool, bypass exchange downtime, mexc, futures, trading, maintenance, bypass, mexc обход, mexc api обход, обход api mexc, фьючерсы mexc, торговля при техобслуживании, mexc торговля, mexc фьючерсный обход">
 
-  <link rel="canonical" href="<?php echo $_SERVER['URL']; ?>/" />
+  <link rel="canonical" href="<?php echo $_SERVER['URL']; ?>/">
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style">
+  <link rel="preload" href="<?php echo $_SERVER['URL']; ?>/css/style.css" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.34.1/tabler-icons.min.css" as="style">
+
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="<?php echo $_SERVER['URL']; ?>/" />
-  <meta property="og:title" content="MEXC Futures API Bypass — Trade Crypto During Maintenance" />
-  <meta property="og:description" content="Trade MEXC futures even during system maintenance. Get full access to our bypass API today." />
-  <meta property="og:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="<?php echo $_SERVER['URL']; ?>/">
+  <meta property="og:title" content="MEXC Futures API Bypass — Trade Crypto During Maintenance">
+  <meta property="og:description" content="Trade MEXC futures even during system maintenance. Get full access to our bypass API today.">
+  <meta property="og:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:url" content="<?php echo $_SERVER['URL']; ?>/" />
-  <meta name="twitter:title" content="MEXC Futures API Bypass — Trade Crypto During Maintenance" />
-  <meta name="twitter:description" content="Trade MEXC futures even during system maintenance. Get full access to our bypass API today." />
-  <meta name="twitter:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="<?php echo $_SERVER['URL']; ?>/">
+  <meta name="twitter:title" content="MEXC Futures API Bypass — Trade Crypto During Maintenance">
+  <meta name="twitter:description" content="Trade MEXC futures even during system maintenance. Get full access to our bypass API today.">
+  <meta name="twitter:image" content="<?php echo $_SERVER['URL']; ?>/images/social-preview.jpg">
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -58,14 +71,12 @@
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SERVER['URL']; ?>/favicon-16x16.png">
   <link rel="manifest" href="<?php echo $_SERVER['URL']; ?>/site.webmanifest">
 
-  <link rel="stylesheet" href="<?php echo $_SERVER['URL']; ?>/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <!-- CSS with media queries for print -->
+  <link rel="stylesheet" href="<?php echo $_SERVER['URL']; ?>/css/style.css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.34.1/tabler-icons.min.css" media="all">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ4Z58CVYV"></script>
+  <!-- Load Google Analytics asynchronously -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -73,9 +84,11 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
-    gtag('config', 'G-TQ4Z58CVYV');
+    gtag('config', 'G-TQ4Z58CVYV', {
+      'transport_type': 'beacon'
+    });
   </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ4Z58CVYV"></script>
 </head>
 
 <body>
@@ -95,10 +108,10 @@
     </header>
 
     <main class="main-content">
-      <section class="card order-section">
+      <section class="card order-section" itemscope itemtype="https://schema.org/WebApplication">
         <div class="card-header">
-          <h2><i class="ti ti-adjustments-alt"></i>Order Parameters</h2>
-          <p class="card-subtitle">Test the API yourself</p>
+          <h2 itemprop="name"><i class="ti ti-adjustments-alt"></i>Order Parameters</h2>
+          <p class="card-subtitle" itemprop="description">Test the API yourself</p>
         </div>
         <form class="card-body" id="orderForm">
           <div class="form-grid">
@@ -229,21 +242,21 @@
         </form>
       </section>
 
-      <section class="card faq-section">
+      <section class="card faq-section" itemscope itemtype="https://schema.org/FAQPage">
         <div class="card-header">
           <h2><i class="ti ti-help"></i>FAQ</h2>
           <p class="card-subtitle">Find answers to common questions about our service</p>
         </div>
         <div class="card-body">
           <div class="accordion">
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq1">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Is this a real trading platform?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq1">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>No, this is a demo application to showcase MEXC Futures API Bypass. Functionality is limited, but
                     all methods are available in full version. You can view your open positions in <a
                       href="https://futures.testnet.mexc.com/futures/" target="_blank">Demo
@@ -252,69 +265,69 @@
               </div>
             </div>
 
-            <div class="accordion-item">
-              <button class="accordion-header" aria-expanded="false" aria-controls="faq2">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+              <button class="accordion-header" aria-expanded="false" aria-controls="faq2" itemprop="name">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Does it use anything third-party to make those requests?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq2">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>No.</p>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq3">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Is the library provided as open source or as compiled/obfuscated
                   code?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq3">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>Currently, everything is open-sourced, nothing is obfuscated.</p>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq4">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Can the library be used with multiple accounts, or is the authentication
                   tied to a single one?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq4">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq4" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>No limitation on number of accounts. Proxy support included.</p>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq5">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">How does authentication work - do I need an API key, or does it use
                   something else?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq5">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>It uses a User Token to authenticate requests.</p>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq6">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">How many orders can be sent per second, per minute, per day?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq6">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>See the results of the Rate Limit Test for 200 requests:</p>
                   <p>
                     <span class="tooltip" data-tooltip-image="<?php echo $_SERVER['URL']; ?>/images/rate-limit-test.jpg">
@@ -325,14 +338,14 @@
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq7">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Where can I find my User Token?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq7">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <ol>
                     <li>Log in to your MEXC account.</li>
                     <li>Open the browser's Developer Tools (Press F12 or right-click and select "Inspect").</li>
@@ -349,42 +362,42 @@
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq8">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Is code provided as one time thing or do I need to get a
                   subscription?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq8">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>This is a one-time purchase and updates are free.</p>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq9">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">Where can I find more info?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq9">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>More info on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"
                       rel="noopener noreferrer"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
                 </div>
               </div>
             </div>
 
-            <div class="accordion-item">
+            <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
               <button class="accordion-header" aria-expanded="false" aria-controls="faq10">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title">How do I get full access to the API?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
               </button>
-              <div class="accordion-content" id="faq10">
-                <div class="accordion-body">
+              <div class="accordion-content" id="faq10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                <div class="accordion-body" itemprop="text">
                   <p>Contact me on <a
                       href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
                       target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-telegram"></i> Telegram</a>.</p>
@@ -396,20 +409,20 @@
       </section>
     </main>
 
-    <section class="card pricing-section">
+    <section class="card pricing-section" itemscope itemtype="https://schema.org/Product">
       <div class="card-header">
-        <h2><i class="ti ti-currency-dollar"></i> Pricing Options</h2>
+        <h2 itemprop="name"><i class="ti ti-currency-dollar"></i> Pricing Options</h2>
         <p class="card-subtitle">Choose the best option for your trading needs</p>
       </div>
       <div class="card-body">
         <div class="pricing-grid">
           <!-- Subscription Option -->
-          <div class="pricing-card">
+          <div class="pricing-card" itemscope itemtype="https://schema.org/Offer">
             <div class="pricing-header">
-              <h3>API Subscription</h3>
+              <h3 itemprop="name">API Subscription</h3>
               <div class="pricing-price">
-                <span class="price">$30</span>
-                <span class="period">/ 30 days</span>
+                <span class="price" itemprop="price" content="30">$30</span>
+                <span class="period" itemprop="priceCurrency" content="USD">/ 30 days</span>
               </div>
               <div class="pricing-badge pricing-badge-hot">
                 <span>🔥 <s>$45</s> <span class="new-price">$30</span> / 30 days</span>
@@ -425,21 +438,22 @@
             <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20API%20Subscription"
               class="btn btn-subscription"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              itemprop="url">
               <i class="ti ti-shopping-cart"></i> Get Subscription
             </a>
           </div>
 
           <!-- Source Code Option -->
-          <div class="pricing-card pricing-card-featured">
+          <div class="pricing-card pricing-card-featured" itemscope itemtype="https://schema.org/Offer">
             <div class="pricing-badge pricing-badge-popular">
               <span>Most Popular</span>
             </div>
             <div class="pricing-header">
-              <h3>Source Code</h3>
+              <h3 itemprop="name">Source Code</h3>
               <div class="pricing-price">
-                <span class="price">$125</span>
-                <span class="period">one-time</span>
+                <span class="price" itemprop="price" content="125">$125</span>
+                <span class="period" itemprop="priceCurrency" content="USD">one-time</span>
               </div>
               <div class="pricing-badge pricing-badge-hot">
                 <span>🔥 <s>$175</s> <span class="new-price">$125</span></span>
@@ -455,7 +469,8 @@
             <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20Source%20Code%20purchase"
               class="btn btn-source-code"
               target="_blank"
-              rel="noopener noreferrer">
+              rel="noopener noreferrer"
+              itemprop="url">
               <span class="btn-text"><i class="ti ti-shopping-cart"></i> Buy Source Code</span>
               <span class="btn-hover-text">Get Full Access</span>
             </a>
@@ -548,7 +563,32 @@
     </footer>
   </div>
 
-  <script src="<?php echo $_SERVER['URL']; ?>/js/script.js"></script>
+  <!-- Defer non-critical JavaScript -->
+  <script src="<?php echo $_SERVER['URL']; ?>/js/script.js" defer></script>
+
+  <!-- Lazy load images -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+      if ("IntersectionObserver" in window) {
+        let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              let lazyImage = entry.target;
+              lazyImage.src = lazyImage.dataset.src;
+              lazyImage.classList.remove("lazy");
+              lazyImageObserver.unobserve(lazyImage);
+            }
+          });
+        });
+
+        lazyImages.forEach(function(lazyImage) {
+          lazyImageObserver.observe(lazyImage);
+        });
+      }
+    });
+  </script>
 </body>
 
 </html>

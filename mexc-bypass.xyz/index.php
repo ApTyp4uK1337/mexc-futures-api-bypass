@@ -11,6 +11,8 @@ $_SERVER['SCHEME'] = (
 $_SERVER['URL'] = "{$_SERVER['SCHEME']}://{$_SERVER['HTTP_HOST']}";
 $_SERVER['FULL_URL'] = $_SERVER['URL'] . $_SERVER['REQUEST_URI'];
 
+$url = 'https://mexc-bypass.xyz';
+
 $request_uri = str_replace('/index.php', '', $_SERVER['REQUEST_URI']);
 $request_path = parse_url($request_uri, PHP_URL_PATH);
 $request_path = rtrim($request_path, '/');
@@ -46,7 +48,9 @@ switch ($request_path) {
 
     break;
   default:
-    header('HTTP/1.0 404 Not Found');
+    http_response_code(404);
+
+    include __DIR__ . '/404.php';
 
     break;
 }

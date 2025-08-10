@@ -7,11 +7,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Privacy Policy - MEXC Futures API Bypass</title>
   <meta name="description" content="Privacy Policy for MEXC Futures API Bypass service." />
-  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $_SERVER['URL']; ?>/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $_SERVER['URL']; ?>/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $_SERVER['URL']; ?>/favicon-16x16.png">
-  <link rel="manifest" href="<?php echo $_SERVER['URL']; ?>/site.webmanifest">
-  <link rel="stylesheet" href="<?php echo $_SERVER['URL']; ?>/css/style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url; ?>/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $url; ?>/favicon-16x16.png">
+  <link rel="manifest" href="<?php echo $url; ?>/site.webmanifest">
+  <link rel="stylesheet" href="<?php echo $url; ?>/css/style.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -108,12 +108,12 @@
 
     <footer class="footer">
       <div class="footer-links">
-        <a href="<?php echo $_SERVER['URL']; ?>/" class="footer-link">Home</a>
+        <a href="<?php echo $url; ?>/" class="footer-link">Home</a>
       </div>
       <div class="footer-links">
-        <a href="<?php echo $_SERVER['URL']; ?>/privacy" class="footer-link">Privacy Policy</a>
+        <a href="<?php echo $url; ?>/privacy" class="footer-link">Privacy Policy</a>
         <span>·</span>
-        <a href="<?php echo $_SERVER['URL']; ?>/terms" class="footer-link">Terms of Service</a>
+        <a href="<?php echo $url; ?>/terms" class="footer-link">Terms of Service</a>
       </div>
       <p>
         © 2025 MEXC Futures API Bypass<br />
