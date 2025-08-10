@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: <?php echo $_SERVER['URL']; ?>/sitemap.xml
+
+Sitemap: <?php echo $url; ?>/sitemap.xml

@@ -4,8 +4,7 @@ const config = {
   apiKey: 'YOUR_API_KEY',
   isTestnet: true,
   proxyUrl: null,
-  testSymbol: 'BTC_USDT',
-  testLeverage: 10
+  testSymbol: 'BTC_USDT'
 };
 
 function roundToStep(value, step) {
@@ -58,7 +57,7 @@ async function runTests() {
       positionMode: 1,
       side: 1,
       vol: 1,
-      leverage: config.testLeverage
+      leverage: 10
     });
     console.log('Create Order Result:', createOrderRes);
 
@@ -82,7 +81,7 @@ async function runTests() {
       symbol: config.testSymbol,
       price: orderPrice,
       vol: 1,
-      leverage: config.testLeverage,
+      leverage: 10,
       side: 2,
       openType: 2,
       triggerPrice: triggerPrice,
@@ -112,7 +111,7 @@ async function runTests() {
       const positionId = positions.data[0].positionId;
       const changeLeverageRes = await mexc.changeFuturesPositionLeverage({
         positionId: positionId,
-        leverage: config.testLeverage + 1,
+        leverage: 10 + 1,
         openType: 2,
         symbol: config.testSymbol,
         positionType: 1
