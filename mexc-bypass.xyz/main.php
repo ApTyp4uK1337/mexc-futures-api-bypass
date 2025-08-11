@@ -53,104 +53,6 @@
   <meta name="twitter:image" content="<?php echo $url; ?>/images/social-preview.jpg">
   <meta name="twitter:creator" content="@aptyp4uk1337">
 
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "MEXC Futures API Bypass - Source Code",
-      "description": "Full source code with lifetime access, free updates, and full customization for commercial use.",
-      "image": "<?php echo $url; ?>/images/social-preview.jpg",
-      "url": "<?php echo $url; ?>/",
-      "sku": "MEXC-SOURCE-001",
-      "mpn": "MEXC-SRC-2025",
-      "brand": {
-        "@type": "Brand",
-        "name": "aptyp4uk1337",
-        "logo": "<?php echo $url; ?>/images/avatar.jpg"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "125.00",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2025-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "url": "<?php echo $url; ?>/",
-        "seller": {
-          "@type": "Organization",
-          "name": "aptyp4uk1337",
-          "url": "<?php echo $url; ?>/"
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "127",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "additionalProperty": {
-        <
-        !--Доп.параметры,
-        если есть-- >
-        "@type": "PropertyValue",
-        "name": "Delivery Time",
-        "value": "Instant download"
-      }
-    }
-  </script>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "MEXC Futures API Bypass - API Subscription",
-      "description": "30-day subscription with full API access, regular updates, priority support, multi-account and proxy integration.",
-      "image": "<?php echo $url; ?>/images/social-preview.jpg",
-      "url": "<?php echo $url; ?>/",
-      "sku": "MEXC-SUB-001",
-      "mpn": "MEXC-SUB-2025",
-      "brand": {
-        "@type": "Brand",
-        "name": "aptyp4uk1337",
-        "logo": "<?php echo $url; ?>/images/avatar.jpg"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "30.00",
-        "priceCurrency": "USD",
-        "priceValidUntil": "2025-12-31",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "url": "<?php echo $url; ?>/",
-        "seller": {
-          "@type": "Organization",
-          "name": "aptyp4uk1337",
-          "url": "<?php echo $url; ?>/"
-        }
-      },
-      "additionalProperty": {
-        "@type": "PropertyValue",
-        "name": "Subscription Period",
-        "value": "30 days"
-      }
-    }
-  </script>
-
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "MEXC Futures API Bypass",
-      "url": "<?php echo $url; ?>/",
-      "logo": "<?php echo $url; ?>/images/social-preview.jpg",
-      "sameAs": [
-        "https://github.com/aptyp4uk1337/mexc-futures-api-bypass",
-        "https://t.me/aptyp4uk1337/19"
-      ]
-    }
-  </script>
-
   <!-- Favicon & Styles -->
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url; ?>/favicon-32x32.png">
@@ -354,7 +256,7 @@
             </div>
 
             <div class="accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
-              <button class="accordion-header" aria-expanded="false" aria-controls="faq2" itemprop="name">
+              <button class="accordion-header" aria-expanded="false" aria-controls="faq2">
                 <span class="accordion-icon"><i class="ti ti-question-mark"></i></span>
                 <span class="accordion-title" itemprop="name">Does it rely on any third-party services to send requests?</span>
                 <span class="accordion-arrow"><i class="ti ti-chevron-down"></i></span>
@@ -496,6 +398,9 @@
     </main>
 
     <section class="card pricing-section" itemscope itemtype="https://schema.org/Product">
+      <meta itemprop="image" content="<?php echo $url; ?>/images/social-preview.jpg">
+      <meta itemprop="description" content="Premium API access and source code for MEXC futures trading with direct access, multi-account support, and blazing fast execution.">
+
       <div class="card-header">
         <h2 itemprop="name"><i class="ti ti-currency-dollar"></i> Pricing Options</h2>
         <p class="card-subtitle">Choose the best option for your trading needs</p>
@@ -503,7 +408,8 @@
       <div class="card-body">
         <div class="pricing-grid">
           <!-- Subscription Option -->
-          <div class="pricing-card" itemscope itemtype="https://schema.org/Offer">
+          <div class="pricing-card" itemscope itemtype="https://schema.org/Offer" itemprop="offers" itemtype="https://schema.org/Offer">
+            <link itemprop="availability" href="https://schema.org/InStock">
             <div class="pricing-header">
               <h3 itemprop="name">API Subscription</h3>
               <div class="pricing-price">
@@ -532,7 +438,8 @@
           </div>
 
           <!-- Source Code Option -->
-          <div class="pricing-card pricing-card-featured" itemscope itemtype="https://schema.org/Offer">
+          <div class="pricing-card pricing-card-featured" itemscope itemtype="https://schema.org/Offer" itemprop="offers" itemtype="https://schema.org/Offer">
+            <link itemprop="availability" href="https://schema.org/InStock">
             <div class="pricing-badge pricing-badge-popular">
               <span>Most Popular</span>
             </div>
