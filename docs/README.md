@@ -30,7 +30,9 @@ All requests must include the following headers:
 | [**getUserInfo**](/docs/methods/getUserInfo.md) | General | Get brief information about the authenticated user. |
 | [**getOriginInfo**](/docs/methods/getOriginInfo.md) | General | Get account origin info. |
 | [**getReferralsList**](/docs/methods/getReferralsList.md) | General | Get referral invite list and their commission statistics. |
+| [**getFuturesTodayPnL**](/docs/methods/getFuturesTodayPnL.md) | General | Get futures today PnL. |
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | General | Get an overview of your asset balances. |
+| [**getFuturesUser**](/docs/methods/getFuturesUser.md) | Futures | Get futures user info. |
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Futures | Get detailed balance data for your futures account. |
 | [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Futures | Get the list of asset transfer records on your futures account. |
 | [**getFuturesOrdersDeals**](/docs/methods/getFuturesOrdersDeals.md) | Futures | Fetches the deal history for your futures orders. |
