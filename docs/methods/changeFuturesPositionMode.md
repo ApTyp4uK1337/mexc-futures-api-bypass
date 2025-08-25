@@ -22,7 +22,8 @@ Change the position mode for your futures account.
 ```json
 {
   "success": true,
-  "code": 0
+  "code": 0,
+  "is_testnet": true
 }
 ```
 
@@ -34,3 +35,4 @@ Change the position mode for your futures account.
 |---------------|------------|-------------------------------------|
 | `success`     | `boolean`  | Indicates if the request succeeded. |
 | `code`        | `number`   | Response status code.               |
+| `is_testnet`  | `boolean`   | Whether the environment is testnet. |

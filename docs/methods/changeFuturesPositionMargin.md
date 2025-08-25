@@ -21,7 +21,8 @@ Change the margin amount of an open futures position.
 ```json
 {
   "success": true,
-  "code": 0
+  "code": 0,
+  "is_testnet": true
 }
 ```
 
@@ -33,3 +34,4 @@ Change the margin amount of an open futures position.
 |---------------|------------|-------------------------------------|
 | `success`     | `boolean`  | Whether the request was successful. |
 | `code`        | `number`   | Response status code.               |
+| `is_testnet`  | `boolean`   | Whether the environment is testnet. |

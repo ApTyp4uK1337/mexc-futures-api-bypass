@@ -29,11 +29,11 @@ This endpoint does not require any parameters.
 
 ## 📦 Response parameters
 
-| **Field**                    | **Type**    | **Description**                                       |
-|-----------------------------|-------------|-------------------------------------------------------|
-| `success`                   | `boolean`   | Indicates whether the request was successful.         |
-| `code`                      | `number`    | Response status code.                                 |
-| `data.mobile`               | `string`    | User mobile phone number.          |
-| `data.mobileCountry`        | `string`    | User mobile phone number country code.             |
-| `data.email`                | `string`    | User email address.   |
-| `is_testnet`                | `boolean`   | Indicates if the server is in testnet mode.           |
+| **Field**              | **Type**   | **Description**                              |
+|------------------------|------------|----------------------------------------------|
+| `success`             | `boolean`  | Whether the request succeeded.               |
+| `code`                | `number`   | Status code (0 = success).                   |
+| `data.mobile`         | `string`   | User mobile phone number.                    |
+| `data.mobileCountry`  | `string`   | Country/region code for the mobile number.   |
+| `data.email`          | `string`   | User email address.                          |
+| `is_testnet`          | `boolean`  | Whether environment is testnet.              |

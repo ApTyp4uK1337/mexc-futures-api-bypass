@@ -47,6 +47,7 @@ All requests must include the following headers:
 | [**getFuturesOpenPositions**](/docs/methods/getFuturesOpenPositions.md) | Futures | Get currently open futures positions. |
 | [**getFuturesPositionsHistory**](/docs/methods/getFuturesPositionsHistory.md) | Futures | Retrieve the historical closed positions for a specific contract. |
 | [**closeAllFuturesPositions**](/docs/methods/closeAllFuturesPositions.md) | Futures | Close all currently open futures positions for the account. |
+| [**getFuturesOpenOrders**](/docs/methods/getFuturesOpenOrders.md) | Futures | Get currently open futures orders. |
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Futures | Create a new futures order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Futures | Fetch futures order(s) by ID. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Futures | Cancel the pending order placed before, each time can cancel up to 50 orders. |
@@ -64,6 +65,9 @@ All requests must include the following headers:
 | [**changeFuturesPositionMargin**](/docs/methods/changeFuturesPositionMargin.md) | Futures | Change the margin amount of an open futures position. |
 | [**changeFuturesPositionLeverage**](/docs/methods/changeFuturesPositionLeverage.md) | Futures | Change the leverage of a position. If the position does not exist yet, additional info is required. |
 | [**changeFuturesPositionMode**](/docs/methods/changeFuturesPositionMode.md) | Futures | Change the position mode for your futures account. |
+| [**changeFuturesOrderStopLimitPrice**](/docs/methods/changeFuturesOrderStopLimitPrice.md) | Futures | Switch Stop-Limit limited order price. |
+| [**changeFuturesPlanOrderStopLimitPrice**](/docs/methods/changeFuturesPlanOrderStopLimitPrice.md) | Futures | Switch the Stop-Limit price of trigger orders. |
+| [**changeFuturesOrderTargets**](/docs/methods/changeFuturesOrderTargets.md) | Futures | Switch the take profit price & stop loss price (fixed). |
 
 ---
 
