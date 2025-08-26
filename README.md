@@ -49,8 +49,8 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 | Option          | Price      | Duration         | Includes                        |
 |-----------------|------------|------------------|----------------------------------|
-| 🔓 Subscription | $30 | 30 days          | Full access to all methods + updates |
-| 💾 Source Code  | $125 | Lifetime (one-time) | Full source, no limits, no expiration |
+| 🔓 Subscription | $45 | 30 days          | Full access to all methods + updates |
+| 💾 Source Code  | $175 | Lifetime (one-time) | Full source, no limits, no expiration |
 
 📬 [Contact me on Telegram](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
 

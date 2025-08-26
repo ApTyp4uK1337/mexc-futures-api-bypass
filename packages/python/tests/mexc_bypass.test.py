@@ -3,7 +3,7 @@ from src.MexcBypass import MexcBypass
 
 async def test_mexc_bypass():
     async with MexcBypass(
-        api_key="your_mexc_token",
+        api_key="WEB82ec55aea4422ee4d331c36541b83f0bd5484d5b2f30d7616781c814ea8f49f1",
         is_testnet=True,
         proxy_url=None
     ) as client:

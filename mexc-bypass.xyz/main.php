@@ -413,11 +413,11 @@
             <div class="pricing-header">
               <h3 itemprop="name">API Subscription</h3>
               <div class="pricing-price">
-                <span class="price" itemprop="price" content="30">$30</span>
+                <span class="price" itemprop="price" content="45">$45</span>
                 <span class="period" itemprop="priceCurrency" content="USD">/ 30 days</span>
               </div>
               <div class="pricing-badge pricing-badge-hot">
-                <span>🔥 <s>$45</s> <span class="new-price">$30</span> / 30 days</span>
+                <span>🔥 <s>$60</s> <span class="new-price">$45</span> / 30 days</span>
               </div>
             </div>
             <ul class="pricing-features">
@@ -446,11 +446,11 @@
             <div class="pricing-header">
               <h3 itemprop="name">Source Code</h3>
               <div class="pricing-price">
-                <span class="price" itemprop="price" content="125">$125</span>
+                <span class="price" itemprop="price" content="175">$175</span>
                 <span class="period" itemprop="priceCurrency" content="USD">one-time</span>
               </div>
               <div class="pricing-badge pricing-badge-hot">
-                <span>🔥 <s>$175</s> <span class="new-price">$125</span></span>
+                <span>🔥 <s>$199</s> <span class="new-price">$175</span></span>
               </div>
             </div>
             <ul class="pricing-features">
