@@ -20,10 +20,12 @@
   <link rel="canonical" href="<?php echo $url; ?>/">
 
   <!-- Preload critical resources -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
   </noscript>
 
   <link rel="preload" href="<?php echo $url; ?>/css/style.min.css" as="style">
@@ -61,8 +63,6 @@
 
   <!-- CSS with media queries for print -->
   <link rel="stylesheet" href="<?php echo $url; ?>/css/style.min.css" media="all">
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/tabler-icons.min.css" media="all">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
 
   <!-- Load Google Analytics asynchronously -->
   <script>
@@ -87,6 +87,9 @@
       <div class="social-links">
         <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="social-link">
           <i class="ti ti-brand-telegram"></i> Telegram
+        </a>
+        <a href="discord://-/users/841963614398578708/" title="Discord" target="_blank" rel="noopener noreferrer" class="social-link">
+          <i class="ti ti-brand-discord"></i> Discord
         </a>
         <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="social-link">
@@ -550,6 +553,10 @@
         <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="footer-icon"
           aria-label="Telegram">
           <i class="ti ti-brand-telegram"></i>
+        </a>
+        <a href="discord://-/users/841963614398578708/" title="Discord" target="_blank" rel="noopener noreferrer" class="footer-icon"
+          aria-label="Discord">
+          <i class="ti ti-brand-discord"></i>
         </a>
         <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">

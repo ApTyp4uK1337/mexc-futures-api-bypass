@@ -1,0 +1,2139 @@
+openapi: 3.0.3
+info:
+  title: MEXC API Bypass
+  description: |
+    Trade during maintenance periods with our specialized API solution.
+  version: 1.0.0
+  contact:
+    name: Contact us
+    url: 'https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20MEXC%20Bypass'
+  termsOfService: 'https://mexc-bypass.xyz/terms'
+  license:
+    name: Proprietary License
+    url: 'https://github.com/ApTyp4uK1337/mexc-futures-api-bypass?tab=License-1-ov-file#readme'
+servers:
+  - url: https://api.mexc-bypass.xyz/v1
+    description: Main server
+    
+security:
+  - X-MEXC-BYPASS-API-KEY: []
+  - X-MEXC-WEB-KEY: []
+  - X-MEXC-NETWORK: []
+  - X-MEXC-PROXY: []
+paths:
+  /getServerTime:
+    get:
+      summary: Get Server Time
+      description: Returns current server time and testnet information
+      tags:
+        - System
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ServerTimeResponse'
+              example:
+                success: true
+                code: 200
+                data: {}
+                is_testnet: true
+  /getFuturesUser:
+    get:
+      summary: Get Futures User Information
+      description: Returns futures user information
+      tags:
+        - User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getReferralsList:
+    get:
+      summary: Get Referrals List
+      description: Returns user referrals list
+      tags:
+        - Referrals
+      parameters:
+        - name: start_time
+          in: query
+          description: Start time in milliseconds (default Monday this week)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: end_time
+          in: query
+          description: End time in milliseconds (default Sunday this week 23:59:59)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 10
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ReferralsListResponse'
+  /getAssetsOverview:
+    get:
+      summary: Get Assets Overview
+      description: Returns general overview of user assets
+      tags:
+        - Assets
+      parameters:
+        - name: convert
+          in: query
+          description: Convert currency
+          required: false
+          schema:
+            type: string
+            default: 1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetsOverviewResponse'
+  /getFuturesAssets:
+    get:
+      summary: Get Futures Assets
+      description: Returns user assets for futures
+      tags:
+        - Futures
+      parameters:
+        - name: currency
+          in: query
+          description: Currency (e.g., USDT)
+          required: true
+          schema:
+            type: string
+            example: "USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesAssetsResponse'
+  /getCustomerInfo:
+    get:
+      summary: Get Customer Info
+      description: Returns customer information and support token
+      tags:
+        - User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerInfoResponse'
+  /getFuturesTodayPnL:
+    get:
+      summary: Get Futures Today PnL
+      description: Returns profit/loss for futures today
+      tags:
+        - Futures
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getUserInfo:
+    get:
+      summary: Get User Info
+      description: Returns detailed user information
+      tags:
+        - User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserInfoResponse'
+  /getOriginInfo:
+    get:
+      summary: Get Origin Info
+      description: Returns original user information
+      tags:
+        - User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserInfoResponse'
+  /getSecure:
+    get:
+      summary: Get Secure Info
+      description: Returns secure user information
+      tags:
+        - User
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserInfoResponse'
+  /getFuturesAssetTransferRecords:
+    get:
+      summary: Get Futures Asset Transfer Records
+      description: Returns history of futures asset transfers
+      tags:
+        - Futures
+      parameters:
+        - name: currency
+          in: query
+          description: Currency filter
+          required: false
+          schema:
+            type: string
+        - name: state
+          in: query
+          description: Transfer state filter
+          required: false
+          schema:
+            type: string
+        - name: type
+          in: query
+          description: Transfer type filter
+          required: false
+          schema:
+            type: string
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AssetTransferRecordsResponse'
+  /getFuturesPendingOrders:
+    get:
+      summary: Get Futures Pending Orders
+      description: Returns list of pending futures orders
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol (optional)
+          required: false
+          schema:
+            type: string
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesPendingOrdersResponse'
+  /getFuturesOrdersHistory:
+    get:
+      summary: Get Futures Orders History
+      description: Returns futures orders history
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol filter
+          required: false
+          schema:
+            type: string
+        - name: states
+          in: query
+          description: Order states filter
+          required: false
+          schema:
+            type: string
+        - name: category
+          in: query
+          description: Order category filter
+          required: false
+          schema:
+            type: string
+        - name: side
+          in: query
+          description: Order side filter
+          required: false
+          schema:
+            type: string
+        - name: start_time
+          in: query
+          description: Start time in milliseconds (default Monday this week)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: end_time
+          in: query
+          description: End time in milliseconds (default Sunday this week 23:59:59)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesOrdersHistoryResponse'
+  /getFuturesContracts:
+    get:
+      summary: Get Futures Contracts
+      description: Returns futures contracts information
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "BTC_USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /calculateFuturesVolume:
+    get:
+      summary: Calculate Futures Volume
+      description: Calculates futures volume based on amount and leverage
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "BTC_USDT"
+        - name: amount
+          in: query
+          description: Amount in USDT
+          required: true
+          schema:
+            type: string
+            example: "1"
+        - name: leverage
+          in: query
+          description: Leverage
+          required: true
+          schema:
+            type: string
+            example: "10"
+        - name: price_type
+          in: query
+          description: Price type
+          required: false
+          schema:
+            type: string
+            enum: [index_price, fair_price, last_price]
+            default: "last_price"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelAllFuturesOrders:
+    post:
+      summary: Cancel All Futures Orders
+      description: Cancels all active futures orders for specified symbol
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "BTC_USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CancelAllOrdersResponse'
+  /getFuturesTickers:
+    get:
+      summary: Get Futures Tickers
+      description: Returns futures tickers
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "BTC_USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesContractIndexPrice:
+    get:
+      summary: Get Futures Contract Index Price
+      description: Returns index price for futures contract
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "BTC_USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesContractFairPrice:
+    get:
+      summary: Get Futures Contract Fair Price
+      description: Returns fair price for futures contract
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "BTC_USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesContractKlineData:
+    get:
+      summary: Get Futures Contract Kline Data
+      description: Returns kline data for futures contract
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+        - name: price_type
+          in: query
+          description: Price type
+          required: false
+          schema:
+            type: string
+            enum: [index_price, fair_price, last_price]
+            default: "last_price"
+        - name: interval
+          in: query
+          description: Kline interval
+          required: false
+          schema:
+            type: string
+            default: "Min1"
+        - name: start
+          in: query
+          description: Start time in milliseconds
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: end
+          in: query
+          description: End time in milliseconds
+          required: false
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesLeverage:
+    get:
+      summary: Get Futures Leverage
+      description: Returns available leverage for futures
+      tags:
+        - Futures
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesLeverageResponse'
+  /getFuturesRiskLimits:
+    get:
+      summary: Get Futures Risk Limits
+      description: Returns risk limits for futures
+      tags:
+        - Futures
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesRiskLimitsResponse'
+  /getFuturesPositionMode:
+    get:
+      summary: Get Futures Position Mode
+      description: Returns current position mode for futures
+      tags:
+        - Futures
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesPositionModeResponse'
+  /getFuturesOpenPositions:
+    get:
+      summary: Get Futures Open Positions
+      description: Returns list of open futures positions
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "RDO_USDT"
+        - name: type
+          in: query
+          description: Position type
+          required: false
+          schema:
+            type: string
+            example: "2"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/FuturesOpenPositionsResponse'
+  /closeAllFuturesPositions:
+    post:
+      summary: Close All Futures Positions
+      description: Closes all open futures positions
+      tags:
+        - Futures
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesPositionsHistory:
+    get:
+      summary: Get Futures Positions History
+      description: Returns futures positions history
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+            example: "ALTCOIN_USDT"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /changeFuturesPositionLeverage:
+    post:
+      summary: Change Futures Position Leverage
+      description: Changes leverage for futures position
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePositionLeverageRequest'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /changeFuturesPositionMargin:
+    post:
+      summary: Change Futures Position Margin
+      description: Changes margin for futures position
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePositionMarginRequest'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /changeFuturesOrderTargets:
+    get:
+      summary: Change Futures Order Targets
+      description: Changes order targets (take profit/stop loss) for futures order
+      tags:
+        - Futures
+      parameters:
+        - name: real_order_id
+          in: query
+          description: Real order ID
+          required: true
+          schema:
+            type: string
+            example: "3140877"
+        - name: take_profit_price
+          in: query
+          description: Take profit price
+          required: true
+          schema:
+            type: string
+            example: "11300"
+        - name: take_profit_volume
+          in: query
+          description: Take profit volume
+          required: true
+          schema:
+            type: string
+            example: "1"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /changeFuturesOrderStopLimitPrice:
+    get:
+      summary: Change Futures Order Stop Limit Price
+      description: Changes stop limit price for futures order
+      tags:
+        - Futures
+      parameters:
+        - name: order_id
+          in: query
+          description: Order ID
+          required: true
+          schema:
+            type: string
+            example: "714888184919574529"
+        - name: take_profit_price
+          in: query
+          description: Take profit price
+          required: true
+          schema:
+            type: string
+            example: "114000"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /changeFuturesPlanOrderStopLimitPrice:
+    get:
+      summary: Change Futures Plan Order Stop Limit Price
+      description: Changes stop limit price for futures plan order
+      tags:
+        - Futures
+      parameters:
+        - name: order_id
+          in: query
+          description: Order ID
+          required: true
+          schema:
+            type: string
+            example: "714888184919574529"
+        - name: take_profit_price
+          in: query
+          description: Take profit price
+          required: true
+          schema:
+            type: string
+            example: "114000"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /changeFuturesPositionMode:
+    post:
+      summary: Change Futures Position Mode
+      description: Changes position mode for futures
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangePositionModeRequest'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /createFuturesOrder:
+    post:
+      summary: Create Futures Order
+      description: Creates a new futures order
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateFuturesOrderRequest'
+            example:
+              symbol: "SOL_USDT"
+              type: 5
+              open_type: 1
+              position_mode: 1
+              side: 1
+              vol: 1
+              leverage: 1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateFuturesOrderResponse'
+  /changeFuturesOrder:
+    post:
+      summary: Change Futures Order
+      description: Modifies existing futures order
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChangeFuturesOrderRequest'
+            example:
+              real_order_id: 3140444
+              take_profit_volume: 1
+              take_profit_price: 113000
+              take_profit_trend: 1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ChangeFuturesOrderResponse'
+  /getFuturesOrdersById:
+    get:
+      summary: Get Futures Orders By ID
+      description: Returns futures orders by specified IDs
+      tags:
+        - Futures
+      parameters:
+        - name: ids
+          in: query
+          description: Comma-separated list of order IDs
+          required: true
+          schema:
+            type: string
+            example: "714888184919574529,1"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesOpenOrders:
+    get:
+      summary: Get Futures Open Orders
+      description: Returns list of open futures orders
+      tags:
+        - Futures
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesOrdersDeals:
+    get:
+      summary: Get Futures Orders Deals
+      description: Returns deals for futures orders
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol
+          required: true
+          schema:
+            type: string
+        - name: start_time
+          in: query
+          description: Start time in milliseconds (default Monday this week)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: end_time
+          in: query
+          description: End time in milliseconds (default Sunday this week 23:59:59)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelFuturesOrders:
+    post:
+      summary: Cancel Futures Orders
+      description: Cancels futures orders by IDs
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+              description: Array of order IDs to cancel
+            example: ["714888184919574529", "714888184919574530"]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelFuturesOrderWithExternalId:
+    post:
+      summary: Cancel Futures Order With External ID
+      description: Cancels futures order by external ID
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                symbol:
+                  type: string
+                  description: Trading pair symbol
+                external_id:
+                  type: string
+                  description: External order ID
+              required:
+                - symbol
+                - external_id
+            example:
+              symbol: "BTC_USDT"
+              external_id: "ext_12345"
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /createFuturesTriggerOrder:
+    post:
+      summary: Create Futures Trigger Order
+      description: Creates a new futures trigger order
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                symbol:
+                  type: string
+                  description: Trading pair symbol
+                price:
+                  type: number
+                  description: Price (optional for market orders)
+                vol:
+                  type: integer
+                  description: Volume
+                leverage:
+                  type: integer
+                  description: Leverage
+                side:
+                  type: integer
+                  description: Side (1 - buy, 2 - sell)
+                open_type:
+                  type: integer
+                  description: Open type
+                trigger_price:
+                  type: number
+                  description: Trigger price
+                trigger_type:
+                  type: integer
+                  description: Trigger type
+                execute_cycle:
+                  type: integer
+                  description: Execute cycle
+                order_type:
+                  type: integer
+                  description: Order type
+                trend:
+                  type: integer
+                  description: Trend
+              required:
+                - symbol
+                - vol
+                - side
+                - open_type
+                - trigger_price
+                - trigger_type
+                - execute_cycle
+                - order_type
+                - trend
+            example:
+              symbol: "BTC_USDT"
+              vol: 1
+              side: 1
+              open_type: 1
+              trigger_price: 50000
+              trigger_type: 1
+              execute_cycle: 1
+              order_type: 1
+              trend: 1
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesTriggerOrders:
+    get:
+      summary: Get Futures Trigger Orders
+      description: Returns futures trigger orders
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol filter
+          required: false
+          schema:
+            type: string
+        - name: states
+          in: query
+          description: Order states filter
+          required: false
+          schema:
+            type: string
+        - name: start_time
+          in: query
+          description: Start time in milliseconds (default Monday this week)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: end_time
+          in: query
+          description: End time in milliseconds (default Sunday this week 23:59:59)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelFuturesTriggerOrders:
+    post:
+      summary: Cancel Futures Trigger Orders
+      description: Cancels futures trigger orders by IDs
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+              description: Array of trigger order IDs to cancel
+            example: ["714888184919574529", "714888184919574530"]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelAllFuturesTriggerOrders:
+    post:
+      summary: Cancel All Futures Trigger Orders
+      description: Cancels all futures trigger orders for specified symbol
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                symbol:
+                  type: string
+                  description: Trading pair symbol (optional)
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /getFuturesStopLimitOrders:
+    get:
+      summary: Get Futures Stop Limit Orders
+      description: Returns futures stop limit orders
+      tags:
+        - Futures
+      parameters:
+        - name: symbol
+          in: query
+          description: Trading pair symbol filter
+          required: false
+          schema:
+            type: string
+        - name: is_finished
+          in: query
+          description: Is finished filter
+          required: false
+          schema:
+            type: boolean
+        - name: start_time
+          in: query
+          description: Start time in milliseconds (default Monday this week)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: end_time
+          in: query
+          description: End time in milliseconds (default Sunday this week 23:59:59)
+          required: false
+          schema:
+            type: integer
+            format: int64
+        - name: page_num
+          in: query
+          description: Page number
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: page_size
+          in: query
+          description: Page size
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 100
+            default: 20
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelStopLimitOrders:
+    post:
+      summary: Cancel Stop Limit Orders
+      description: Cancels stop limit orders by IDs
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: string
+              description: Array of stop limit order IDs to cancel
+            example: ["714888184919574529", "714888184919574530"]
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+  /cancelAllFuturesStopLimitOrders:
+    post:
+      summary: Cancel All Futures Stop Limit Orders
+      description: Cancels all futures stop limit orders
+      tags:
+        - Futures
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                position_id:
+                  type: string
+                  description: Position ID (optional)
+                symbol:
+                  type: string
+                  description: Trading pair symbol (optional)
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BaseResponse'
+components:
+  securitySchemes:
+    X-MEXC-BYPASS-API-KEY:
+      type: apiKey
+      in: header
+      name: X-MEXC-BYPASS-API-KEY
+      description: Your unique API key to access the MEXC Bypass API
+    X-MEXC-WEB-KEY:
+      type: apiKey
+      in: header
+      name: X-MEXC-WEB-KEY
+      description: Optional MEXC web key. Used only in some methods
+    X-MEXC-NETWORK:
+      type: apiKey
+      in: header
+      name: X-MEXC-NETWORK
+      description: "Network type: TESTNET (default) or MAINNET"
+    X-MEXC-PROXY:
+      type: apiKey
+      in: header
+      name: X-MEXC-PROXY
+      description: "Optional proxy URL (supports http:// or socks5://)"
+  schemas:
+    BaseResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Operation success status
+        code:
+          type: integer
+          description: Response code
+        data:
+          description: Response data
+        is_testnet:
+          type: boolean
+          description: Testnet flag
+      required:
+        - success
+        - code
+        - is_testnet
+    ServerTimeResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              description: Server time data
+    ReferralsListResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                total:
+                  type: integer
+                  description: Total number of referrals
+                invites:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      memberId:
+                        type: string
+                        description: Member ID
+                      account:
+                        type: string
+                        description: Account
+                      regTime:
+                        type: integer
+                        format: int64
+                        description: Registration time
+                      totalCommission:
+                        type: string
+                        description: Total commission
+                      exchange:
+                        type: string
+                        description: Exchange
+                      contract:
+                        type: string
+                        description: Contract
+                      dex:
+                        type: string
+                        description: DEX
+                      margin:
+                        type: string
+                        nullable: true
+                        description: Margin
+                      uid:
+                        type: string
+                        description: UID
+              required:
+                - total
+                - invites
+    AssetsOverviewResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                total:
+                  type: number
+                  format: double
+                  description: Total balance
+                spot:
+                  type: number
+                  format: double
+                  description: Spot balance
+                otc:
+                  type: number
+                  format: double
+                  description: OTC balance
+                contract:
+                  type: number
+                  format: double
+                  description: Contract balance
+                strategy:
+                  type: number
+                  format: double
+                  description: Strategy balance
+                robot:
+                  type: number
+                  format: double
+                  description: Robot balance
+                alpha:
+                  type: number
+                  format: double
+                  description: Alpha balance
+              required:
+                - total
+                - spot
+                - otc
+                - contract
+                - strategy
+                - robot
+                - alpha
+            msg:
+              type: string
+              description: Message
+            timestamp:
+              type: integer
+              format: int64
+              description: Timestamp
+    FuturesAssetsResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                positionMargin:
+                  type: number
+                  format: double
+                  description: Position margin
+                availableBalance:
+                  type: number
+                  format: double
+                  description: Available balance
+                cashBalance:
+                  type: number
+                  format: double
+                  description: Cash balance
+                frozenBalance:
+                  type: number
+                  format: double
+                  description: Frozen balance
+                equity:
+                  type: number
+                  format: double
+                  description: Equity
+                unrealized:
+                  type: number
+                  format: double
+                  description: Unrealized profit/loss
+                bonus:
+                  type: number
+                  format: double
+                  description: Bonus
+                availableCash:
+                  type: number
+                  format: double
+                  description: Available cash
+                availableOpen:
+                  type: number
+                  format: double
+                  description: Available for opening
+    CustomerInfoResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                memberId:
+                  type: string
+                  description: Member ID
+                digitalId:
+                  type: string
+                  description: Digital ID
+                customerServiceToken:
+                  type: string
+                  description: Customer service token
+              required:
+                - memberId
+                - digitalId
+                - customerServiceToken
+    UserInfoResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                memberId:
+                  type: string
+                  description: Member ID
+                userToken:
+                  type: string
+                  description: User token
+                digitalId:
+                  type: string
+                  description: Digital ID
+                status:
+                  type: string
+                  description: Status
+                mobile:
+                  type: string
+                  description: Mobile phone
+                email:
+                  type: string
+                  description: Email
+                authLevel:
+                  type: string
+                  description: Authorization level
+                secondAuthType:
+                  type: string
+                  description: Second authorization type
+                account:
+                  type: string
+                  description: Account
+                lastLoginIp:
+                  type: string
+                  description: Last login IP
+                lastLoginTime:
+                  type: string
+                  description: Last login time
+                kycStatus:
+                  type: string
+                  description: KYC status
+                country:
+                  type: string
+                  description: Country
+                inviteCode:
+                  type: string
+                  description: Invite code
+                kycInfo:
+                  type: object
+                  properties:
+                    junior:
+                      type: object
+                      properties:
+                        country:
+                          type: string
+                        countryCode:
+                          type: string
+                        authName:
+                          type: string
+                        authRealName:
+                          type: string
+                        firstName:
+                          type: string
+                        lastName:
+                          type: string
+                        cardNo:
+                          type: string
+                        cardType:
+                          type: string
+                        status:
+                          type: string
+                        note:
+                          type: string
+                        passTime:
+                          type: string
+                        dateOfBirth:
+                          type: string
+                        realDateOfBirth:
+                          type: string
+                    senior:
+                      type: object
+                      properties:
+                        country:
+                          type: string
+                        countryCode:
+                          type: string
+                        authName:
+                          type: string
+                        authRealName:
+                          type: string
+                        firstName:
+                          type: string
+                        lastName:
+                          type: string
+                        cardNo:
+                          type: string
+                        cardType:
+                          type: string
+                        status:
+                          type: string
+                        note:
+                          type: string
+                        passTime:
+                          type: string
+                        dateOfBirth:
+                          type: string
+                        realDateOfBirth:
+                          type: string
+                    level1:
+                      type: object
+                    level2:
+                      type: object
+                    level3:
+                      type: object
+                    maxAuthTimes:
+                      type: integer
+                institutionInfo:
+                  type: object
+                  properties:
+                    level:
+                      type: string
+                userVipLevel:
+                  type: string
+                  description: User VIP level
+                kycMode:
+                  type: string
+                  description: KYC mode
+                isAgent:
+                  type: boolean
+                  description: Is agent
+                registerTime:
+                  type: string
+                  description: Registration time
+                pageLanguage:
+                  type: string
+                  description: Page language
+                customerServiceToken:
+                  type: string
+                  description: Customer service token
+                notSetPassword:
+                  type: boolean
+                  description: Password not set
+                dexOpened:
+                  type: boolean
+                  description: DEX opened
+    AssetTransferRecordsResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                pageSize:
+                  type: integer
+                  description: Page size
+                totalCount:
+                  type: integer
+                  description: Total count
+                totalPage:
+                  type: integer
+                  description: Total pages
+                currentPage:
+                  type: integer
+                  description: Current page
+                resultList:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        description: Record ID
+                      txid:
+                        type: string
+                        description: Transaction ID
+                      currency:
+                        type: string
+                        description: Currency
+                      amount:
+                        type: number
+                        format: double
+                        description: Amount
+                      type:
+                        type: string
+                        description: Type
+                      state:
+                        type: string
+                        description: State
+                      createTime:
+                        type: integer
+                        format: int64
+                        description: Creation time
+                      updateTime:
+                        type: integer
+                        format: int64
+                        description: Update time
+              required:
+                - pageSize
+                - totalCount
+                - totalPage
+                - currentPage
+                - resultList
+    FuturesPendingOrdersResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: array
+              description: List of pending orders
+              items:
+                type: object
+    FuturesOrdersHistoryResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: array
+              items:
+                type: object
+                properties:
+                  orderId:
+                    type: string
+                    description: Order ID
+                  symbol:
+                    type: string
+                    description: Symbol
+                  positionId:
+                    type: integer
+                    description: Position ID
+                  price:
+                    type: number
+                    format: double
+                    description: Price
+                  priceStr:
+                    type: string
+                    description: Price as string
+                  vol:
+                    type: number
+                    format: double
+                    description: Volume
+                  leverage:
+                    type: integer
+                    description: Leverage
+                  side:
+                    type: integer
+                    description: Side
+                  category:
+                    type: integer
+                    description: Category
+                  orderType:
+                    type: integer
+                    description: Order type
+                  dealAvgPrice:
+                    type: number
+                    format: double
+                    description: Deal average price
+                  dealAvgPriceStr:
+                    type: string
+                    description: Deal average price as string
+                  dealVol:
+                    type: number
+                    format: double
+                    description: Deal volume
+                  orderMargin:
+                    type: number
+                    format: double
+                    description: Order margin
+                  takerFee:
+                    type: number
+                    format: double
+                    description: Taker fee
+                  makerFee:
+                    type: number
+                    format: double
+                    description: Maker fee
+                  profit:
+                    type: number
+                    format: double
+                    description: Profit
+                  feeCurrency:
+                    type: string
+                    description: Fee currency
+                  openType:
+                    type: integer
+                    description: Open type
+                  state:
+                    type: integer
+                    description: State
+                  externalOid:
+                    type: string
+                    description: External ID
+                  errorCode:
+                    type: integer
+                    description: Error code
+                  usedMargin:
+                    type: number
+                    format: double
+                    description: Used margin
+                  createTime:
+                    type: integer
+                    format: int64
+                    description: Creation time
+                  updateTime:
+                    type: integer
+                    format: int64
+                    description: Update time
+                  positionMode:
+                    type: integer
+                    description: Position mode
+                  version:
+                    type: integer
+                    description: Version
+                  showCancelReason:
+                    type: integer
+                    description: Show cancel reason
+                  showProfitRateShare:
+                    type: integer
+                    description: Show profit rate share
+                  pnlRate:
+                    type: number
+                    format: double
+                    description: PnL rate
+                  openAvgPrice:
+                    type: number
+                    format: double
+                    description: Open average price
+                  bboTypeNum:
+                    type: integer
+                    description: BBO type number
+                  totalFee:
+                    type: number
+                    format: double
+                    description: Total fee
+                  zeroSaveTotalFeeBinance:
+                    type: number
+                    format: double
+                    description: Total fee Binance
+                  zeroTradeTotalFeeBinance:
+                    type: number
+                    format: double
+                    description: Total trade fee Binance
+    CancelAllOrdersResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            code:
+              type: integer
+              example: 0
+    FuturesLeverageResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          description: Operation success status
+        code:
+          type: integer
+          description: Response code
+        message:
+          type: string
+          description: Message
+        is_testnet:
+          type: boolean
+          description: Testnet flag
+      required:
+        - success
+        - code
+        - message
+        - is_testnet
+    FuturesRiskLimitsResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              additionalProperties:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    level:
+                      type: integer
+                      description: Level
+                    maxVol:
+                      type: number
+                      format: double
+                      description: Maximum volume
+                    mmr:
+                      type: number
+                      format: double
+                      description: MMR
+                    imr:
+                      type: number
+                      format: double
+                      description: IMR
+                    maxLeverage:
+                      type: integer
+                      description: Maximum leverage
+                    symbol:
+                      type: string
+                      description: Symbol
+                    positionType:
+                      type: integer
+                      description: Position type
+                    openType:
+                      type: integer
+                      description: Open type
+                    leverage:
+                      type: integer
+                      description: Leverage
+                    limitBySys:
+                      type: boolean
+                      description: Limit by system
+                    currentMmr:
+                      type: number
+                      format: double
+                      description: Current MMR
+    FuturesPositionModeResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            code:
+              type: integer
+              example: 0
+    FuturesOpenPositionsResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: array
+              description: List of open positions
+              items:
+                type: object
+    ChangePositionLeverageRequest:
+      type: object
+      properties:
+        position_id:
+          type: string
+          description: Position ID
+        leverage:
+          type: integer
+          minimum: 1
+          maximum: 200
+          description: New leverage
+        open_type:
+          type: integer
+          nullable: true
+          description: Open type
+        symbol:
+          type: string
+          nullable: true
+          description: Symbol
+        position_type:
+          type: integer
+          nullable: true
+          description: Position type
+      required:
+        - leverage
+    ChangePositionMarginRequest:
+      type: object
+      properties:
+        position_id:
+          type: string
+          description: Position ID
+        amount:
+          type: number
+          format: double
+          description: Amount to change
+        type:
+          type: integer
+          description: Change type
+      required:
+        - position_id
+        - amount
+        - type
+    ChangePositionModeRequest:
+      type: object
+      properties:
+        position_mode:
+          type: integer
+          description: Position mode
+          enum: [1, 2]
+      required:
+        - position_mode
+    CreateFuturesOrderRequest:
+      type: object
+      properties:
+        symbol:
+          type: string
+          description: Trading pair symbol
+        price:
+          type: number
+          format: double
+          description: Price (optional for market orders)
+        type:
+          type: integer
+          description: Order type
+        open_type:
+          type: integer
+          description: Open type
+        position_mode:
+          type: integer
+          description: Position mode
+        side:
+          type: integer
+          description: Side (1 - buy, 2 - sell)
+          enum: [1, 2]
+        vol:
+          type: number
+          format: double
+          minimum: 0
+          description: Volume
+        leverage:
+          type: integer
+          minimum: 1
+          maximum: 200
+          description: Leverage
+        position_id:
+          type: string
+          nullable: true
+          description: Position ID
+        external_id:
+          type: string
+          nullable: true
+          description: External ID
+        take_profit_price:
+          type: number
+          format: double
+          nullable: true
+          description: Take profit price
+        take_profit_trend:
+          type: integer
+          nullable: true
+          description: Take profit trend
+        stop_loss_price:
+          type: number
+          format: double
+          nullable: true
+          description: Stop loss price
+        stop_loss_trend:
+          type: integer
+          nullable: true
+          description: Stop loss trend
+        price_protect:
+          type: integer
+          nullable: true
+          description: Price protection
+        reduce_only:
+          type: boolean
+          nullable: true
+          description: Reduce only
+      required:
+        - symbol
+        - type
+        - open_type
+        - position_mode
+        - side
+        - vol
+        - leverage
+    CreateFuturesOrderResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                orderId:
+                  type: string
+                  description: Created order ID
+                ts:
+                  type: integer
+                  format: int64
+                  description: Timestamp
+              required:
+                - orderId
+                - ts
+    ChangeFuturesOrderRequest:
+      type: object
+      properties:
+        real_order_id:
+          type: integer
+          description: Real order ID
+        take_profit_volume:
+          type: number
+          format: double
+          description: Take profit volume
+        take_profit_price:
+          type: number
+          format: double
+          description: Take profit price
+        take_profit_trend:
+          type: integer
+          description: Take profit trend
+        stop_loss_price:
+          type: number
+          format: double
+          nullable: true
+          description: Stop loss price
+        stop_loss_trend:
+          type: integer
+          nullable: true
+          description: Stop loss trend
+      required:
+        - real_order_id
+        - take_profit_volume
+        - take_profit_price
+        - take_profit_trend
+    ChangeFuturesOrderResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            data:
+              type: object
+              properties:
+                orderId:
+                  type: string
+                  description: Modified order ID
+                ts:
+                  type: integer
+                  format: int64
+                  description: Timestamp
+              required:
+                - orderId
+                - ts
+tags:
+  - name: System
+    description: System endpoints
+  - name: User
+    description: User management endpoints
+  - name: Referrals
+    description: Referral management endpoints
+  - name: Assets
+    description: Asset management endpoints
+  - name: Futures
+    description: Futures trading endpoints

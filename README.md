@@ -146,4 +146,5 @@ The library supports **30+ endpoints** including:
 ### 💌 Contact me
 
 <a href="https://t.me/aptyp4uk1337_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"></a>
+<a href="discord://-/users/841963614398578708/"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white" title="Discord"></a>
 <a href="mailto:aptyp4uk1337@gmail.com?subject=MEXC API Bypass"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" title="Email"></a>
