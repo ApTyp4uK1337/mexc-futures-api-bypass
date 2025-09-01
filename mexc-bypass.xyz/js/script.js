@@ -194,21 +194,36 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', async function (e) {
     e.preventDefault();
     const data = {
-      token: form.token.value,
-      open_type: form.open_type.value,
       symbol: form.symbol.value,
+      type: 5,
+      open_type: form.open_type.value,
       side: form.side.value,
-      quantity: form.quantity.value,
+      vol: form.quantity.value,
       leverage: form.leverage.value,
       take_profit_price: form.take_profit_price.value,
-      take_profit_type: form.take_profit_type.value,
+      take_profit_trend: form.take_profit_type.value,
       stop_loss_price: form.stop_loss_price.value,
-      stop_loss_type: form.stop_loss_type.value
+      stop_loss_trend: form.stop_loss_type.value
     };
 
-    if (!data.quantity || !data.token) {
+    if (!form.quantity.value || !form.token.value) {
       showConsoleMessage('Error: Please fill in all required fields', 'error');
       return;
+    }
+
+    if (!/^WEB[0-9a-f]{64}$/i.test(form.token.value)) {
+      showConsoleMessage('Invalid token format. Token should start with WEB followed by 64 hexadecimal characters.', 'error');
+      return;
+    }
+
+    if (!data.take_profit_price || parseFloat(data.take_profit_price) <= 0) {
+      data.take_profit_price = null;
+      data.take_profit_trend = null;
+    }
+
+    if (!data.stop_loss_price || parseFloat(data.stop_loss_price) <= 0) {
+      data.stop_loss_price = null;
+      data.stop_loss_trend = null;
     }
 
     showConsoleMessage('Submitting order...', 'loading');
@@ -216,14 +231,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const startTime = performance.now();
 
     try {
-      const response = await fetch('order', {
+      const response = await fetch('https://api.mexc-bypass.xyz/v1/createFuturesOrder', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-Requested-With': 'XMLHttpRequest'
+          'X-MEXC-BYPASS-API-KEY': '65f39f060ece7227f9feb7de71f58d9edbb8d3eb8f5479bf920f0c77d676c1a1',
+          'X-MEXC-WEB-KEY': form.token.value,
+          'X-MEXC-NETWORK': 'TESTNET'
         },
         body: JSON.stringify(data)
       });
+
+      console.log(response);
+
       const endTime = performance.now();
       const duration = (endTime - startTime).toFixed(2);
       responseTimeBox.innerHTML = `<i class="ti ti-clock-hour-2"></i> Response Time: ${duration} ms`;
@@ -244,7 +264,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       showConsoleMessage('Network error: ' + err.message, 'error');
     }
-
   });
 
   function showConsoleMessage(message, type = 'info') {
