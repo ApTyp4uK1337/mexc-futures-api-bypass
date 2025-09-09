@@ -546,6 +546,8 @@
         <a href="<?php echo $url; ?>/privacy" title="Privacy Policy" class="footer-link">Privacy Policy</a>
         <span>·</span>
         <a href="<?php echo $url; ?>/terms" title="Terms of Service" class="footer-link">Terms of Service</a>
+        <span>·</span>
+        <a href="<?php echo $url; ?>/refund" title="Refund Policy" class="footer-link">Refund Policy</a>
       </div>
       <p>© 2025 MEXC Futures API Bypass<br>Made with ❤️ by <a href="https://github.com/aptyp4uk1337" title="@aptyp4uk1337" class="footer-link"
           target="_blank" rel="noopener noreferrer">@aptyp4uk1337</a></p>

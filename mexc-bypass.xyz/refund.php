@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Privacy Policy - MEXC Futures API Bypass</title>
-  <meta name="description" content="Privacy Policy for MEXC Futures API Bypass service. Learn about data collection, security measures, and your privacy rights." />
-  <meta name="keywords" content="MEXC API bypass privacy, data protection, security policy, privacy rights, MEXC futures API privacy" />
+  <title>Refund Policy - MEXC Futures API Bypass</title>
+  <meta name="description" content="Refund Policy for MEXC Futures API Bypass service. Learn why refunds are not available for code purchases and subscriptions." />
+  <meta name="keywords" content="MEXC API bypass refund, no refunds, subscription policy, code purchase policy" />
 
-  <link rel="canonical" href="<?php echo $url; ?>/privacy">
+  <link rel="canonical" href="<?php echo $url; ?>/refund">
 
   <!-- Preload critical resources -->
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -22,15 +22,15 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php echo $url; ?>/privacy">
-  <meta property="og:title" content="Privacy Policy - MEXC Futures API Bypass">
-  <meta property="og:description" content="Privacy Policy for MEXC Futures API Bypass service. Learn about data protection and security.">
+  <meta property="og:url" content="<?php echo $url; ?>/refund">
+  <meta property="og:title" content="Refund Policy - MEXC Futures API Bypass">
+  <meta property="og:description" content="Refund Policy for MEXC Futures API Bypass service. Learn why refunds are not available.">
   <meta property="og:image" content="<?php echo $url; ?>/images/social-preview.jpg">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Privacy Policy - MEXC Futures API Bypass">
-  <meta name="twitter:description" content="Privacy Policy for MEXC Futures API Bypass service.">
+  <meta name="twitter:title" content="Refund Policy - MEXC Futures API Bypass">
+  <meta name="twitter:description" content="Refund Policy for MEXC Futures API Bypass service.">
 
   <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $url; ?>/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="<?php echo $url; ?>/favicon-32x32.png">
@@ -47,7 +47,6 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-
     gtag('config', 'G-TQ4Z58CVYV');
   </script>
 </head>
@@ -55,74 +54,53 @@
 <body>
   <div class="container">
     <header class="header">
-      <h1 class="title">Privacy Policy</h1>
-      <p class="subtitle">Last updated: June 29, 2025</p>
+      <h1 class="title">Refund Policy</h1>
+      <p class="subtitle">Last updated: September 6, 2025</p>
     </header>
 
     <main class="policy-content">
       <section class="card">
         <div class="card-header">
-          <h2><i class="ti ti-shield-lock"></i> Data Collection and Usage</h2>
+          <h2><i class="ti ti-cash-off"></i> No Refunds Policy</h2>
         </div>
         <div class="card-body">
-          <p>We respect your privacy and are transparent about what data we collect and how it is used.</p>
-
-          <p>🔹 <strong>User Tokens:</strong> You may provide your MEXC user token when using our demo API bypass
-            service. This token is only used temporarily for demonstration purposes and is never stored, logged, or
-            shared with third parties.</p>
-
-          <p>🔹 <strong>Anonymous Analytics:</strong> We may collect anonymous, aggregated usage data solely to improve
-            service quality. This data does not identify individual users in any way.</p>
-
-          <p>🔹 <strong>Cookies:</strong> Our website uses only essential cookies to ensure basic functionality and a
-            smooth user experience. We do not employ tracking cookies or third-party analytics tools.</p>
+          <p>We value transparency and want to make it clear that we <strong>do not provide refunds</strong> for our services.
+            This policy is in place to ensure fairness and clarity for all customers.</p>
         </div>
       </section>
 
       <section class="card">
         <div class="card-header">
-          <h2><i class="ti ti-database"></i> Data Security</h2>
+          <h2><i class="ti ti-code"></i> Purchase of Source Code</h2>
         </div>
         <div class="card-body">
-          <p>We take strong measures to keep your data safe:</p>
-
-          <p>🔹 All API requests are transmitted over secure HTTPS connections to prevent interception.</p>
-
-          <p>🔹 We do not store any sensitive user data on our servers beyond what is strictly necessary for service
-            operation.</p>
-
-          <p>🔹 Our infrastructure undergoes regular security audits to ensure compliance with best practices.</p>
+          <p>🔹 When you purchase our source code, you immediately receive full access to all files. Since digital goods
+            cannot be "returned" once delivered, all sales of source code are <strong>final and non-refundable</strong>.</p>
+          <p>This ensures that once the intellectual property is transferred, ownership remains with the buyer.</p>
         </div>
       </section>
 
       <section class="card">
         <div class="card-header">
-          <h2><i class="ti ti-building-bank"></i> Third-Party Services</h2>
+          <h2><i class="ti ti-clock-dollar"></i> Subscription Services</h2>
         </div>
         <div class="card-body">
-          <p>We only share your data with third parties when absolutely necessary, for example:</p>
-
-          <p>🔹 Payment processors for full-version purchases.</p>
-
-          <p>🔹 Compliance with valid legal or governmental requests.</p>
+          <p>🔹 Our subscription service provides 30 days of access to our API.
+            Before committing to a paid plan, every user has the option to test the service using a
+            <strong>free 12-hour trial key</strong>.
+          </p>
+          <p>This trial allows you to fully evaluate whether the service meets your needs.
+            As such, once a subscription is purchased, <strong>it is not eligible for a refund</strong>.</p>
         </div>
       </section>
 
       <section class="card">
         <div class="card-header">
-          <h2><i class="ti ti-user"></i> Your Rights</h2>
+          <h2><i class="ti ti-scale"></i> Fair Use and Agreement</h2>
         </div>
         <div class="card-body">
-          <p>You have the right to:</p>
-
-          <p>🔹 Request details about what personal data we hold about you.</p>
-
-          <p>🔹 Request deletion of your personal data, where applicable.</p>
-
-          <p>🔹 Opt out of any non-essential data collection.</p>
-
-          <p>To exercise these rights or ask questions, please contact us via <a href="https://t.me/aptyp4uk1337_bot" title="Telegram"
-              target="_blank"><i class="ti ti-brand-telegram"></i> Telegram</a>.</p>
+          <p>By purchasing our services, you acknowledge and agree to this Refund Policy.
+            We encourage all customers to make use of the free trial before making a purchase decision.</p>
         </div>
       </section>
     </main>

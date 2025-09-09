@@ -27,12 +27,20 @@ switch ($request_path) {
     require __DIR__ . '/order.php';
 
     break;
+  case '/landing':
+    require __DIR__ . '/landing.php';
+
+    break;
   case '/privacy':
     require __DIR__ . '/privacy.php';
 
     break;
   case '/terms':
     require __DIR__ . '/terms.php';
+
+    break;
+  case '/refund':
+    require __DIR__ . '/refund.php';
 
     break;
   case '/robots.txt':
