@@ -49,6 +49,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 | Option          | Price      | Duration         | Includes                        |
 |-----------------|------------|------------------|----------------------------------|
+| 🧪 Trial | Free | 6 hours          | Full access to all methods for the duration of testing |
 | 🔓 Subscription | $45 | 30 days          | Full access to all methods + updates |
 | 💾 Source Code  | $175 | Lifetime (one-time) | Full source, no limits, no expiration |
 
