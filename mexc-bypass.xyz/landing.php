@@ -59,7 +59,7 @@
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="./css/landing.css" as="style">
+  <link rel="preload" href="./css/landing.min.css" as="style">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     as="style">
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
@@ -117,7 +117,7 @@
   </noscript>
 
   <!-- Main CSS loaded with high priority -->
-  <link rel="stylesheet" href="./css/landing.css">
+  <link rel="stylesheet" href="./css/landing.min.css">
 
   <!-- Highlight.js scripts loaded asynchronously -->
   <script>
@@ -211,7 +211,7 @@
   </script>
 
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ4Z58CVYV"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-715HR0GEGN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -219,7 +219,7 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'G-TQ4Z58CVYV', {
+    gtag('config', 'G-715HR0GEGN', {
       page_title: 'MEXC Futures API Libraries - Landing Page',
       page_location: 'https://mexc-bypass.xyz/landing'
     });
@@ -839,7 +839,7 @@ console.log(order);</code></pre>
 
           <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20want%20to%20purchase%20the%20Source%20Code"
             target="_blank"
-            onclick="trackConversion('source_code_purchase', 175); trackButtonClick('Buy Source Code', 'pricing')"
+            onclick="trackConversion('source_code_purchase', 175); trackButtonClick('Buy Source Code', 'pricing'); return gtag_report_conversion(this.href);"
             class="btn-enhanced-base btn-secondary block w-full bg-secondary-600 hover:bg-secondary-700 text-white text-center py-3 rounded-lg font-medium flex items-center justify-center">
             <i class="ti ti-code mr-2"></i> Buy Source Code
           </a>
@@ -890,7 +890,7 @@ console.log(order);</code></pre>
 
           <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20want%20to%20purchase%20the%20API%20Subscription"
             target="_blank"
-            onclick="trackConversion('api_subscription', 45); trackButtonClick('Get Subscription', 'pricing')"
+            onclick="trackConversion('api_subscription', 45); trackButtonClick('Get Subscription', 'pricing'); return gtag_report_conversion(this.href);"
             class="btn-enhanced-base btn-glow block w-full bg-primary-600 hover:bg-primary-700 text-white text-center py-3 rounded-lg font-medium flex items-center justify-center">
             <i class="ti ti-shopping-cart mr-2"></i> Get Subscription
           </a>
@@ -1133,6 +1133,7 @@ console.log(order);</code></pre>
             <div class="accordion-content-inner px-6" itemprop="text">
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Message me on <a
                   href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
+                  onclick="return gtag_report_conversion(this.href);"
                   target="_blank" class="text-primary-600 dark:text-primary-400 hover:underline">Telegram</a> for
                 details.</p>
             </div>
@@ -1158,7 +1159,7 @@ console.log(order);</code></pre>
       <p class="text-xl text-gray-100 max-w-2xl mx-auto mb-8">Get the full libraries with unlimited API features and
         start trading without interruptions.</p>
       <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."
-        target="_blank" onclick="trackConversion('cta_purchase', 175); trackButtonClick('Purchase Now', 'cta')"
+        target="_blank" onclick="trackConversion('cta_purchase', 175); trackButtonClick('Purchase Now', 'cta'); return gtag_report_conversion(this.href);"
         class="cta-button inline-flex items-center text-primary-900 px-8 py-4 rounded-lg font-bold text-lg relative overflow-hidden group">
         <span class="relative z-10 flex items-center">
           <i
@@ -1275,6 +1276,7 @@ console.log(order);</code></pre>
             <li>
               <a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20MEXC%20Bypass"
                 target="_blank"
+                onclick="return gtag_report_conversion(this.href);"
                 class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors text-sm flex items-center">
                 <i class="ti ti-message-circle mr-2 text-xs"></i> Contact Support
               </a>
@@ -1594,6 +1596,19 @@ console.log(order);</code></pre>
       }
     });
 
+    function gtag_report_conversion(url) {
+      var callback = function() {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17515871160/_NMfCNy0lZgbELj3m6BB',
+        'event_callback': callback
+      });
+      return false;
+    }
+
     // Code carousel functionality with enhanced animations
     document.querySelectorAll('.code-tab-btn').forEach(button => {
       button.addEventListener('click', function() {
@@ -1838,12 +1853,12 @@ console.log(order);</code></pre>
         const style = document.createElement('style');
         style.textContent = `
           @keyframes ripple {
-            to {
-              transform: scale(4);
-              opacity: 0;
-            }
+          to {
+          transform: scale(4);
+          opacity: 0;
           }
-        `;
+          }
+          `;
         document.head.appendChild(style);
       }
     });

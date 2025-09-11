@@ -103,6 +103,7 @@ Expand your knowledge and integrate faster with these helpful articles:
 | 🔢 [Volume Calculation Guide](./volume_calculation.md) | Learn how to calculate the correct `vol` value when placing futures orders using MEXC Bypass API. |
 | 🛡️ [What is Risk Control?](./risk_control_en.md) | Understand how MEXC’s internal risk control systems might affect your orders and how to handle it. |
 | 🛑 [How to change TP / SL?](./change_tp_sl.md) | Current method of multiple changes of order TP/SL. |
+| 🚧 [Error Codes](./error_codes.md) | Description of the error code that the endpoint may return. |
 
 ---
 
