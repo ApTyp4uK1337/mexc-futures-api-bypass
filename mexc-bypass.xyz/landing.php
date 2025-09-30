@@ -211,7 +211,7 @@
   </script>
 
   <!-- Google Analytics 4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-715HR0GEGN"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ4Z58CVYV"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -219,7 +219,7 @@
       dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'G-715HR0GEGN', {
+    gtag('config', 'G-TQ4Z58CVYV', {
       page_title: 'MEXC Futures API Libraries - Landing Page',
       page_location: 'https://mexc-bypass.xyz/landing'
     });
