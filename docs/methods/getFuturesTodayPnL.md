@@ -2,7 +2,7 @@
 
 Get futures today PnL.
 
-- **Endpoint:** `/v1/getFuturesTodayPnL`
+- **GET:** `/v1/getFuturesTodayPnL`
 
 ## 📥 Request parameters
 

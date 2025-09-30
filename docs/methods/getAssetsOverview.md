@@ -2,7 +2,7 @@
 
 Get an overview of your asset balances.
 
-- **Endpoint:** `/v1/getAssetsOverview`
+- **GET:** `/v1/getAssetsOverview`
 
 ---
 

@@ -2,7 +2,7 @@
 
 Switch the Stop-Limit price of trigger orders.
 
-- **Endpoint:** `/v1/changeFuturesPlanOrderStopLimitPrice`
+- **POST:** `/v1/changeFuturesPlanOrderStopLimitPrice`
 
 ---
 

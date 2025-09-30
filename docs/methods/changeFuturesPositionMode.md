@@ -5,7 +5,7 @@ Change the position mode for your futures account.
 > ⚠️ This operation is only allowed if you have **no active orders**, **no planned orders**, and **no open positions**.  
 > When switching from hedge to one-way mode, the risk limit level will reset to level 1.
 
-- **Endpoint:** `/v1/changeFuturesPositionMode`
+- **POST:** `/v1/changeFuturesPositionMode`
 
 ---
 

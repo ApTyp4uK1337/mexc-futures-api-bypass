@@ -12,5 +12,5 @@ To get around these limitations, we have developed our own workaround, which con
    Returns the "valid" order ID in the MEXC system.:
    - `id`
 
-2. [`changeFuturesOrder`](/docs/methods/changeFuturesOrder.md)  
+2. [`changeFuturesOrderTargets`](/docs/methods/changeFuturesOrderTargets.md)  
    Allows you to update TP/SL an unlimited number of times using the real order ID.

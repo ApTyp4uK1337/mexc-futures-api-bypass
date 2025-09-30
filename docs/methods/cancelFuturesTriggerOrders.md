@@ -2,7 +2,7 @@
 
 Cancel one or multiple Trigger Orders.
 
-- **Endpoint:** `/v1/cancelFuturesTriggerOrders`
+- **POST:** `/v1/cancelFuturesTriggerOrders`
 
 ---
 

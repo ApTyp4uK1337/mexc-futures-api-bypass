@@ -3,7 +3,7 @@
 Cancel all stop-limit (stoporder) futures orders.  
 You can cancel by `symbol`, by `positionId`, or **all at once**.
 
-- **Endpoint:** `/v1/cancelAllFuturesStopLimitOrders`
+- **POST:** `/v1/cancelAllFuturesStopLimitOrders`
 
 ---
 

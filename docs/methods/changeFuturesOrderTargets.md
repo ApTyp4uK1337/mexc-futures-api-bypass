@@ -3,7 +3,7 @@
 Update Take Profit (TP) and Stop Loss (SL) targets for an existing futures order.  
 You can modify TP/SL prices and volumes, or cancel them by setting the respective values to `0` or leaving them empty.
 
-- **Endpoint:** `/v1/changeFuturesOrderTargets`
+- **POST:** `/v1/changeFuturesOrderTargets`
 
 ---
 

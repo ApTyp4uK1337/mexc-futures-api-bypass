@@ -2,7 +2,7 @@
 
 Get contract K-line data.
 
-- **Endpoint:** `/v1/getFuturesContractKlineData`
+- **GET:** `/v1/getFuturesContractKlineData`
 
 ---
 

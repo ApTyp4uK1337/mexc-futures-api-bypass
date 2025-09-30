@@ -2,7 +2,7 @@
 
 Change the margin amount of an open futures position.
 
-- **Endpoint:** `/v1/changeFuturesMargin`
+- **POST:** `/v1/changeFuturesMargin`
 
 ---
 

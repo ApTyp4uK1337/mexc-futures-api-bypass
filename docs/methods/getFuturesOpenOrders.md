@@ -2,7 +2,7 @@
 
 Get currently open futures orders.
 
-- **Endpoint:** `/v1/getFuturesOpenOrders`
+- **GET:** `/v1/getFuturesOpenOrders`
 
 ---
 

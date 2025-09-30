@@ -2,7 +2,7 @@
 
 Cancel a futures order using an external order ID.
 
-- **Endpoint:** `/v1/cancelFuturesOrderWithExternalId`
+- **POST:** `/v1/cancelFuturesOrderWithExternalId`
 
 ---
 

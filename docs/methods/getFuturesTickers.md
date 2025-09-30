@@ -2,7 +2,7 @@
 
 Get the latest market ticker for a futures contract.
 
-- **Endpoint:** `/v1/getFuturesTickers`
+- **GET:** `/v1/getFuturesTickers`
 
 ---
 

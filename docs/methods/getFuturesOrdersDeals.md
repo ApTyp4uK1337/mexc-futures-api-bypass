@@ -2,7 +2,7 @@
 
 Fetches the deal history for your futures orders.
 
-- **Endpoint:** `/v1/getFuturesOrdersDeals`
+- **GET:** `/v1/getFuturesOrdersDeals`
 
 ---
 

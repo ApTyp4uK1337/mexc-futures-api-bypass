@@ -2,7 +2,7 @@
 
 Get account origin info.
 
-- **Endpoint:** `/v1/getOriginInfo`
+- **GET:** `/v1/getOriginInfo`
 
 ## 📥 Request parameters
 

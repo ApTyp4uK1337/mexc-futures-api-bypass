@@ -2,7 +2,7 @@
 
 Get referral invite list and their commission statistics.
 
-- **Endpoint:** `/v1/getReferralsList`
+- **GET:** `/v1/getReferralsList`
 
 ---
 

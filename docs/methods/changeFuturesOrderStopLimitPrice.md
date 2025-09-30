@@ -2,7 +2,7 @@
 
 Switch Stop-Limit limited order price.
 
-- **Endpoint:** `/v1/changeFuturesOrderStopLimitPrice`
+- **POST:** `/v1/changeFuturesOrderStopLimitPrice`
 
 ---
 

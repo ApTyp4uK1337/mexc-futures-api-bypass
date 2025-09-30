@@ -2,7 +2,7 @@
 
 Change the leverage of a position. If the position does not exist yet, additional info is required.
 
-- **Endpoint:** `/v1/changeFuturesPositionLeverage`
+- **POST:** `/v1/changeFuturesPositionLeverage`
 
 ---
 

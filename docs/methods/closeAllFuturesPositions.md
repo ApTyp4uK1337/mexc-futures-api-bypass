@@ -2,7 +2,7 @@
 
 Close all currently open futures positions for the account.
 
-- **Endpoint:** `/v1/closeAllFuturesPositions`
+- **POST:** `/v1/closeAllFuturesPositions`
 
 ---
 

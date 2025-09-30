@@ -2,7 +2,7 @@
 
 Get brief information about the authenticated user.
 
-- **Endpoint:** `/v1/getUserInfo`
+- **GET:** `/v1/getUserInfo`
 
 ---
 

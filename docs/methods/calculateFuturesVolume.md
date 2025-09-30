@@ -2,7 +2,7 @@
 
 Calculate position volume quantity.
 
-- **Endpoint:** `/v1/calculateFuturesVolume`
+- **GET:** `/v1/calculateFuturesVolume`
 
 ---
 

@@ -2,7 +2,7 @@
 
 Fetch the fair price of a specific futures contract.
 
-- **Endpoint:** `/v1/getFuturesContractFairPrice`
+- **GET:** `/v1/getFuturesContractFairPrice`
 
 ---
 

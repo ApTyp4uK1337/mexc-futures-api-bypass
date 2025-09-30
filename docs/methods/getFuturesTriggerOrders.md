@@ -2,7 +2,7 @@
 
 Fetch the list of trigger orders (plan orders).
 
-- **Endpoint:** `/v1/getFuturesTriggerOrders`
+- **GET:** `/v1/getFuturesTriggerOrders`
 
 ---
 
