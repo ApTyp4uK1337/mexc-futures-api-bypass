@@ -19,7 +19,7 @@ You can modify TP/SL prices and volumes, or cancel them by setting the respectiv
 | `stop_loss_volume`   | `decimal`  | Conditional  | Stop Loss trigger volume. Required if `stop_loss_price` is provided.                           |
 | `stop_loss_trend`    | `decimal`  | ❌           | Stop Loss trend parameter (used for trend-based SL).                                           |
 
-> **Note:** The `real_order_id` can be obtained from the [`getFuturesOpenOrders`](/docs/methods/getFuturesOpenOrders.md) method.
+> **Note:** The `real_order_id` can be obtained from the [`getFuturesOpenOrders`](/docs/methods/getFuturesOpenOrders.md) method - `data[].id`.
 
 ---
 
