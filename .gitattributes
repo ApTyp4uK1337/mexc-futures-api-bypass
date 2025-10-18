@@ -1,0 +1,7 @@
+*.md linguist-documentation
+docs/** linguist-documentation
+.github/** linguist-documentation
+examples/python/*.py linguist-detectable=true
+examples/nodejs/*.js linguist-detectable=true
+demo/** linguist-vendored
+assets/** linguist-generated
