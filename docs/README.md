@@ -32,6 +32,8 @@ All requests must include the following headers:
 | [**getReferralsList**](/docs/methods/getReferralsList.md) | General | Get referral invite list and their commission statistics. |
 | [**getFuturesTodayPnL**](/docs/methods/getFuturesTodayPnL.md) | General | Get futures today PnL. |
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | General | Get an overview of your asset balances. |
+| [**createSpotOrder**](/docs/methods/createSpotOrder.md) | Spot | Create a new spot order. |
+| [**cancelSpotOrder**](/docs/methods/cancelSpotOrder.md) | Spot | Cancel spot limit order. |
 | [**getFuturesUser**](/docs/methods/getFuturesUser.md) | Futures | Get futures user info. |
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Futures | Get detailed balance data for your futures account. |
 | [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Futures | Get the list of asset transfer records on your futures account. |
@@ -48,6 +50,8 @@ All requests must include the following headers:
 | [**getFuturesPositionsHistory**](/docs/methods/getFuturesPositionsHistory.md) | Futures | Retrieve the historical closed positions for a specific contract. |
 | [**closeAllFuturesPositions**](/docs/methods/closeAllFuturesPositions.md) | Futures | Close all currently open futures positions for the account. |
 | [**getFuturesOpenOrders**](/docs/methods/getFuturesOpenOrders.md) | Futures | Get currently open futures orders. |
+| [**getFuturesOpenLimitOrders**](/docs/methods/getFuturesOpenLimitOrders.md) | Futures | Get currently open limit futures orders. |
+| [**getFuturesOpenStopOrders**](/docs/methods/getFuturesOpenStopOrders.md) | Futures | Get currently open stop futures orders. |
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Futures | Create a new futures order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Futures | Fetch futures order(s) by ID. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Futures | Cancel the pending order placed before, each time can cancel up to 50 orders. |

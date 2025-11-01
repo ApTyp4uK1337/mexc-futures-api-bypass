@@ -23,10 +23,10 @@ Create a new spot order.
 
 ```json
 {
-    "data": "C02__603915252018683904091",
+    "data": "C02__1337",
     "code": 200,
     "msg": "success",
-    "timestamp": 1759766852161,
+    "timestamp": 1759766800000,
     "is_testnet": false
 }
 ```

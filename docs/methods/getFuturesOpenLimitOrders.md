@@ -1,8 +1,8 @@
-# getFuturesOpenOrders
+# getFuturesOpenLimitOrders
 
-Get currently open futures orders.
+Get currently open futures limit orders.
 
-- **GET:** `/v1/getFuturesOpenOrders`
+- **GET:** `/v1/getFuturesOpenLimitOrders`
 
 ---
 
@@ -20,7 +20,7 @@ This endpoint does not require any parameters.
     "code": 0,
     "data": [
         {
-            "orderId": "1337",
+            "orderId": "228",
             "symbol": "BTC_USDT",
             "positionId": 0,
             "price": 115000,
@@ -53,6 +53,38 @@ This endpoint does not require any parameters.
             "totalFee": 0,
             "zeroSaveTotalFeeBinance": 0,
             "zeroTradeTotalFeeBinance": 0
+        },
+        {
+            "id": 1337,
+            "orderId": "71486456545433",
+            "symbol": "BTC_USDT",
+            "positionId": "26433333",
+            "lossTrend": 1,
+            "profitTrend": 1,
+            "stopLossPrice": 110000,
+            "takeProfitPrice": 114000,
+            "state": 1,
+            "triggerSide": 0,
+            "positionType": 1,
+            "vol": 1,
+            "realityVol": 0,
+            "errorCode": 0,
+            "version": 2,
+            "isFinished": 0,
+            "priceProtect": 1,
+            "profitLossVolType": "SEPARATE",
+            "takeProfitVol": 1,
+            "stopLossVol": 1,
+            "createTime": 1756113025000,
+            "updateTime": 1756113312000,
+            "volType": 1,
+            "takeProfitReverse": 2,
+            "stopLossReverse": 2,
+            "closeTryTimes": 0,
+            "reverseTryTimes": 0,
+            "reverseErrorCode": 0,
+            "profit_LOSS_VOL_TYPE_SAME": "SAME",
+            "profit_LOSS_VOL_TYPE_DIFFERENT": "SEPARATE"
         }
     ]
 }
