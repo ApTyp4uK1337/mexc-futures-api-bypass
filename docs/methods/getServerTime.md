@@ -2,7 +2,7 @@
 
 Get the server time.
 
-- **Endpoint:** `/v1/getServerTime`
+- **GET:** `/v1/getServerTime`
 
 ## 📥 Request parameters
 

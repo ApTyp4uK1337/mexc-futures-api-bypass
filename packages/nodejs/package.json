@@ -2,12 +2,13 @@
   "name": "mexc_bypass",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://mexc-bypass.xyz/",
   "main": "src/MexcBypass.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "@aptyp4uk1337",
   "license": "ISC",
   "type": "module",
   "dependencies": {

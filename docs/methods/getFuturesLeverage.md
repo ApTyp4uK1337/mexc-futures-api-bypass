@@ -2,7 +2,7 @@
 
 Get leverage and margin information for a specific futures contract.
 
-- **Endpoint:** `/v1/getFuturesLeverage`
+- **GET:** `/v1/getFuturesLeverage`
 
 ---
 

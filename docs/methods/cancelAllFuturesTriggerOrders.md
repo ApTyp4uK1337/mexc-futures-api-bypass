@@ -2,7 +2,7 @@
 
 Cancel all open trigger (planned) futures orders. You can cancel all at once, or only for a specific symbol.
 
-- **Endpoint:** `/v1/cancelAllFuturesTriggerOrders`
+- **POST:** `/v1/cancelAllFuturesTriggerOrders`
 
 ---
 

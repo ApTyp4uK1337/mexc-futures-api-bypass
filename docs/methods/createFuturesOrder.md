@@ -2,7 +2,7 @@
 
 Create a new futures order.
 
-- **Endpoint:** `/v1/createFuturesOrder`
+- **POST:** `/v1/createFuturesOrder`
 
 ---
 

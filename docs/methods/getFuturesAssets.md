@@ -2,7 +2,7 @@
 
 Get detailed balance data for your futures account.
 
-- **Endpoint:** `/v1/getFuturesAssets`
+- **GET:** `/v1/getFuturesAssets`
 
 ---
 

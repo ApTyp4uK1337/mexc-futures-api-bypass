@@ -13,16 +13,21 @@
   <a href="/packages/nodejs"><img src="https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white" alt="Node.js"></a>
 </div>
 
-# 🔷 MEXC Futures API Bypass
+# 🔷 Unofficial MEXC API SDK
 
-This unofficial MEXC Futures API library bypasses current maintenance restrictions in the official endpoints, allowing full trading and account access even when some routes are marked "[Under maintenance](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance)".
+This is an unofficial *MEXC API SDK* with support for *futures* and *spot* trading, as well as many other methods, providing full trading and account access, even if some routes are marked as "[Under maintenance](https://mexcdevelop.github.io/apidocs/contract_v1_en/#order-under-maintenance)".
+
+<br>
 
 > [!NOTE]
-> The source code of the library is not distributed openly. You can get access by contacting me on Telegram: [@aptyp4uk1337_bot](https://t.me/aptyp4uk1337_bot)
+> The source code of the library is not distributed openly. You can get access by contacting me on Telegram: [@aptyp4uk1337_bot](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
+
+<br>
 
 ### 🔴 Live Demo
 
-You can test the opening of a position yourself: https://mexc-bypass.xyz/
+* You can test the opening of a position yourself: https://mexc-bypass.xyz/
+* 6h free trial: [@mexc_api_robot](https://t.me/mexc_api_robot?start=trial) → `🆓 Get Free Trial`
 
 <div align="center">
   <img src="/assets/preview.gif" title="Telegram">
@@ -30,29 +35,30 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 
 > **Demo file:** [./demo/app.js](/main/demo/app.js)
 
-
 ---
 
 ## 🎖 Features
 
-- Blazing fast
-- No third-party requests
-- Works on mainnet & testnet
-- Multi-accounting and proxy support
-- Compatible with any programming language
-- Simple PHP, Python & Node.js library
-- Free updates
+- ⚡ Blazing fast _(200 - 400 ms)_
+- 🔐 No third-party requests
+- 🌐 Works on mainnet & testnet
+- 🥷🏻 Multi-accounting and proxy support _(HTTP/HTTPS/SOCKS5)_
+- ⚙️ Compatible with any programming language
+- ⌨️ Simple PHP, Python & Node.js library
+- 🆓 Free updates & support included
+- 🔔 TradingView Alerts Integration
 
 ---
 
 ### 💳 Pricing
 
-| Option          | Price      | Duration         | Includes                        |
-|-----------------|------------|------------------|----------------------------------|
-| 🔓 Subscription | $30 | 30 days          | Full access to all methods + updates |
-| 💾 Source Code  | $125 | Lifetime (one-time) | Full source, no limits, no expiration |
+| Option          | Price      | Duration            | Includes                        |
+|-----------------|------------|---------------------|----------------------------------|
+| 🧪 Trial        | Free       | 6 hours             | Full access to all methods for the duration of testing |
+| 🔓 Subscription | $45        | 30 days             | Full access to all methods + updates |
+| 💾 Source Code  | $175       | Lifetime (one-time) | Full source, no limits, no expiration |
 
-📬 [Contact me on Telegram](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
+📬 [Contact me on Telegram »](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
 
 ---
 
@@ -74,7 +80,7 @@ You can test the opening of a position yourself: https://mexc-bypass.xyz/
 - No limitation on number of accounts.
 
 > Does it use anything third-party to make those requests?
-- No.
+- In the test version and subscription mode, all requests go through our server. When purchasing the source code, all requests go directly.
 
 > Will I get a risk control ban for using the library?
 - In my experience - no. For more information on risk control, see here 🛡️ [Risk Control on MEXC](/docs/risk_control_en.md).
@@ -126,9 +132,9 @@ const order = await client.createOrder({
 
 ### 📖 Available Methods
 
-The library supports **30+ endpoints** including:
+The library supports **40+ endpoints** including:
 
-- Placing, modifying and cancelling orders (market, limit, trigger, stop-limit)
+- Placing, modifying and canceling orders on spot and futures
 - Accessing wallet and asset data
 - Managing open positions, leverage and margin
 - Retrieving contract info and price feeds
@@ -145,5 +151,8 @@ The library supports **30+ endpoints** including:
 
 ### 💌 Contact me
 
-<a href="https://t.me/aptyp4uk1337_bot"><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"></a>
-<a href="mailto:aptyp4uk1337@gmail.com?subject=MEXC API Bypass"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" title="Email"></a>
+<a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"> @aptyp4uk1337</a>
+<br>
+<a href="discord://-/users/841963614398578708/"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white" title="Discord"> aptyp4uk1337</a>
+<br>
+<a href="mailto:aptyp4uk1337@gmail.com?subject=MEXC API Bypass"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" title="Email"> aptyp4uk1337@gmail.com</a>

@@ -2,7 +2,7 @@
 
 Retrieve the index price of a specific futures contract.
 
-- **Endpoint:** `/v1/getFuturesContractIndexPrice`
+- **GET:** `/v1/getFuturesContractIndexPrice`
 
 ---
 

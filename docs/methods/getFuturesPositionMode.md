@@ -2,7 +2,7 @@
 
 Get the current position mode for the account.
 
-- **Endpoint:** `/v1/getFuturesPositionMode`
+- **GET:** `/v1/getFuturesPositionMode`
 
 ## 📥 Request parameters
 

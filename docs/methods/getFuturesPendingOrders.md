@@ -2,7 +2,7 @@
 
 Get a list of your open (pending) futures orders.
 
-- **Endpoint:** `/v1/getFuturesPendingOrders`
+- **GET:** `/v1/getFuturesPendingOrders`
 
 ---
 

@@ -2,7 +2,7 @@
 
 Calculate position volume quantity.
 
-- **Endpoint:** `/v1/calculateFuturesVolume`
+- **GET:** `/v1/calculateFuturesVolume`
 
 ---
 
@@ -37,10 +37,13 @@ Calculate position volume quantity.
 
 ## 📦 Response parameters
 
-| **Field**     | **Type**   | **Description**                                      |
-|---------------|------------|------------------------------------------------------|
-| `usdt_value`     | `boolean`  | The value of the final volume in USDT.                 |
-| `volume`        | `number`   | Total volume taking into account all rounding and minVol, maxVol.            |
-| `price`  | `boolean`  | The price at which the calculation was made.       |
-| `min_volume`  | `boolean`  | Min position volume.       |
-| `max_volume`  | `boolean`  | Max position volume.       |
+| **Field**             | **Type**  | **Description**                                  |
+|-----------------------|-----------|--------------------------------------------------|
+| `success`             | `boolean` | Whether the request succeeded.                   |
+| `code`                | `number`  | Status code (0 = success).                       |
+| `data.usdt_value`     | `number`  | The value of the final volume in USDT.           |
+| `data.volume`         | `number`  | Total volume after rounding and min/max checks.  |
+| `data.price`          | `number`  | Price used for the calculation.                  |
+| `data.min_volume`     | `number`  | Minimum allowed position volume.                 |
+| `data.max_volume`     | `number`  | Maximum allowed position volume.                 |
+| `is_testnet`          | `boolean` | Whether environment is testnet.                  |

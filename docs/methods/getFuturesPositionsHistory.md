@@ -2,7 +2,7 @@
 
 Retrieve the historical closed positions for a specific contract.
 
-- **Endpoint:** `/v1/getFuturesPositionsHistory`
+- **GET:** `/v1/getFuturesPositionsHistory`
 
 ---
 

@@ -2,7 +2,7 @@
 
 Retrieve the list of Stop-Limit orders (take-profit & stop-loss).
 
-- **Endpoint:** `/v1/getFuturesStopLimitOrders`
+- **GET:** `/v1/getFuturesStopLimitOrders`
 
 ---
 

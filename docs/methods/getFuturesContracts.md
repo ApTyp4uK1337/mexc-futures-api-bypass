@@ -2,7 +2,7 @@
 
 Get details of one or all futures contracts.
 
-- **Endpoint:** `/v1/getFuturesContracts`
+- **GET:** `/v1/getFuturesContracts`
 
 ---
 

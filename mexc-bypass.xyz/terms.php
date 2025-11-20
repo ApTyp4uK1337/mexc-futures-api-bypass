@@ -11,6 +11,15 @@
 
   <link rel="canonical" href="<?php echo $url; ?>/terms">
 
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
+  </noscript>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?php echo $_SERVER['URL']; ?>/terms">
@@ -28,10 +37,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="<?php echo $url; ?>/favicon-16x16.png">
   <link rel="manifest" href="<?php echo $url; ?>/site.webmanifest">
   <link rel="stylesheet" href="<?php echo $url; ?>/css/style.min.css" />
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/tabler-icons.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQ4Z58CVYV"></script>
@@ -139,6 +144,8 @@
         <a href="<?php echo $url; ?>/privacy" title="Privacy Policy" class="footer-link">Privacy Policy</a>
         <span>·</span>
         <a href="<?php echo $url; ?>/terms" title="Terms of Service" class="footer-link">Terms of Service</a>
+        <span>·</span>
+        <a href="<?php echo $url; ?>/refund" title="Refund Policy" class="footer-link">Refund Policy</a>
       </div>
       <p>
         © 2025 MEXC Futures API Bypass<br />
@@ -150,6 +157,10 @@
         <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="footer-icon"
           aria-label="Telegram">
           <i class="ti ti-brand-telegram"></i>
+        </a>
+        <a href="discord://-/users/841963614398578708/" title="Discord" target="_blank" rel="noopener noreferrer" class="footer-icon"
+          aria-label="Discord">
+          <i class="ti ti-brand-discord"></i>
         </a>
         <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">

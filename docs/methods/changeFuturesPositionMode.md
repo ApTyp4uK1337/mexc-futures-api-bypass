@@ -5,7 +5,7 @@ Change the position mode for your futures account.
 > ⚠️ This operation is only allowed if you have **no active orders**, **no planned orders**, and **no open positions**.  
 > When switching from hedge to one-way mode, the risk limit level will reset to level 1.
 
-- **Endpoint:** `/v1/changeFuturesPositionMode`
+- **POST:** `/v1/changeFuturesPositionMode`
 
 ---
 
@@ -22,7 +22,8 @@ Change the position mode for your futures account.
 ```json
 {
   "success": true,
-  "code": 0
+  "code": 0,
+  "is_testnet": true
 }
 ```
 
@@ -34,3 +35,4 @@ Change the position mode for your futures account.
 |---------------|------------|-------------------------------------|
 | `success`     | `boolean`  | Indicates if the request succeeded. |
 | `code`        | `number`   | Response status code.               |
+| `is_testnet`  | `boolean`   | Whether the environment is testnet. |

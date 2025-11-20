@@ -2,7 +2,7 @@
 
 Get the list of asset transfer records on your futures account.
 
-- **Endpoint:** `/v1/getFuturesAssetTransferRecords`
+- **GET:** `/v1/getFuturesAssetTransferRecords`
 
 ---
 

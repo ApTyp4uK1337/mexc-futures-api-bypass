@@ -2,7 +2,7 @@
 
 Get futures user info.
 
-- **Endpoint:** `/v1/getFuturesUser`
+- **GET:** `/v1/getFuturesUser`
 
 ## 📥 Request parameters
 

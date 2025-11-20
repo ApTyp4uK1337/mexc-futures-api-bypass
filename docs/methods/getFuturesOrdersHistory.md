@@ -2,7 +2,7 @@
 
 Get historical futures orders (filled, cancelled, etc.)
 
-**Endpoint:** `/v1/getFuturesOrdersHistory`
+**GET:** `/v1/getFuturesOrdersHistory`
 
 ---
 

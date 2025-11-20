@@ -2,7 +2,7 @@
 
 Change the leverage of a position. If the position does not exist yet, additional info is required.
 
-- **Endpoint:** `/v1/changeFuturesPositionLeverage`
+- **POST:** `/v1/changeFuturesPositionLeverage`
 
 ---
 
@@ -23,7 +23,8 @@ Change the leverage of a position. If the position does not exist yet, additiona
 ```json
 {
   "success": true,
-  "code": 0
+  "code": 0,
+  "is_testnet": true
 }
 ```
 
@@ -35,3 +36,4 @@ Change the leverage of a position. If the position does not exist yet, additiona
 |---------------|------------|-------------------------------------|
 | `success`     | `boolean`  | Indicates if the request succeeded. |
 | `code`        | `number`   | Response status code.               |
+| `is_testnet`  | `boolean`   | Whether the environment is testnet. |

@@ -32,6 +32,9 @@ All requests must include the following headers:
 | [**getReferralsList**](/docs/methods/getReferralsList.md) | General | Get referral invite list and their commission statistics. |
 | [**getFuturesTodayPnL**](/docs/methods/getFuturesTodayPnL.md) | General | Get futures today PnL. |
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | General | Get an overview of your asset balances. |
+| [**getSpotOrderBook**](/docs/methods/getSpotOrderBook.md) | Spot | Get order book. |
+| [**createSpotOrder**](/docs/methods/createSpotOrder.md) | Spot | Create a new spot order. |
+| [**cancelSpotOrder**](/docs/methods/cancelSpotOrder.md) | Spot | Cancel spot limit order. |
 | [**getFuturesUser**](/docs/methods/getFuturesUser.md) | Futures | Get futures user info. |
 | [**getFuturesAssets**](/docs/methods/getFuturesAssets.md) | Futures | Get detailed balance data for your futures account. |
 | [**getFuturesAssetTransferRecords**](/docs/methods/getFuturesAssetTransferRecords.md) | Futures | Get the list of asset transfer records on your futures account. |
@@ -46,7 +49,11 @@ All requests must include the following headers:
 | [**getFuturesOrdersHistory**](/docs/methods/getFuturesOrdersHistory.md) | Futures | Get historical futures orders (filled, cancelled, etc.) |
 | [**getFuturesOpenPositions**](/docs/methods/getFuturesOpenPositions.md) | Futures | Get currently open futures positions. |
 | [**getFuturesPositionsHistory**](/docs/methods/getFuturesPositionsHistory.md) | Futures | Retrieve the historical closed positions for a specific contract. |
+| [**reverseFuturesPosition**](/docs/methods/reverseFuturesPosition.md) | Futures | Reverse futures position. |
 | [**closeAllFuturesPositions**](/docs/methods/closeAllFuturesPositions.md) | Futures | Close all currently open futures positions for the account. |
+| [**getFuturesOpenOrders**](/docs/methods/getFuturesOpenOrders.md) | Futures | Get currently open futures orders. |
+| [**getFuturesOpenLimitOrders**](/docs/methods/getFuturesOpenLimitOrders.md) | Futures | Get currently open limit futures orders. |
+| [**getFuturesOpenStopOrders**](/docs/methods/getFuturesOpenStopOrders.md) | Futures | Get currently open stop futures orders. |
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Futures | Create a new futures order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Futures | Fetch futures order(s) by ID. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Futures | Cancel the pending order placed before, each time can cancel up to 50 orders. |
@@ -57,6 +64,7 @@ All requests must include the following headers:
 | [**cancelFuturesTriggerOrders**](/docs/methods/cancelFuturesTriggerOrders.md) | Futures | Cancel one or multiple Trigger Orders. |
 | [**cancelAllFuturesTriggerOrders**](/docs/methods/cancelAllFuturesTriggerOrders.md) | Futures | Cancel all open trigger (planned) futures orders. You can cancel all at once, or only for a specific symbol. |
 | [**getFuturesStopLimitOrders**](/docs/methods/getFuturesStopLimitOrders.md) | Futures | Retrieve the list of Stop-Limit orders (take-profit & stop-loss). |
+| [**cancelStopLimitOrders**](/docs/methods/cancelStopLimitOrders.md) | Futures | Cancel stop-limit futures orders by id. |
 | [**cancelAllFuturesStopLimitOrders**](/docs/methods/cancelAllFuturesStopLimitOrders.md) | Futures | Cancel all stop-limit (stoporder) futures orders. |
 | [**getFuturesPositionMode**](/docs/methods/getFuturesPositionMode.md) | Futures | Get the current position mode for the account. |
 | [**getFuturesLeverage**](/docs/methods/getFuturesLeverage.md) | Futures | Get leverage and margin information for a specific futures contract. |
@@ -64,6 +72,10 @@ All requests must include the following headers:
 | [**changeFuturesPositionMargin**](/docs/methods/changeFuturesPositionMargin.md) | Futures | Change the margin amount of an open futures position. |
 | [**changeFuturesPositionLeverage**](/docs/methods/changeFuturesPositionLeverage.md) | Futures | Change the leverage of a position. If the position does not exist yet, additional info is required. |
 | [**changeFuturesPositionMode**](/docs/methods/changeFuturesPositionMode.md) | Futures | Change the position mode for your futures account. |
+| [**changeFuturesOrderStopLimitPrice**](/docs/methods/changeFuturesOrderStopLimitPrice.md) | Futures | Switch Stop-Limit limited order price. |
+| [**changeFuturesPlanOrderStopLimitPrice**](/docs/methods/changeFuturesPlanOrderStopLimitPrice.md) | Futures | Switch the Stop-Limit price of trigger orders. |
+| [**changeFuturesOrderTargets**](/docs/methods/changeFuturesOrderTargets.md) | Futures | Switch the take profit price & stop loss price (fixed). |
+| [**receiveFuturesTestnetAsset**](/docs/methods/receiveFuturesTestnetAsset.md) | Futures | Receive futures testnet assets. |
 
 ---
 
@@ -95,9 +107,12 @@ Expand your knowledge and integrate faster with these helpful articles:
 
 | Title | Description |
 |-------|-------------|
+| 🆕 [Changelog](./CHANGELOG.md) | History of updates and changes. |
 | 🔑 [Where to get MEXC token?](./mexc_token.md) | Find out how to get a token to work with MEXC. |
 | 🔢 [Volume Calculation Guide](./volume_calculation.md) | Learn how to calculate the correct `vol` value when placing futures orders using MEXC Bypass API. |
 | 🛡️ [What is Risk Control?](./risk_control_en.md) | Understand how MEXC’s internal risk control systems might affect your orders and how to handle it. |
+| 🛑 [How to change TP / SL?](./change_tp_sl.md) | Current method of multiple changes of order TP/SL. |
+| 🚧 [Error Codes](./error_codes.md) | Description of the error code that the endpoint may return. |
 
 ---
 

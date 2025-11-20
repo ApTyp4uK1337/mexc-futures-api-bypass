@@ -2,7 +2,7 @@
 
 Create a trigger (planned) futures order that executes once market conditions are met.
 
-- **Endpoint:** `/v1/createFuturesTriggerOrder`
+- **POST:** `/v1/createFuturesTriggerOrder`
 
 ---
 

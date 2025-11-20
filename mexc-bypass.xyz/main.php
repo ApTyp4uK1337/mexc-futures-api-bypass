@@ -20,10 +20,12 @@
   <link rel="canonical" href="<?php echo $url; ?>/">
 
   <!-- Preload critical resources -->
+  <link rel="preload" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
   <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" media="all">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
   </noscript>
 
   <link rel="preload" href="<?php echo $url; ?>/css/style.min.css" as="style">
@@ -61,8 +63,6 @@
 
   <!-- CSS with media queries for print -->
   <link rel="stylesheet" href="<?php echo $url; ?>/css/style.min.css" media="all">
-  <link rel="stylesheet" href="<?php echo $url; ?>/css/tabler-icons.min.css" media="all">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" media="all">
 
   <!-- Load Google Analytics asynchronously -->
   <script>
@@ -87,6 +87,9 @@
       <div class="social-links">
         <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="social-link">
           <i class="ti ti-brand-telegram"></i> Telegram
+        </a>
+        <a href="discord://-/users/841963614398578708/" title="Discord" target="_blank" rel="noopener noreferrer" class="social-link">
+          <i class="ti ti-brand-discord"></i> Discord
         </a>
         <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="social-link">
@@ -413,11 +416,11 @@
             <div class="pricing-header">
               <h3 itemprop="name">API Subscription</h3>
               <div class="pricing-price">
-                <span class="price" itemprop="price" content="30">$30</span>
+                <span class="price" itemprop="price" content="45">$45</span>
                 <span class="period" itemprop="priceCurrency" content="USD">/ 30 days</span>
               </div>
               <div class="pricing-badge pricing-badge-hot">
-                <span>🔥 <s>$45</s> <span class="new-price">$30</span> / 30 days</span>
+                <span>🔥 <s>$60</s> <span class="new-price">$45</span> / 30 days</span>
               </div>
             </div>
             <ul class="pricing-features">
@@ -446,11 +449,11 @@
             <div class="pricing-header">
               <h3 itemprop="name">Source Code</h3>
               <div class="pricing-price">
-                <span class="price" itemprop="price" content="125">$125</span>
+                <span class="price" itemprop="price" content="175">$175</span>
                 <span class="period" itemprop="priceCurrency" content="USD">one-time</span>
               </div>
               <div class="pricing-badge pricing-badge-hot">
-                <span>🔥 <s>$175</s> <span class="new-price">$125</span></span>
+                <span>🔥 <s>$199</s> <span class="new-price">$175</span></span>
               </div>
             </div>
             <ul class="pricing-features">
@@ -543,6 +546,8 @@
         <a href="<?php echo $url; ?>/privacy" title="Privacy Policy" class="footer-link">Privacy Policy</a>
         <span>·</span>
         <a href="<?php echo $url; ?>/terms" title="Terms of Service" class="footer-link">Terms of Service</a>
+        <span>·</span>
+        <a href="<?php echo $url; ?>/refund" title="Refund Policy" class="footer-link">Refund Policy</a>
       </div>
       <p>© 2025 MEXC Futures API Bypass<br>Made with ❤️ by <a href="https://github.com/aptyp4uk1337" title="@aptyp4uk1337" class="footer-link"
           target="_blank" rel="noopener noreferrer">@aptyp4uk1337</a></p>
@@ -550,6 +555,10 @@
         <a href="https://t.me/aptyp4uk1337/19" title="Telegram" target="_blank" rel="noopener noreferrer" class="footer-icon"
           aria-label="Telegram">
           <i class="ti ti-brand-telegram"></i>
+        </a>
+        <a href="discord://-/users/841963614398578708/" title="Discord" target="_blank" rel="noopener noreferrer" class="footer-icon"
+          aria-label="Discord">
+          <i class="ti ti-brand-discord"></i>
         </a>
         <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">

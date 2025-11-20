@@ -2,7 +2,7 @@
 
 Get risk limit tiers for a specific futures contract.
 
-- **Endpoint:** `/v1/getFuturesRiskLimits`
+- **GET:** `/v1/getFuturesRiskLimits`
 
 ---
 
