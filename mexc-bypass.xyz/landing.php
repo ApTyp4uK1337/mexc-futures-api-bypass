@@ -714,7 +714,7 @@ console.log(order);</code></pre>
               <li>1. Authorize in our Telegram bot</li>
               <li>2. Go to your account</li>
               <li>3. Click "Get Trial Key"</li>
-              <li>4. Key will be active for 12 hours</li>
+              <li>4. Key will be active for 6 hours</li>
             </ol>
           </div>
 
