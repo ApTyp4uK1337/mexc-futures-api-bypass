@@ -1,5 +1,9 @@
 # 🆕 Changelog
 
+## 01.12.2025
+
+* Added new method [changeFuturesLimitOrderPrice](./methods/changeFuturesLimitOrderPrice.md)
+
 ## 20.11.2025
 
 * Method parameters have been changed `coin` → `symbol` OR `base_coin`, `quote_coin` [getMarketSymbols](./methods/getMarketSymbols.md)

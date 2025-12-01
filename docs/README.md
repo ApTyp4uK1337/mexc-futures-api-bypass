@@ -65,6 +65,7 @@ All requests must include the following headers:
 | [**cancelAllFuturesTriggerOrders**](/docs/methods/cancelAllFuturesTriggerOrders.md) | Futures | Cancel all open trigger (planned) futures orders. You can cancel all at once, or only for a specific symbol. |
 | [**getFuturesStopLimitOrders**](/docs/methods/getFuturesStopLimitOrders.md) | Futures | Retrieve the list of Stop-Limit orders (take-profit & stop-loss). |
 | [**cancelStopLimitOrders**](/docs/methods/cancelStopLimitOrders.md) | Futures | Cancel stop-limit futures orders by id. |
+| [**changeFuturesLimitOrderPrice**](/docs/methods/changeFuturesLimitOrderPrice.md) | Futures | Change futures limit order price. |
 | [**cancelAllFuturesStopLimitOrders**](/docs/methods/cancelAllFuturesStopLimitOrders.md) | Futures | Cancel all stop-limit (stoporder) futures orders. |
 | [**getFuturesPositionMode**](/docs/methods/getFuturesPositionMode.md) | Futures | Get the current position mode for the account. |
 | [**getFuturesLeverage**](/docs/methods/getFuturesLeverage.md) | Futures | Get leverage and margin information for a specific futures contract. |
