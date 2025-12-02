@@ -56,7 +56,9 @@ This is an unofficial *MEXC API SDK* with support for *futures* and *spot* tradi
 |-----------------|------------|---------------------|----------------------------------|
 | 🧪 Trial        | Free       | 6 hours             | Full access to all methods for the duration of testing |
 | 🔓 Subscription | $45        | 30 days             | Full access to all methods + updates |
-| 💾 Source Code  | $175       | Lifetime (one-time) | Full source, no limits, no expiration |
+| 💾 Source Code  | $175       | Lifetime (one-time) | Full source, no limits, no expiration, free updates |
+| 🖥 [Multi-account interface](https://t.me/aptyp4uk1337/37) | $275 | Lifetime (one-time) | MEXC API SDK + Sources of interface |
+
 
 📬 [Contact me on Telegram »](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
 
@@ -132,7 +134,7 @@ const order = await client.createOrder({
 
 ### 📖 Available Methods
 
-The library supports **40+ endpoints** including:
+The library supports **50+ endpoints** including:
 
 - Placing, modifying and canceling orders on spot and futures
 - Accessing wallet and asset data
