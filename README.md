@@ -57,8 +57,8 @@ This is an unofficial *MEXC API SDK* with support for *futures* and *spot* tradi
 | 🧪 [Trial](https://t.me/mexc_api_robot?start=trial)       | Free       | 6 hours             | Full access to all methods for the duration of testing |
 | 🔓 [Subscription](https://t.me/aptyp4uk1337/19)           | $45        | 30 days             | Full access to all methods + updates |
 | 💾 [Source Code](https://t.me/aptyp4uk1337/19)            | $175       | Lifetime | Full source, no limits, no expiration, free updates |
-| 🖥 [Multi-account interface](https://t.me/aptyp4uk1337/37) | $275       | Lifetime | MEXC API SDK + Sources of interface |
-| 🪞 [Trading Mirror](https://t.me/aptyp4uk1337/39) | $400       | Lifetime | MEXC API SDK + Sources of mirroring |
+| 🖥 [Multi-account interface](https://t.me/aptyp4uk1337/37) | $275       | Lifetime | MEXC API SDK + Sources of interface + updates |
+| 🪞 [Trading Mirror](https://t.me/aptyp4uk1337/39) | $400       | Lifetime | MEXC API SDK + Sources of mirroring + updates |
 
 📬 [Contact me on Telegram »](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)
 
@@ -153,8 +153,4 @@ The library supports **50+ endpoints** including:
 
 ### 💌 Contact me
 
-<a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API."><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"> @aptyp4uk1337</a>
-<br>
-<a href="discord://-/users/841963614398578708/"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white" title="Discord"> aptyp4uk1337</a>
-<br>
-<a href="mailto:aptyp4uk1337@gmail.com?subject=MEXC API Bypass"><img src="https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white" title="Email"> aptyp4uk1337@gmail.com</a>
+<a href="https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20API%20SDK."><img src="https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white" title="Telegram"></a>
