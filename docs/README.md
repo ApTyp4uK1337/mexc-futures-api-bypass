@@ -52,9 +52,11 @@ All requests must include the following headers:
 | [**reverseFuturesPosition**](/docs/methods/reverseFuturesPosition.md) | Futures | Reverse futures position. |
 | [**closeAllFuturesPositions**](/docs/methods/closeAllFuturesPositions.md) | Futures | Close all currently open futures positions for the account. |
 | [**getFuturesOpenOrders**](/docs/methods/getFuturesOpenOrders.md) | Futures | Get currently open futures orders. |
+| [**getFuturesClosedOrders**](/docs/methods/getFuturesClosedOrders.md) | Futures | Get futures closed orders. |
 | [**getFuturesOpenLimitOrders**](/docs/methods/getFuturesOpenLimitOrders.md) | Futures | Get currently open limit futures orders. |
 | [**getFuturesOpenStopOrders**](/docs/methods/getFuturesOpenStopOrders.md) | Futures | Get currently open stop futures orders. |
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Futures | Create a new futures order. |
+| [**createFuturesStopOrder**](/docs/methods/createFuturesStopOrder.md) | Futures | Create a new futures stop order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Futures | Fetch futures order(s) by ID. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Futures | Cancel the pending order placed before, each time can cancel up to 50 orders. |
 | [**cancelFuturesOrderWithExternalId**](/docs/methods/cancelFuturesOrderWithExternalId.md) | Futures | Cancel a futures order using an external order ID. |

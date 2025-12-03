@@ -1,5 +1,10 @@
 # 🆕 Changelog
 
+## 03.12.2025
+
+* Added new method [getFuturesClosedOrders](./methods/getFuturesClosedOrders.md)
+* Added new method [createFuturesStopOrder](./methods/createFuturesStopOrder.md)
+
 ## 01.12.2025
 
 * Added new method [changeFuturesLimitOrderPrice](./methods/changeFuturesLimitOrderPrice.md)
