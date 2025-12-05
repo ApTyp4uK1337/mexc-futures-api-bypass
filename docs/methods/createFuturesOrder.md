@@ -24,8 +24,10 @@ Create a new futures order.
 | `take_profit_trend`              | `int`       | ❌           | TP trigger type: `1` = Last, `2` = Fair, `3` = Index. Default = `1`.           |
 | `stop_loss_price`                 | `decimal`   | ❌           | Stop-loss price.                                                               |
 | `stop_loss_trend`                  | `int`       | ❌           | SL trigger type: `1` = Last, `2` = Fair, `3` = Index. Default = `1`.           |
-| `price_protect`                  | `boolean`   | ❌           | Enable price protection. Default = `false`.                                    |
+| `price_protect`                  | `int`   | ❌           | Conditional order trigger protection: `1`, default `0` disabled. Required only for plan orders/TP-SL orders                                    |
+| `market_ceiling`                  | `boolean`   | ❌           | 100% market open                                    |
 | `reduce_only`                      | `boolean`   | ❌           | One-way mode only: set `true` to reduce-only. Ignored in hedge mode.           |
+| `bbo_type`                      | `int`   | ❌           | Limit order type - BBO type: `0` = not BBO<br>`1` = opposite-1<br>`2` = opposite-5<br>`3` = same-side-1<br>`4` = same-side-5.           |
 
 ---
 
