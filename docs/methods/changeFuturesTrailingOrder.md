@@ -1,6 +1,6 @@
 # changeFuturesTrailingOrder
 
-Modify Trailing Order.
+Modify futures trailing order.
 
 - **POST:** `/v1/changeFuturesTrailingOrder`
 
