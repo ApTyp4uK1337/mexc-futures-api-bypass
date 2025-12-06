@@ -65,6 +65,7 @@ All requests must include the following headers:
 | [**createFuturesTriggerOrder**](/docs/methods/createFuturesTriggerOrder.md) | Futures | Create a trigger (planned) futures order that executes once market conditions are met. |
 | [**getFuturesTriggerOrders**](/docs/methods/getFuturesTriggerOrders.md) | Futures | Fetch the list of trigger orders (plan orders). |
 | [**cancelFuturesTriggerOrders**](/docs/methods/cancelFuturesTriggerOrders.md) | Futures | Cancel one or multiple Trigger Orders. |
+| [**cancelFuturesTrailingOrder**](/docs/methods/cancelFuturesTrailingOrder.md) | Futures | Cancel fuutres trailing order. |
 | [**cancelAllFuturesTriggerOrders**](/docs/methods/cancelAllFuturesTriggerOrders.md) | Futures | Cancel all open trigger (planned) futures orders. You can cancel all at once, or only for a specific symbol. |
 | [**getFuturesStopLimitOrders**](/docs/methods/getFuturesStopLimitOrders.md) | Futures | Retrieve the list of Stop-Limit orders (take-profit & stop-loss). |
 | [**cancelStopLimitOrders**](/docs/methods/cancelStopLimitOrders.md) | Futures | Cancel stop-limit futures orders by id. |
