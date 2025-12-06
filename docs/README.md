@@ -56,7 +56,8 @@ All requests must include the following headers:
 | [**getFuturesOpenLimitOrders**](/docs/methods/getFuturesOpenLimitOrders.md) | Futures | Get currently open limit futures orders. |
 | [**getFuturesOpenStopOrders**](/docs/methods/getFuturesOpenStopOrders.md) | Futures | Get currently open stop futures orders. |
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Futures | Create a new futures order. |
-| [**createFuturesStopOrder**](/docs/methods/createFuturesStopOrder.md) | Futures | Create a new futures stop order. |
+| [**createFuturesStopOrder**](/docs/methods/createFuturesTrailingOrder.md) | Futures | Create a new futures stop order. |
+| [**createFuturesTrailingOrder**](/docs/methods/createFuturesStopOrder.md) | Futures | Create a new futures trailing order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Futures | Fetch futures order(s) by ID. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Futures | Cancel the pending order placed before, each time can cancel up to 50 orders. |
 | [**cancelFuturesOrderWithExternalId**](/docs/methods/cancelFuturesOrderWithExternalId.md) | Futures | Cancel a futures order using an external order ID. |

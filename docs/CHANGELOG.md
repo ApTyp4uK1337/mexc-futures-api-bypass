@@ -2,6 +2,7 @@
 
 ## 06.12.2025
 
+* Added new method [createFuturesTrailingOrder](./methods/createFuturesTrailingOrder.md)
 * Method parameters have been updated: Added `market_ceiling`, `bbo_type` [createFuturesOrder](./methods/createFuturesOrder.md)
 
 ## 03.12.2025
