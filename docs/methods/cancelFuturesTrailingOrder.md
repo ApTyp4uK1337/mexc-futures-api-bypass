@@ -11,7 +11,7 @@ Cancel futures trailing order.
 | **Parameter**   |    **Type**    | **Required** | **Description**                                                                 |
 |-----------------------------------|-------------|--------------|---------------------------------------------------------------------------------|
 | `symbol`                      | `string`    | ❌          | Contract name.                                       |
-| `track_order_id`                      | `int`    | ❌          | Trailing order ID.                                       |
+| `order_id`                      | `int`    | ❌          | Trailing order ID.                                       |
 
 ---
 
