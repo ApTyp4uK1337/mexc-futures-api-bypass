@@ -1,5 +1,9 @@
 # 🆕 Changelog
 
+## 11.12.2025
+
+* Added new method [logout](./methods/logout.md)
+
 ## 06.12.2025
 
 * Added new method [changeFuturesTrailingOrder](./methods/changeFuturesTrailingOrder.md)

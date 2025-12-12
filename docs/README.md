@@ -32,6 +32,7 @@ All requests must include the following headers:
 | [**getReferralsList**](/docs/methods/getReferralsList.md) | General | Get referral invite list and their commission statistics. |
 | [**getFuturesTodayPnL**](/docs/methods/getFuturesTodayPnL.md) | General | Get futures today PnL. |
 | [**getAssetsOverview**](/docs/methods/getAssetsOverview.md) | General | Get an overview of your asset balances. |
+| [**logout**](/docs/methods/logout.md) | General | Deactivate X-MEXC-WEB-KEY and close current sessions. |
 | [**getSpotOrderBook**](/docs/methods/getSpotOrderBook.md) | Spot | Get order book. |
 | [**createSpotOrder**](/docs/methods/createSpotOrder.md) | Spot | Create a new spot order. |
 | [**cancelSpotOrder**](/docs/methods/cancelSpotOrder.md) | Spot | Cancel spot limit order. |
