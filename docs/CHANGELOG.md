@@ -1,5 +1,9 @@
 # 🆕 Changelog
 
+## 14.12.2025
+
+* Added new method [createFuturesChaseOrder](./methods/createFuturesChaseOrder.md)
+
 ## 11.12.2025
 
 * Added new method [logout](./methods/logout.md)
