@@ -1,8 +1,8 @@
-# createFuturesChaseOrder
+# chaseFuturesOrder
 
 Modify order price to the corresponding one-tick price.
 
-- **POST:** `/v1/createFuturesChaseOrder`
+- **POST:** `/v1/chaseFuturesOrder`
 
 ---
 

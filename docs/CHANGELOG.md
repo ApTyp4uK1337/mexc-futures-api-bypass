@@ -2,6 +2,7 @@
 
 ## 14.12.2025
 
+* Added new method [chaseFuturesOrder](./methods/chaseFuturesOrder.md)
 * Added new method [createFuturesChaseOrder](./methods/createFuturesChaseOrder.md)
 
 ## 11.12.2025

@@ -1,6 +1,6 @@
 # createFuturesChaseOrder
 
-Modify order price to the corresponding one-tick price.
+Create a new futures chase limit order.
 
 - **POST:** `/v1/createFuturesChaseOrder`
 

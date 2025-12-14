@@ -59,8 +59,9 @@ All requests must include the following headers:
 | [**createFuturesOrder**](/docs/methods/createFuturesOrder.md) | Futures | Create a new futures order. |
 | [**createFuturesStopOrder**](/docs/methods/createFuturesTrailingOrder.md) | Futures | Create a new futures stop order. |
 | [**createFuturesTrailingOrder**](/docs/methods/createFuturesStopOrder.md) | Futures | Create a new futures trailing order. |
-| [**createFuturesChaseOrder**](/docs/methods/createFuturesChaseOrder.md) | Futures | Modify order price to the corresponding one-tick price. |
+| [**createFuturesChaseOrder**](/docs/methods/createFuturesChaseOrder.md) | Futures | Create a new futures chase limit order. |
 | [**getFuturesOrdersById**](/docs/methods/getFuturesOrdersById.md) | Futures | Fetch futures order(s) by ID. |
+| [**chaseFuturesOrder**](/docs/methods/chaseFuturesOrder.md) | Futures | Modify order price to the corresponding one-tick price. |
 | [**cancelFuturesOrders**](/docs/methods/cancelFuturesOrders.md) | Futures | Cancel the pending order placed before, each time can cancel up to 50 orders. |
 | [**cancelFuturesOrderWithExternalId**](/docs/methods/cancelFuturesOrderWithExternalId.md) | Futures | Cancel a futures order using an external order ID. |
 | [**cancelAllFuturesOrders**](/docs/methods/cancelAllFuturesOrders.md) | Futures | Cancel all open futures orders for a given symbol. |
