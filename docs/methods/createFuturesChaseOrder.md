@@ -10,7 +10,14 @@ Modify order price to the corresponding one-tick price.
 
 | **Parameter**   |    **Type**    | **Required** | **Description**                                                                 |
 |-----------------------------------|-------------|--------------|---------------------------------------------------------------------------------|
-| `order_id`                      | `long`    | ✅          | Order ID.                                       |
+| `chase_type`                      | `int`    | ✅          | Chase type: `1` = Bid1/Ask1, `2` - Distance from Bid1/Ask1.                                       |
+| `distance_type`                      | `int`    | ❌          | Distance type: `1` = USDT, `2` = Percent. Default: `1`                                       |
+| `distance_value`                      | `decimal`    | ❌          | Distance value in USDT or Percent / 100.                                       |
+| `leverage`                      | `int`    | ❌          | Leverage (required for isolated margin).                                       |
+| `open_type`                      | `int`    | ✅          | Margin type: `1` = Isolated, `2` = Cross.                                       |
+| `side`                      | `int`    | ✅          | Direction: `1` = Open Long, `2` = Close Short, `3` = Open Short, `4` = Close Long.                                       |
+| `symbol`                      | `int`    | ✅          | Name of the contract (e.g., `BTC_USDT`).                                       |
+| `vol`                      | `string`    | ✅          | Order volume.                                       |
 
 ---
 
