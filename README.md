@@ -55,8 +55,8 @@ This is an unofficial *MEXC API SDK* with support for *futures* and *spot* tradi
 | Option          | Price      | Duration            | Includes                        |
 |-----------------|------------|---------------------|----------------------------------|
 | 🧪 [Trial](https://t.me/mexc_api_robot?start=trial)       | Free       | 6 hours             | Full access to all methods for the duration of testing |
-| 🔓 [Subscription](https://t.me/aptyp4uk1337/19)           | $60        | 30 days             | Full access to all methods + updates |
-| 💾 [Source Code](https://t.me/aptyp4uk1337/19)            | $225       | Lifetime | Full source, no limits, no expiration, free updates |
+| 🔓 [Subscription](https://t.me/aptyp4uk1337/19)           | $75        | 30 days             | Full access to all methods + updates |
+| 💾 [Source Code](https://t.me/aptyp4uk1337/19)            | $250       | Lifetime | Full source, no limits, no expiration, free updates |
 | 🖥 [Multi-account interface](https://t.me/aptyp4uk1337/37) | $399       | Lifetime | MEXC API SDK + Sources of interface + updates |
 | 🪞 [Trading Mirror](https://t.me/aptyp4uk1337/39) | $499       | Lifetime | MEXC API SDK + Sources of mirroring + updates |
 
