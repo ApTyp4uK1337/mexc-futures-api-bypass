@@ -10,7 +10,7 @@ info:
   termsOfService: 'https://mexc-bypass.xyz/terms'
   license:
     name: Proprietary License
-    url: 'https://github.com/ApTyp4uK1337/mexc-futures-api-bypass?tab=License-1-ov-file#readme'
+    url: 'https://github.com/ApTyp4uK1337/mexc-api-sdk?tab=License-1-ov-file#readme'
 servers:
   - url: https://api.mexc-bypass.xyz/v1
     description: Main server

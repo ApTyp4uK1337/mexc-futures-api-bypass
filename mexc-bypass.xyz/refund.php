@@ -131,7 +131,7 @@
           aria-label="Discord">
           <i class="ti ti-brand-discord"></i>
         </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">
           <i class="ti ti-brand-github"></i>
         </a>

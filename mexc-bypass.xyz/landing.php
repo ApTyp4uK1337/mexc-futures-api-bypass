@@ -1113,7 +1113,7 @@ console.log(order);</code></pre>
           <div class="accordion-content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
             <div class="accordion-content-inner px-6" itemprop="text">
               <p class="text-gray-600 dark:text-gray-400 leading-relaxed">See the full project details on my <a
-                  href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank"
+                  href="https://github.com/ApTyp4uK1337/mexc-api-sdk" title="GitHub" target="_blank"
                   class="text-primary-600 dark:text-primary-400 hover:underline">GitHub</a>.</p>
             </div>
           </div>
@@ -1202,7 +1202,7 @@ console.log(order);</code></pre>
               aria-label="Discord">
               <i class="ti ti-brand-discord text-2xl"></i>
             </a>
-            <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" target="_blank"
+            <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk" target="_blank"
               class="text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors"
               aria-label="GitHub Repository">
               <i class="ti ti-brand-github text-2xl"></i>
@@ -1243,7 +1243,7 @@ console.log(order);</code></pre>
           <h4 class="text-lg font-semibold mb-4">Documentation</h4>
           <ul class="space-y-3">
             <li>
-              <a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/tree/main/docs" target="_blank"
+              <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk/tree/main/docs" target="_blank"
                 class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors text-sm flex items-center">
                 <i class="ti ti-book-2 mr-2 text-xs"></i> GitHub Docs
               </a>

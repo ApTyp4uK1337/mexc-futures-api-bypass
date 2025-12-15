@@ -91,7 +91,7 @@
         <a href="discord://-/users/841963614398578708/" title="Discord" target="_blank" rel="noopener noreferrer" class="social-link">
           <i class="ti ti-brand-discord"></i> Discord
         </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="social-link">
           <i class="ti ti-brand-github"></i> GitHub
         </a>
@@ -377,7 +377,7 @@
               </button>
               <div class="accordion-content" id="faq9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
                 <div class="accordion-body" itemprop="text">
-                  <p>See the full project details on my <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
+                  <p>See the full project details on my <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="ti ti-brand-github"></i> GitHub</a>.</p>
                 </div>
               </div>
             </div>
@@ -509,7 +509,7 @@
         </div>
 
         <div class="simple-methods-link">
-          <a href="https://github.com/ApTyp4uK1337/mexc-futures-api-bypass/tree/main/docs#-available-methods"
+          <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk/tree/main/docs#-available-methods"
             title="View All API Methods on GitHub"
             target="_blank"
             rel="noopener noreferrer"
@@ -560,7 +560,7 @@
           aria-label="Discord">
           <i class="ti ti-brand-discord"></i>
         </a>
-        <a href="https://github.com/aptyp4uk1337/mexc-futures-api-bypass" title="GitHub" target="_blank" rel="noopener noreferrer"
+        <a href="https://github.com/ApTyp4uK1337/mexc-api-sdk" title="GitHub" target="_blank" rel="noopener noreferrer"
           class="footer-icon" aria-label="GitHub">
           <i class="ti ti-brand-github"></i>
         </a>
