@@ -1,5 +1,9 @@
 # 🆕 Changelog
 
+## 17.12.2025
+
+* Added new method [calculateFuturesPositionPnL](./methods/calculateFuturesPositionPnL.md)
+
 ## 14.12.2025
 
 * Added new method [chaseFuturesOrder](./methods/chaseFuturesOrder.md)
