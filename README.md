@@ -50,10 +50,12 @@ This is an unofficial *MEXC API SDK* with support for *futures* and *spot* tradi
 
 ---
 
-### 💳 Pricing
-
 > [!CAUTION]
 > Beware of scammers and resellers selling incomplete versions — always verify contacts to avoid paying twice.
+
+---
+
+### 💳 Pricing
 
 | Option          | Price      | Duration            | Includes                        |
 |-----------------|------------|---------------------|----------------------------------|
