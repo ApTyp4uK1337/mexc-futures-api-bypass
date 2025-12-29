@@ -149,13 +149,17 @@ try {
 ---
 
 ## 🌍 Proxy Format
+The API supports **HTTP**, **HTTPS** and **SOCKS5** proxies provided as a URL string.
+
+##### 👀 Examples
 
 ```
+X-MEXC-PROXY: http://127.0.0.1:8080
+X-MEXC-PROXY: https://user:pass@proxy.example.com:3128
 X-MEXC-PROXY: socks5://user:pass@127.0.0.1:9050
 ```
 
-This allows you to tunnel traffic through your own proxy.
-
+This allows you to route API requests through your own proxy.
 
 ---
 
