@@ -87,15 +87,63 @@ All requests must include the following headers:
 | [**changeFuturesOrderTargets**](/docs/methods/changeFuturesOrderTargets.md) | Futures | Switch the take profit price & stop loss price (fixed). |
 | [**receiveFuturesTestnetAsset**](/docs/methods/receiveFuturesTestnetAsset.md) | Futures | Receive futures testnet assets. |
 
----
+## 📦 Quick Example
 
-## 📦 Quick Example (with cURL)
+#### 🌐 cURL
 
 ```bash
 curl -X GET 'https://api.mexc-bypass.xyz/v1/getServerTime' \
-  -H 'X-MEXC-BYPASS-API-KEY: <your-api-key>' \
-  -H 'X-MEXC-WEB-KEY: <your-mexc-web-key>' \
+  -H 'X-MEXC-BYPASS-API-KEY: <YOUR_MEXC_BYPASS_API_KEY>' \
+  -H 'X-MEXC-WEB-KEY: <YOUR_MEXC_WEB_KEY>' \
   -H 'X-MEXC-NETWORK: TESTNET'
+```
+
+### 🐍 Python
+
+```python
+import requests
+
+url = "https://api.mexc-bypass.xyz/v1/getUserInfo"
+
+headers = {
+    "Accept": "application/json",
+    "X-MEXC-BYPASS-API-KEY": "YOUR_MEXC_BYPASS_API_KEY",
+    "X-MEXC-WEB-KEY": "YOUR_MEXC_WEB_KEY",
+    "X-MEXC-NETWORK": "MAINNET"
+}
+
+response = requests.get(url, headers=headers)
+print(response.json())
+```
+
+### 🚀 Node.js
+
+```javascript
+import axios from "axios";
+
+const url = "https://api.mexc-bypass.xyz/v1/createFuturesOrder";
+
+const headers = {
+  "Accept": "application/json",
+  "X-MEXC-BYPASS-API-KEY": "YOUR_MEXC_BYPASS_API_KEY",
+  "X-MEXC-WEB-KEY": "YOUR_MEXC_WEB_KEY",
+  "X-MEXC-NETWORK": "TESTNET"
+};
+
+const data = {
+  symbol: "BTC_USDT",
+  type: 5,
+  side: 1,
+  vol: 1,
+  leverage: 20
+};
+
+try {
+  const response = await axios.post(url, data, { headers });
+  console.log(response.data);
+} catch (error) {
+  console.error(error.response?.data || error.message);
+}
 ```
 
 ---
