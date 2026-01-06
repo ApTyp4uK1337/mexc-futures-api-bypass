@@ -1,5 +1,9 @@
 # 🆕 Changelog
 
+## 06.01.2026
+
+* Added new method [getFuturesFundingRate](./methods/getFuturesFundingRate.md)
+
 ## 17.12.2025
 
 * Added new method [calculateFuturesPositionPnL](./methods/calculateFuturesPositionPnL.md)

@@ -61,10 +61,10 @@ This is an unofficial *MEXC API SDK* with support for *futures* and *spot* tradi
 |-----------------|------------|---------------------|----------------------------------|
 | 🧪 [Trial](https://t.me/mexc_api_robot?start=trial)         | Free       | 6 hours    | Full access to all methods for the duration of testing |
 | 🤖 [MEXC1337 bot](https://t.me/mexc1337_robot)             | Free       | Lifetime   | Telegram MEXC Futures Trading bot |
-| 🔓 [API Subscription](https://t.me/aptyp4uk1337/19)             | $60 ❄️ ~$75~        | 30 days    | Full access to all methods + updates |
-| 💾 [SDK Source Code](https://t.me/aptyp4uk1337/19)              | $200 ☃️ ~$250~       | Lifetime   | Full source, no limits, no expiration, free updates |
-| 🖥 [Multi-account interface](https://t.me/aptyp4uk1337/37)   | $300 🎅🏼 ~$399~       | Lifetime   | MEXC API SDK + Sources of interface + updates |
-| 🪞 [Trading Mirror](https://t.me/aptyp4uk1337/39)           | $400 🎄 ~$499~       | Lifetime   | MEXC API SDK + Sources of mirroring + updates |
+| 🔓 [API Subscription](https://t.me/aptyp4uk1337/19)             | $74        | 30 days    | Full access to all methods + updates |
+| 💾 [SDK Source Code](https://t.me/aptyp4uk1337/19)              | $249       | Lifetime   | Full source, no limits, no expiration, free updates |
+| 🖥 [Multi-account interface](https://t.me/aptyp4uk1337/37)   | $399       | Lifetime   | MEXC API SDK + Sources of interface + updates |
+| 🪞 [Trading Mirror](https://t.me/aptyp4uk1337/39)           | $499       | Lifetime   | MEXC API SDK + Sources of mirroring + updates |
 | 🛠 [Custom development](https://t.me/aptyp4uk1337_bot)       | Personal   | Lifetime   | Individual development for your needs |
 
 📬 [Contact me on Telegram »](https://t.me/aptyp4uk1337_bot?text=%F0%9F%91%8B%20Hi%2C%20I%20am%20writing%20regarding%20the%20acquisition%20of%20MEXC%20Futures%20API.)

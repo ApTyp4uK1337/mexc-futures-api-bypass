@@ -1,4 +1,4 @@
-# 🚀 MEXC Bypass API
+# 🚀 MEXC API SDK
 
 This project provides a wrapper around the MEXC Futures API with support for proxy usage, testnet/mainnet environments, and custom authorization headers. It is designed for fast and convenient access to MEXC methods without direct login.
 
