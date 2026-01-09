@@ -1,5 +1,9 @@
 # 🆕 Changelog
 
+## 09.01.2026
+
+* Added new method [getFuturesAnalysis](./methods/getFuturesAnalysis.md)
+
 ## 06.01.2026
 
 * Added new method [getFuturesFundingRate](./methods/getFuturesFundingRate.md)

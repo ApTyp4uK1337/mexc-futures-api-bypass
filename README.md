@@ -26,7 +26,7 @@ This is an unofficial *MEXC API SDK* with support for *futures* and *spot* tradi
 
 ### 🔴 Live Demo
 
-* You can test the opening of a position yourself: https://mexc-bypass.xyz/
+* You can test the opening of a position yourself: https://mexc-bypass.xyz/demo
 * 6h free trial: [@mexc_api_robot](https://t.me/mexc_api_robot?start=trial) → `🆓 Get Free Trial`
 
 <div align="center">
